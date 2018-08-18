@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c94a560286b024395a7cef0e821f3d66
+timeCreated: 1462555119
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - knockedDown: {instanceID: 0}
+  - stabbed: {instanceID: 0}
+  - bulletWound: {instanceID: 0}
+  - backUp: {instanceID: 0}
+  - bloodPool: {instanceID: 0}
+  - bloodSpurt: {instanceID: 0}
+  - bloodSpray: {fileID: 147318, guid: 97a1f68e36bc144229ffebba41636260, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

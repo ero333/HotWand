@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: b682283e402004869856f98d1bcfb647
+timeCreated: 1458040378
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: enemyAttacking_0
+    21300002: enemyAttacking_1
+    21300004: enemyAttacking_2
+    21300006: enemyAttacking_3
+    21300008: enemyAttacking_4
+    21300010: enemyAttacking_5
+    21300012: enemyAttacking_6
+    21300014: enemyAttacking_7
+    21300016: enemyAttacking_8
+    21300018: enemyAttacking_9
+    21300020: enemyAttacking_10
+    21300022: enemyAttacking_11
+    21300024: enemyAttacking_12
+    21300026: enemyAttacking_13
+    21300028: enemyAttacking_14
+    21300030: enemyAttacking_15
+    21300032: enemyAttacking_16
+    21300034: enemyAttacking_17
+    21300036: enemyAttacking_18
+    21300038: enemyAttacking_19
+    21300040: enemyAttacking_20
+    21300042: enemyAttacking_21
+    21300044: enemyAttacking_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: enemyAttacking_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 59
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.38567084, y: 0.51587903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 59
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.48468834, y: 0.51587903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 59
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5142914, y: 0.51587903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 59
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48015115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 58
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5071457, y: 0.51587903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_5
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 59
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5198489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 58
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.39996237, y: 0.5516069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 59
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.3702513, y: 0.51587903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 60
+        width: 22
+        height: 26
+      alignment: 9
+      pivot: {x: 0.36358503, y: 0.49587747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_9
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 60
+        width: 27
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3650281, y: 0.53297955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 37
+        width: 43
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25057343, y: 0.6381484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_11
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 37
+        width: 45
+        height: 14
+      alignment: 9
+      pivot: {x: 0.23691322, y: 0.6381484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 38
+        width: 46
+        height: 14
+      alignment: 9
+      pivot: {x: 0.23243979, y: 0.6381484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 39
+        width: 48
+        height: 14
+      alignment: 9
+      pivot: {x: 0.21758842, y: 0.6324517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_14
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 41
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_15
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 42
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6
+        width: 26
+        height: 26
+      alignment: 9
+      pivot: {x: 0.36822298, y: 0.53294426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 7
+        width: 29
+        height: 26
+      alignment: 9
+      pivot: {x: 0.37379956, y: 0.53593916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 10
+        width: 36
+        height: 25
+      alignment: 9
+      pivot: {x: 0.35374323, y: 0.51912016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_19
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 22
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_20
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 10
+        width: 39
+        height: 22
+      alignment: 9
+      pivot: {x: 0.3261077, y: 0.45334217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_21
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 8
+        width: 22
+        height: 26
+      alignment: 9
+      pivot: {x: 0.35772845, y: 0.489056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: enemyAttacking_22
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 8
+        width: 18
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3814409, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

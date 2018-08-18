@@ -1,0 +1,459 @@
+fileFormatVersion: 2
+guid: 5305c8de37f6347559f1bbc7ef19e5b8
+timeCreated: 1456670723
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: redailTrans_0
+    21300002: redailTrans_1
+    21300004: redailTrans_2
+    21300006: redailTrans_3
+    21300008: redailTrans_4
+    21300010: redailTrans_5
+    21300012: redailTrans_6
+    21300014: redailTrans_7
+    21300016: redailTrans_8
+    21300018: redailTrans_9
+    21300020: redailTrans_10
+    21300022: redailTrans_11
+    21300024: redailTrans_12
+    21300026: redailTrans_13
+    21300028: redailTrans_14
+    21300030: redailTrans_15
+    21300032: redailTrans_16
+    21300034: redailTrans_17
+    21300036: redailTrans_18
+    21300038: redailTrans_19
+    21300040: redailTrans_20
+    21300042: redailTrans_21
+    21300044: redailTrans_22
+    21300046: redailTrans_23
+    21300048: redailTrans_24
+    21300050: redailTrans_25
+    21300052: redailTrans_26
+    21300054: redailTrans_27
+    21300056: redailTrans_28
+    21300058: redailTrans_29
+    21300060: redailTrans_30
+    21300062: redailTrans_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: redailTrans_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 249
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 262
+        width: 45
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 205
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_3
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 205
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 17}
+        - {x: -23.5, y: -17}
+        - {x: 22.5, y: -17}
+        - {x: 23.5, y: -14}
+        - {x: 23.5, y: 11}
+        - {x: -14.5, y: 17}
+    - name: redailTrans_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 173
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 173
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 173
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 173
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 143
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 143
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 143
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 143
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 108
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 108
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 108
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_15
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 108
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 78
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_17
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 78
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_18
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 78
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_19
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 78
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_20
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 63
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 63
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 43
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_23
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 43
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_24
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 43
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_25
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 2
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 29}
+        - {x: -24.5, y: -29}
+        - {x: -17.5, y: -29}
+        - {x: 24.5, y: 21}
+        - {x: 24.5, y: 29}
+      - - {x: -3.5, y: 21}
+        - {x: -4.5, y: 19}
+        - {x: -12.5, y: -26}
+        - {x: -12.5, y: -27}
+        - {x: -10.5, y: -29}
+        - {x: 24.5, y: -29}
+        - {x: 24.5, y: 21}
+    - name: redailTrans_26
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 13
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_27
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 13
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_28
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 27
+        width: 35
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_29
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 27
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_30
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 27
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: redailTrans_31
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 28
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
