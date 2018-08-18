@@ -1,3 +1,7 @@
 Hola
 
-Fausto es  el mas capito
+<<<<<<< HEAD
+Fausto es muy griton 
+=======
+Fausto es  de Olavarria y es fan del Indio Solari
+>>>>>>> e55edca1f2a2fd96ba4e37b5262b3037b85aceb3
