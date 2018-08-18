@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 40c10e715d2b648e193b6f32aa2ede2c
+timeCreated: 1456919853
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BackupBoilerSuit_0
+    21300002: BackupBoilerSuit_1
+    21300004: BackupBoilerSuit_2
+    21300006: BackupBoilerSuit_3
+    21300008: BackupBoilerSuit_4
+    21300010: BackupBoilerSuit_5
+    21300012: BackupBoilerSuit_6
+    21300014: BackupBoilerSuit_7
+    21300016: BackupBoilerSuit_8
+    21300018: BackupBoilerSuit_9
+    21300020: BackupBoilerSuit_10
+    21300022: BackupBoilerSuit_11
+    21300024: BackupBoilerSuit_12
+    21300026: BackupBoilerSuit_13
+    21300028: BackupBoilerSuit_14
+    21300030: BackupBoilerSuit_15
+    21300032: BackupBoilerSuit_16
+    21300034: BackupBoilerSuit_17
+    21300036: BackupBoilerSuit_18
+    21300038: BackupBoilerSuit_19
+    21300040: BackupBoilerSuit_20
+    21300042: BackupBoilerSuit_21
+    21300044: BackupBoilerSuit_22
+    21300046: BackupBoilerSuit_23
+    21300048: BackupBoilerSuit_24
+    21300050: BackupBoilerSuit_25
+    21300052: BackupBoilerSuit_26
+    21300054: BackupBoilerSuit_27
+    21300056: BackupBoilerSuit_28
+    21300058: BackupBoilerSuit_29
+    21300060: BackupBoilerSuit_30
+    21300062: BackupBoilerSuit_31
+    21300064: BackupBoilerSuit_32
+    21300066: BackupBoilerSuit_33
+    21300068: BackupBoilerSuit_34
+    21300070: BackupBoilerSuit_35
+    21300072: BackupBoilerSuit_36
+    21300074: BackupBoilerSuit_37
+    21300076: BackupBoilerSuit_38
+    21300078: BackupBoilerSuit_39
+    21300080: BackupBoilerSuit_40
+    21300082: BackupBoilerSuit_41
+    21300084: BackupBoilerSuit_42
+    21300086: BackupBoilerSuit_43
+    21300088: BackupBoilerSuit_44
+    21300090: BackupBoilerSuit_45
+    21300092: BackupBoilerSuit_46
+    21300094: BackupBoilerSuit_47
+    21300096: BackupBoilerSuit_48
+    21300098: BackupBoilerSuit_49
+    21300100: BackupBoilerSuit_50
+    21300102: BackupBoilerSuit_51
+    21300104: BackupBoilerSuit_52
+    21300106: BackupBoilerSuit_53
+    21300108: BackupBoilerSuit_54
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BackupBoilerSuit_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 262
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 262
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 262
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 262
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 261
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 262
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_6
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 261
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 261
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_8
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 261
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_9
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 261
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_10
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 262
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 261
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 242
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 241
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_14
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 241
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 240
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_16
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 240
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_17
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 240
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_18
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 240
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_19
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 241
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_20
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 241
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_21
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_22
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 235
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_23
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 234
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_24
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 233
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 232
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_26
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 232
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_27
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 232
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_28
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 232
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_29
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 234
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_30
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 234
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_31
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 234
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_32
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 211
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_33
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 212
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 212
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_35
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 213
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_36
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 213
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_37
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 213
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_38
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 213
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 212
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_40
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 212
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_41
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 212
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_42
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 202
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_43
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 203
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_44
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 202
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_45
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 203
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_46
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 203
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_47
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 203
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_48
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 203
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_49
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 203
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_50
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 203
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_51
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 204
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_52
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 174
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BackupBoilerSuit_53
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 127
+        width: 67
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: -9}
+        - {x: 22.5, y: -9}
+        - {x: 16.5, y: -9}
+        - {x: 10.5, y: -10}
+        - {x: 7.5, y: -13}
+        - {x: 7.5, y: -16}
+        - {x: 31.5, y: -16}
+        - {x: 33.5, y: -14}
+        - {x: 33.5, y: -2}
+        - {x: 26.5, y: -1}
+        - {x: 33.5, y: 4}
+        - {x: 33.5, y: 16}
+        - {x: -32.5, y: 16}
+        - {x: -33.5, y: 15}
+        - {x: -33.5, y: -16}
+        - {x: -8.5, y: -16}
+        - {x: 5.5, y: -15}
+        - {x: 8.5, y: -11}
+        - {x: 10.5, y: -8}
+      - - {x: -33.5, y: -12}
+        - {x: -30.5, y: -11}
+        - {x: -30.5, y: -8}
+        - {x: -32.5, y: -6}
+        - {x: -33.5, y: -6}
+    - name: BackupBoilerSuit_54
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 122
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

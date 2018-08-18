@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: 3931b954bb6a24a379c280eaaee5be05
+timeCreated: 1461849164
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HeavyHMTTest_0
+    21300002: HeavyHMTTest_1
+    21300004: HeavyHMTTest_2
+    21300006: HeavyHMTTest_3
+    21300008: HeavyHMTTest_4
+    21300010: HeavyHMTTest_5
+    21300012: HeavyHMTTest_6
+    21300014: HeavyHMTTest_7
+    21300016: HeavyHMTTest_8
+    21300018: HeavyHMTTest_9
+    21300020: HeavyHMTTest_10
+    21300022: HeavyHMTTest_11
+    21300024: HeavyHMTTest_12
+    21300026: HeavyHMTTest_13
+    21300028: HeavyHMTTest_14
+    21300030: HeavyHMTTest_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HeavyHMTTest_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 9
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 10
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.49999884, y: 0.47360003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 10
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.503553, y: 0.47360003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 11
+        width: 13
+        height: 20
+      alignment: 9
+      pivot: {x: 0.49999884, y: 0.45149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 10
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.503553, y: 0.4758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 10
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.49999884, y: 0.47800002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_7
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 9
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_8
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 9
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_9
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 9
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_10
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 9
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5035518, y: 0.5197999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_11
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 10
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5035518, y: 0.5197999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_12
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 10
+        width: 13
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5438899}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_13
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 9
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5071059, y: 0.5219999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_14
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 9
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5035541, y: 0.51539993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeavyHMTTest_15
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 8
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

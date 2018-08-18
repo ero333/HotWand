@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: 3776696c8f51f4248a563056c5c35afe
+timeCreated: 1456670365
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tutorialAttacking_0
+    21300002: tutorialAttacking_1
+    21300004: tutorialAttacking_2
+    21300006: tutorialAttacking_3
+    21300008: tutorialAttacking_4
+    21300010: tutorialAttacking_5
+    21300012: tutorialAttacking_6
+    21300014: tutorialAttacking_7
+    21300016: tutorialAttacking_8
+    21300018: tutorialAttacking_9
+    21300020: tutorialAttacking_10
+    21300022: tutorialAttacking_11
+    21300024: tutorialAttacking_12
+    21300026: tutorialAttacking_13
+    21300028: tutorialAttacking_14
+    21300030: tutorialAttacking_15
+    21300032: tutorialAttacking_16
+    21300034: tutorialAttacking_17
+    21300036: tutorialAttacking_18
+    21300038: tutorialAttacking_19
+    21300040: tutorialAttacking_20
+    21300042: tutorialAttacking_21
+    21300044: tutorialAttacking_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tutorialAttacking_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 59
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.37514374, y: 0.5504472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 59
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.4756775, y: 0.5168157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 59
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.50378364, y: 0.5147137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 59
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.50597423, y: 0.47898045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 58
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.50756735, y: 0.5168157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_5
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 59
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.4756786, y: 0.5147137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 58
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.38271078, y: 0.554651}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 59
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.3476635, y: 0.5189178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 60
+        width: 22
+        height: 26
+      alignment: 9
+      pivot: {x: 0.34779912, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_9
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 60
+        width: 27
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3570664, y: 0.5392905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 37
+        width: 43
+        height: 14
+      alignment: 9
+      pivot: {x: 0.24579929, y: 0.6434909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_11
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 37
+        width: 45
+        height: 14
+      alignment: 9
+      pivot: {x: 0.23608924, y: 0.6434909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 38
+        width: 46
+        height: 14
+      alignment: 9
+      pivot: {x: 0.23026657, y: 0.6392708}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 39
+        width: 48
+        height: 14
+      alignment: 9
+      pivot: {x: 0.22250366, y: 0.63998115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_14
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 41
+        width: 16
+        height: 10
+      alignment: 9
+      pivot: {x: 0.2684765, y: 0.5864353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_15
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 42
+        width: 12
+        height: 5
+      alignment: 9
+      pivot: {x: 0.4073906, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6
+        width: 26
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3704686, y: 0.5386323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 7
+        width: 29
+        height: 26
+      alignment: 9
+      pivot: {x: 0.36756936, y: 0.5386323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 10
+        width: 36
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3506476, y: 0.5212704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_19
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 22
+        width: 10
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53692794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_20
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 10
+        width: 39
+        height: 22
+      alignment: 9
+      pivot: {x: 0.3227465, y: 0.45165807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_21
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 8
+        width: 22
+        height: 26
+      alignment: 9
+      pivot: {x: 0.35497075, y: 0.5011688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tutorialAttacking_22
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 8
+        width: 18
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3750746, y: 0.4988313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
