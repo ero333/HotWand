@@ -1,0 +1,1 @@
+Utilizada para cargar los diseños de los personajes, escenarios, cut scenes, logos, etc.
