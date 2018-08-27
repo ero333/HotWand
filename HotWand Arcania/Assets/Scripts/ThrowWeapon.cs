@@ -24,6 +24,8 @@ public class ThrowWeapon : MonoBehaviour {
 			rid.isKinematic = true;
 			Destroy (this);
 		}
+        
+        //rid.AddForce(-direction * 2);
 	}
 
 
@@ -47,7 +49,11 @@ public class ThrowWeapon : MonoBehaviour {
 		else if (col.gameObject.tag == "Dog") {
 			col.gameObject.GetComponent<DogHealth> ().killDog ();
 		}
-		else {
+        else if (col.gameObject.tag == "Wall")
+        {
+            rid.velocity = new Vector3(0, 0, 0);
+        }
+        else {
 			rid.isKinematic = true;
 			Destroy (this);
 		}
