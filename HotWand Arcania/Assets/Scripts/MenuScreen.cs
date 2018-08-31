@@ -146,28 +146,16 @@ public class MenuScreen : MonoBehaviour {
 			if (menu == true) {
 				play = false;
 				titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
-				GUI.Box (titlePos, "Cloneline Miami", titleShadow);
+				GUI.Box (titlePos, "", titleShadow);
 
 
 				titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300);
-				GUI.Box (titlePos, "Cloneline Miami", titleText);
-
-				Rect menuPos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 400, 800, 200);
-				if (playSelect == true) {
-					GUI.DrawTexture (menuPos, bg);
-					GUI.Box (menuPos, "Play", text);
-				} else if (playSelect == false) {
-					GUI.Box (menuPos, "Play", text);
-				}
+				GUI.Box (titlePos, "", titleText);
 
 
-				Rect exitPos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 700, 800, 200);
-				if (exitSelect == true) {
-					GUI.DrawTexture (exitPos, bg);
-					GUI.Box (exitPos, "Exit", text);
-				} else if (exitSelect == false) {
-					GUI.Box (exitPos, "Exit", text);
-				}
+
+
+
 
 			} else if (play == true) {
 				Rect backToRet = new Rect (originalWidth - originalWidth + 200, originalHeight - 200, 800, 200);
@@ -175,11 +163,11 @@ public class MenuScreen : MonoBehaviour {
 				GUI.Box (backToRet, "Press backspace to return to menu", text);
 
 				titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
-				GUI.Box (titlePos, "Cloneline Miami", titleShadow);
+				GUI.Box (titlePos, "", titleShadow);
 
 
 				titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300);
-				GUI.Box (titlePos, "Cloneline Miami", titleText);
+				GUI.Box (titlePos, "", titleText);
 
 				if (levels [levelSelectCount].unlocked == true) {
 					Rect levelTitlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 200, 800, 200);
