@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6537c04c2c8264367a5844ec3ef3de63
+guid: 3c35633a659494ea39e5e500ad9d6f6a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Press Start 2P
+  fontName: Trajan Pro
   fontNames:
-  - Trajan
+  - Trajan Pro
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

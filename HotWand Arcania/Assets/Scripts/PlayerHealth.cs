@@ -97,7 +97,7 @@ public class PlayerHealth : MonoBehaviour {
 		if (dead == true) {
 			Rect posForRestart = new Rect (100,originalHeight-200,500,150);
 			GUI.DrawTexture (posForRestart,bg);
-			GUI.Box (posForRestart,"Press 'R' to restart",text);
+			GUI.Box (posForRestart,"Presione 'R' para re-iniciar nivel",text);
 		}
 
 		GUI.matrix = svMat;

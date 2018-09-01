@@ -160,7 +160,7 @@ public class MenuScreen : MonoBehaviour {
 			} else if (play == true) {
 				Rect backToRet = new Rect (originalWidth - originalWidth + 200, originalHeight - 200, 800, 200);
 				GUI.DrawTexture (backToRet, bg);
-				GUI.Box (backToRet, "Press backspace to return to menu", text);
+				GUI.Box (backToRet, "Presiona 'R' para volver al menú", text);
 
 				titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
 				GUI.Box (titlePos, "", titleShadow);
