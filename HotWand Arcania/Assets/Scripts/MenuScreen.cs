@@ -6,8 +6,8 @@ public class MenuScreen : MonoBehaviour {
 	static public MenuScreen mu;//new menu 2
 
 
-	float originalWidth = 1920.0f; //turn these to floats to fix placement issue
-	float originalHeight = 1080.0f;
+	float originalWidth = 1280.0f; //turn these to floats to fix placement issue
+	float originalHeight = 720.0f;
 	Vector3 scale;
 	public bool display = false;
 
