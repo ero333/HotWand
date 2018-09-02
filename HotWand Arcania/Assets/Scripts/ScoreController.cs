@@ -78,7 +78,7 @@ public class ScoreController : MonoBehaviour {
 		if (CutsceneDisplay.anyCutsceneDisplaying == false) {
 			Rect scorePos = new Rect (originalWidth - 500, (originalHeight - originalHeight) + 50, 200, 100);
 			Rect multiPos = new Rect (originalWidth - 500, (originalHeight - originalHeight) + 100, 200, 100);
-			Rect bgPos = new Rect (originalWidth - 750, (originalHeight - originalHeight) + 50, 700, 150);
+			Rect bgPos = new Rect (originalWidth - 750, (originalHeight - originalHeight) + 50, 700, 250);
 			GUI.DrawTexture (bgPos, bg);
 			if (PlayerHealth.dead == false) {//changed for ep on cutscenes
 				GUI.Box (scorePos, "Score: " + score, text);
