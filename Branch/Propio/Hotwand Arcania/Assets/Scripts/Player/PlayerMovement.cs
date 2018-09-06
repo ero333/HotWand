@@ -4,16 +4,15 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 	public  bool moving = true;
 	public float speed = 5.0f;
-	// Use this for initialization
-	void Start () {
-	
-	}
+
+	public Animator animator;
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if(moving==true)
 		{
 			movement ();
+			animator.SetBool("Moving", true);
 		}
 		movementCheck ();
 	}
@@ -50,6 +49,7 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		if (Input.GetKey (KeyCode.D) != true && Input.GetKey (KeyCode.A) != true && Input.GetKey (KeyCode.S) != true && Input.GetKey (KeyCode.W) != true) {
 			moving = false;
+			animator.SetBool("Moving", false);
 		} else {
 			moving = true;
 		}

@@ -5,18 +5,32 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour {
 
 	public GameObject currentInteractable = null;
+	public InteractionObject currentInteractableObjectScript = null;
+	public Inventory inventory;
 
 	void Update(){
-		if(Input.GetButtonDown("Interact") && currentInteractable){
-			//Do something with the object
-			currentInteractable.SendMessage("DoInteraction");
+		//Pick up item from the floor
+		if(Input.GetMouseButtonDown(1) && currentInteractable){
+			//Check to see if this object is to be stored in inventory
+			if (currentInteractableObjectScript.inventory)
+			{
+				inventory.AddItem(currentInteractable);
+				currentInteractable.SendMessage("Pickedup");
+			}
+		}
+
+		//Use item
+		if(Input.GetMouseButtonDown(0) && currentInteractable){
+			//Check the inventory if we have something equipped
+
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Interactable")){
-			currentInteractable = other.gameObject;
 			Debug.Log(other.name);
+			currentInteractable = other.gameObject;
+			currentInteractableObjectScript = currentInteractable.GetComponent<InteractionObject>();
 		}
 	}
 
