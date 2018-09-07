@@ -5,7 +5,12 @@ using UnityEngine;
 public class Equipment : MonoBehaviour {
 
 	public GameObject equippedWeapon;
+	
 	public GameObject wandProjectile;
+	public GameObject crossbowProjectile;
+
+	public GameObject rangedAnchorPoint;
+
 	public Animator animator;
 
 	//Damage Modifiers for weapons
@@ -37,12 +42,27 @@ public class Equipment : MonoBehaviour {
 		{
 			animator.SetBool("Sword Stance", true);	
 			animator.SetBool("Wand Stance", false);	
+			animator.SetBool("Crossbow Stance", false);
 		}
 		else
 		if (item.name == "Wand")
 		{
 			animator.SetBool("Wand Stance", true);
+			animator.SetBool("Sword Stance", false);
+			animator.SetBool("Crossbow Stance", false);	
+		}
+		else
+		if (item.name == "Crossbow")
+		{
+			animator.SetBool("Crossbow Stance", true);
+			animator.SetBool("Wand Stance", false);
 			animator.SetBool("Sword Stance", false);	
+		}
+		else
+		{
+			animator.SetBool("Wand Stance", false);
+			animator.SetBool("Sword Stance", false);
+			animator.SetBool("Crossbow Stance", false);
 		}
 	}
 
@@ -57,6 +77,7 @@ public class Equipment : MonoBehaviour {
 
 			animator.SetBool("Wand Stance", false);
 			animator.SetBool("Sword Stance", false);
+			animator.SetBool("Crossbow Stance", false);
 		}
 	}
 
@@ -69,7 +90,7 @@ public class Equipment : MonoBehaviour {
 		}
 		else
 		if (equippedWeapon.name == "Wand"){
-			Instantiate(wandProjectile, transform.position, transform.rotation);
+			Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 		}
 		else
 		if (equippedWeapon.name == "Sword"){
@@ -77,6 +98,10 @@ public class Equipment : MonoBehaviour {
 			//Hit only the closest enemy
 			hitObjects[1].SendMessage("TakeDamage", swordDamage, SendMessageOptions.DontRequireReceiver);
 			Debug.Log ("Hit " + hitObjects[0].name);
+		}
+		else
+		if (equippedWeapon.name == "Crossbow"){
+			Instantiate(crossbowProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 		}
 
 	}
