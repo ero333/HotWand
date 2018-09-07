@@ -34,10 +34,8 @@ public class Projectile : MonoBehaviour {
 		if(other.CompareTag("Enemy")){
 			Destroy(this.gameObject);
 		}
-	}
-
-	void OnTriggerEnter2D(TilemapCollider2D other){
-		if(other.CompareTag("Collidable")){
+		else
+		if(other.CompareTag("Wall")){
 			Destroy(this.gameObject);
 		}
 	}
