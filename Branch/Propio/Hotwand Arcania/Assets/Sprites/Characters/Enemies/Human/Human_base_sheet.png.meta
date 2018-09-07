@@ -1,61 +1,61 @@
 fileFormatVersion: 2
-guid: 52a44681c78e4724683048138b9ab18b
+guid: 19adb6d8458b59540806554daa465d80
 TextureImporter:
   fileIDToRecycleName:
-    21300000: humano_base_0
-    21300002: humano_base_1
-    21300004: humano_base_2
-    21300006: humano_base_3
-    21300008: humano_base_4
-    21300010: humano_base_5
-    21300012: humano_base_6
-    21300014: humano_base_7
-    21300016: humano_base_8
-    21300018: humano_base_9
-    21300020: humano_base_10
-    21300022: humano_base_11
-    21300024: humano_base_12
-    21300026: humano_base_13
-    21300028: humano_base_14
-    21300030: humano_base_15
-    21300032: humano_base_16
-    21300034: humano_base_17
-    21300036: humano_base_18
-    21300038: humano_base_19
-    21300040: humano_base_20
-    21300042: humano_base_21
-    21300044: humano_base_22
-    21300046: humano_base_23
-    21300048: humano_base_24
-    21300050: humano_base_25
-    21300052: humano_base_26
-    21300054: humano_base_27
-    21300056: humano_base_28
-    21300058: humano_base_29
-    21300060: humano_base_30
-    21300062: humano_base_31
-    21300064: humano_base_32
-    21300066: humano_base_33
-    21300068: humano_base_34
-    21300070: humano_base_35
-    21300072: humano_base_36
-    21300074: humano_base_37
-    21300076: humano_base_38
-    21300078: humano_base_39
-    21300080: humano_base_40
-    21300082: humano_base_41
-    21300084: humano_base_42
-    21300086: humano_base_43
-    21300088: humano_base_44
-    21300090: humano_base_45
-    21300092: humano_base_46
-    21300094: humano_base_47
-    21300096: humano_base_48
-    21300098: humano_base_49
-    21300100: humano_base_50
-    21300102: humano_base_51
-    21300104: humano_base_52
-    21300106: humano_base_53
+    21300000: Human_base_sheet_0
+    21300002: Human_base_sheet_1
+    21300004: Human_base_sheet_2
+    21300006: Human_base_sheet_3
+    21300008: Human_base_sheet_4
+    21300010: Human_base_sheet_5
+    21300012: Human_base_sheet_6
+    21300014: Human_base_sheet_7
+    21300016: Human_base_sheet_8
+    21300018: Human_base_sheet_9
+    21300020: Human_base_sheet_10
+    21300022: Human_base_sheet_11
+    21300024: Human_base_sheet_12
+    21300026: Human_base_sheet_13
+    21300028: Human_base_sheet_14
+    21300030: Human_base_sheet_15
+    21300032: Human_base_sheet_16
+    21300034: Human_base_sheet_17
+    21300036: Human_base_sheet_18
+    21300038: Human_base_sheet_19
+    21300040: Human_base_sheet_20
+    21300042: Human_base_sheet_21
+    21300044: Human_base_sheet_22
+    21300046: Human_base_sheet_23
+    21300048: Human_base_sheet_24
+    21300050: Human_base_sheet_25
+    21300052: Human_base_sheet_26
+    21300054: Human_base_sheet_27
+    21300056: Human_base_sheet_28
+    21300058: Human_base_sheet_29
+    21300060: Human_base_sheet_30
+    21300062: Human_base_sheet_31
+    21300064: Human_base_sheet_32
+    21300066: Human_base_sheet_33
+    21300068: Human_base_sheet_34
+    21300070: Human_base_sheet_35
+    21300072: Human_base_sheet_36
+    21300074: Human_base_sheet_37
+    21300076: Human_base_sheet_38
+    21300078: Human_base_sheet_39
+    21300080: Human_base_sheet_40
+    21300082: Human_base_sheet_41
+    21300084: Human_base_sheet_42
+    21300086: Human_base_sheet_43
+    21300088: Human_base_sheet_44
+    21300090: Human_base_sheet_45
+    21300092: Human_base_sheet_46
+    21300094: Human_base_sheet_47
+    21300096: Human_base_sheet_48
+    21300098: Human_base_sheet_49
+    21300100: Human_base_sheet_50
+    21300102: Human_base_sheet_51
+    21300104: Human_base_sheet_52
+    21300106: Human_base_sheet_53
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -149,112 +149,252 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: humano_base_0
+      name: Human_base_sheet_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 281
-        width: 26
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7af81328053a3f0439156c1c372a3558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_1
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 272
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63175e95445febb4c893dc13c13d7d8d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_2
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 271
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84712b41ca492124cb9ba28dea78731f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_3
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 252
-        width: 26
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2aad67c3f44f2940a1a1a6704044830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_4
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 263
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bf45d497d33e1f4b8ce3a041f2c4d82
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_5
-      rect:
-        serializedVersion: 2
-        x: 88
+        x: 8
         y: 262
-        width: 8
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9c301458ffc944b89d879a01c035ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 262
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f17c2d4b68d7fb4f9ed31bbc06ced03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 262
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501153dcc08f2fc4b84a6f239c393221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 262
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a650dc21b24824cbfb0c379e1d6180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 261
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fddfab852bad7408e83787b2f5692e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 262
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0af69114f862347835d5caf31f6d98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 261
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cda3b131e3ae4b49b1372004902fb8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 261
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8212c0de2db3d4e83c1fe7da71eabb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 261
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cedd55b9bd9eac4f9cfec1c112e2acc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 261
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c537736a150b43e4e924eaa6b10cde85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 262
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed8b4378ba8eea49bfa323838d71197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 261
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e139648efa9654080ce76df11b9bfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 242
+        width: 10
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +403,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d4b035781c9e304e81a140f06e527bd
+      spriteID: 3cb5356c622789e4cb93b594c196e6c2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: humano_base_6
+      name: Human_base_sheet_13
       rect:
         serializedVersion: 2
-        x: 60
-        y: 249
-        width: 6
-        height: 9
+        x: 36
+        y: 241
+        width: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,858 +423,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adc04db0079992949996219bfb9ca823
+      spriteID: f1d2aee6245991a4cb405f996c3bb71f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: humano_base_7
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 248
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 168e489ad1e49244b98d497e231f25ff
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_8
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 228
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f19806bbec63f3a469a00c03aedb6ac8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_9
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 239
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc84730c54d14eb48b93e82025b380af
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_10
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 238
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa65c437e6c01f0459fab57d8bde4abc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_11
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 225
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93346c5a43c2be64499e8388a77a4daa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_12
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 224
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b763d3dbf926054796c425ff06b0ddb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_13
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 204
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e06056e02a0806648ab485a9ab99e602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_14
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 214
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 996e2dafdaf19154aab788ac350dea2b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_15
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 213
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48c7e237fb6e0fc4f8d974c4ea96ff31
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_16
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 198
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdc1a31b90d8f2640af5c7acc9a59340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_17
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 197
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3af86c3724c712847bade7bfda7b44f5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_18
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 181
-        width: 26
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b997f7242c1e5214d99926743f06d416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_19
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 185
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 953152e9b9f822249963d1d470ed572f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_20
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 184
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 746007029a96aba489638de8f45a1006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_21
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 160
-        width: 26
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c2b5cf92e91f0b4fa0ddcf86c2edda5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_22
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 167
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9459c331cb353e4fa4a80687c467cd0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_23
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 166
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6584f7cdd5ff09c41b6ee466d4190873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_24
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 152
-        width: 9
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8d620e5ff71a0e4796c83fd24bf6ad1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_25
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 151
-        width: 9
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72060061335f2554ea03571853664211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_26
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 134
-        width: 26
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da4042f6124d5884b868e83335bd424c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_27
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 119
-        width: 9
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e214735bd163dc4b9777242d21f444a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_28
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 134
-        width: 7
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d52c28872e5fd54b91c50ed994145e9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_29
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 133
-        width: 7
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 557a3db19c5158a489395e87a5eb503d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_30
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 106
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9baa774f9c2e4e469f34afa0802eba7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_31
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 118
-        width: 9
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae6889ada66a102439a8a0ff5cca145f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_32
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 82
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 970232033dfd8094da99b17ab446716a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_33
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 100
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4689c804e4ba32b419e77017b53dfc89
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_34
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 99
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2679f720bc61fb549a73fb74200b114b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_35
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 85
-        width: 9
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edd073b272d4ee543901ccc62fd93057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_36
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 84
-        width: 9
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b89216fa3ec29c42b10610945929566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_37
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 58
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f88c13066c032d46b518dd6c612fce1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_38
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 72
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7378f59dcdf617408fba0ce6a47ea71
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_39
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 71
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e28d441314a259943b676cf87383f04e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_40
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 2
-        width: 32
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf88ecf775328f043a9c0d030c93f939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_41
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 59
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 733bd529eadfe1c4dbaf7ac228ddb6a3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_42
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 58
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a825a8be9ea11d479b1dde0d2031b33
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_43
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 47
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 534953148e4a1234fad7f0c447615a74
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_44
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 46
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dba4561a503fae4cbf3b15fcab0e4b5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_45
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 34
-        width: 26
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5c6ad3986743d34a9fd5e888b073a1d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_46
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 36
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a983eb5622d6c55478355b6d2695415c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_47
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 35
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d75e6c388046d574e984a5f9db793012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_48
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 14
-        width: 17
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 335293ddf95657e4e94b0b2d9316bee8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humano_base_49
+      name: Human_base_sheet_14
       rect:
         serializedVersion: 2
         x: 59
-        y: 23
-        width: 6
+        y: 241
+        width: 13
         height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1143,18 +443,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94025b96d080d02419e9220f9823e4b4
+      spriteID: 1988985ac9014db4d935beef806f6718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: humano_base_50
+      name: Human_base_sheet_15
       rect:
         serializedVersion: 2
-        x: 83
-        y: 22
-        width: 6
+        x: 85
+        y: 240
+        width: 15
         height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1163,19 +463,539 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 059cab04e0a47774ebb181132abc2e9b
+      spriteID: 3e9ed514ea762534e9d61fddee2d84fa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: humano_base_51
+      name: Human_base_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 240
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0cd23c72d932d4dac65fd0f722f291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 240
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc79aecb7b5d6da42b6bd2356e1f5be2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 240
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd3f5822fbd98e478307e4ae580976b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 241
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef41eb315521864fb28197a8e9e9842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 241
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05a74a966148df4eb6beecf7fea0031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525ba854d5461ef49959f8fae0e91a93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 235
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ac4eab5c2dcb14180c0f1f78f299d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 234
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91701d0b436cb64d8a10d54f3a9523d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 233
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5428ed99748114796c56cdcee03bcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 232
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9ea40f151ac3549bd394f4f57ce681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 232
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a6b1e55e18afd4aa7a5a465ff2a47e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 232
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9d5904f2f591c409f72fd6d8b996ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 232
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5759843317aeb8a4db3653478472837f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 234
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc5a19e2be11dd4b81a1087b2cd22f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 234
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1938fb0e3ceb8499037448dadb2b4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 234
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f776e2b993dfb479159b9ccc0f97d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 211
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57682f76902757448029e3720bd3287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 212
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3313705deae8cde47aa6645513446386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 212
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce287f82cd085634882690a393b3c521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 213
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a615f7db72742e1439de5278c8b51d61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 213
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c800b7f9c6f33f408a6c7c97ddcecd9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 213
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e59fd44cac84124b9045b9b6b2f8dcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 213
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32b9d88532337b499db235d1b3eaed0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 212
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec278dd6589842947ba5dfa8722d7f16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 212
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4673fc23195dc5e4c888c6d27e8dd210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 212
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a4e325f8934564e8b92ec951f96638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_42
       rect:
         serializedVersion: 2
         x: 12
-        y: 8
-        width: 26
-        height: 12
+        y: 202
+        width: 10
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1183,19 +1003,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dc0ce3ea74e3d448a2dc4dec337033e
+      spriteID: 9a799af3965bfb44992c06f6f88c5ebf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: humano_base_52
+      name: Human_base_sheet_43
       rect:
         serializedVersion: 2
-        x: 50
-        y: 13
-        width: 8
-        height: 10
+        x: 35
+        y: 203
+        width: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1203,19 +1023,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d83eccaf6e3771647b5135a4793df208
+      spriteID: a13ab06ca3c7ba14fa2c30c8a8965661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: humano_base_53
+      name: Human_base_sheet_44
       rect:
         serializedVersion: 2
-        x: 90
-        y: 12
-        width: 8
-        height: 10
+        x: 58
+        y: 202
+        width: 13
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1223,7 +1043,187 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5096bacc3a61ff947b49d9a019a2f704
+      spriteID: 0d39a1e1131304e4bab8b2335f889b48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 203
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbae135f6b23974dbb03991be921bdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 203
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e5935298324a04e8eb592d7fc8a117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 203
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3018a80dae96ddb41ba68b912525928f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 203
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd25b496a9404c4394080e505860d26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 203
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39acf300578b5344d834d8ac8a1ab3bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 203
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5cf16620c92a44bb24b3d052c52539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 204
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed3f42ee1c3ff84680bc959687c972d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 174
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901fa34696031874083c9e275e637ba8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human_base_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 127
+        width: 73
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb99bf8aa5009ae4c8980d533c4743bd
       vertices: []
       indices: 
       edges: []
@@ -1231,7 +1231,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4f60b9aeb8975374abb4aa6ff858cc9e
+    spriteID: cc2950e9d3c93b64ba999f1c1ae48537
     vertices: []
     indices: 
     edges: []

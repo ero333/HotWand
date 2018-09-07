@@ -1,54 +1,16 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
-	GameObject player;
-	PlayerMovement pm;
-	public bool followPlayer = true;
-	Vector3 mousePos;
-	Camera cam;
-	// Use this for initialization
-	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
-		pm = player.GetComponent<PlayerMovement> ();
-		cam = Camera.main;
-	}
-	
-	// Update is called once per frame
+
+	public Transform target;
+	public float smoothTime = 0.3F;
+	public float posY;
+	private Vector3 velocity = Vector3.zero;
+
 	void Update () {
-		if (Input.GetKey (KeyCode.LeftShift)) {
-			followPlayer = false;
-			pm.setMoving (false);
-		} else {
-			followPlayer = true;
-		}
-
-		if (followPlayer == true) {
-			camFollowPlayer ();
-		} else {
-			lookAhead ();
-		}
-	}
-
-	public void setFollowPlayer(bool val)
-	{
-		followPlayer = val;
-	}
-
-	void camFollowPlayer()
-	{
-		Vector3 newPos = new Vector3 (player.transform.position.x, player.transform.position.y, this.transform.position.z);
-		this.transform.position = newPos;
-	}
-
-	void lookAhead()
-	{
-
-		Vector3 camPos = cam.ScreenToWorldPoint (new Vector3(Input.mousePosition.x,Input.mousePosition.y));
-		camPos.z = -10;
-		Vector3 dir = camPos-this.transform.position;
-		if (player.GetComponent<SpriteRenderer> ().isVisible  == true) {
-			transform.Translate(dir*2*Time.deltaTime);
-		}
+		Vector3 targetPosition = target.TransformPoint(new Vector3(0, posY, -10));
+		transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);	
 	}
 }

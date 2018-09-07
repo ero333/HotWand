@@ -4,40 +4,48 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {
 
-	public GameObject currentInteractable = null;
-	public InteractionObject currentInteractableObjectScript = null;
-	public Inventory inventory;
+	public GameObject currentWeaponOnFloor = null;
+	public Weapon currentWeaponScript = null;
+	public Equipment equipment;
 
 	void Update(){
 		//Pick up item from the floor
-		if(Input.GetMouseButtonDown(1) && currentInteractable){
-			//Check to see if this object is to be stored in inventory
-			if (currentInteractableObjectScript.inventory)
-			{
-				inventory.AddItem(currentInteractable);
-				currentInteractable.SendMessage("Pickedup");
+		if(Input.GetMouseButtonDown(1)){
+			if (currentWeaponOnFloor){
+				//Check to see if this object is to be stored in inventory
+				if (currentWeaponScript.equippable)
+				{
+					equipment.EquipWeapon(currentWeaponOnFloor);
+					currentWeaponOnFloor.SendMessage("PickedUp");
+					currentWeaponOnFloor = null;
+				}
+			}
+			else 
+			if (!currentWeaponOnFloor){
+				equipment.DropWeapon();
 			}
 		}
 
-		//Use item
-		if(Input.GetMouseButtonDown(0) && currentInteractable){
+		//Attack
+		if(Input.GetMouseButtonDown(0) && (gameObject.GetComponent<Equipment>().equippedWeapon != null)){
 			//Check the inventory if we have something equipped
-
+			equipment.Attack();
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.CompareTag("Interactable")){
+		if(other.CompareTag("Weapon")){
 			Debug.Log(other.name);
-			currentInteractable = other.gameObject;
-			currentInteractableObjectScript = currentInteractable.GetComponent<InteractionObject>();
+			currentWeaponOnFloor = other.gameObject;
+			currentWeaponScript = currentWeaponOnFloor.GetComponent<Weapon>();
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D other){
-		if(other.CompareTag("Interactable")){
-			if(other.gameObject == currentInteractable){
-				currentInteractable = null;
+		if(other.CompareTag("Weapon")){
+			if(other.gameObject == currentWeaponOnFloor){
+				currentWeaponOnFloor = null;
+				currentWeaponScript = null;
 			}
 		}
 	}
