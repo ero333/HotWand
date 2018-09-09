@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 guid: 5a0519b72582bb54e98a98c4b3b044d0
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Player_Attack_Sword_0
+    21300002: Player_Attack_Sword_1
+    21300004: Player_Attack_Sword_2
+    21300006: Player_Attack_Sword_3
+    21300008: Player_Attack_Sword_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +45,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
@@ -93,7 +98,107 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Player_Attack_Sword_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 21
+        height: 18
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48faf2b495b784e0a8cbd40605397c48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack_Sword_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 3
+        width: 21
+        height: 23
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fb68001c49241099da39570cadf022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack_Sword_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 21
+        height: 26
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbac072f2ac1042f8ae8dee5f20448b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack_Sword_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 4
+        width: 32
+        height: 22
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43008f4bf3e97496bad303fd5ec65ecf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack_Sword_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 11
+        width: 42
+        height: 16
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700e86ec20d834ab28d270ab095d2514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
