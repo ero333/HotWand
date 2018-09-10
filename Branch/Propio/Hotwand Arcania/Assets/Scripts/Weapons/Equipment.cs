@@ -78,6 +78,7 @@ public class Equipment : MonoBehaviour {
 			animator.SetBool("Wand Stance", false);
 			animator.SetBool("Sword Stance", false);
 			animator.SetBool("Crossbow Stance", false);
+			animator.ResetTrigger("Sword Attack");
 		}
 	}
 
@@ -98,6 +99,7 @@ public class Equipment : MonoBehaviour {
 			//Hit only the closest enemy
 			hitObjects[1].SendMessage("TakeDamage", swordDamage, SendMessageOptions.DontRequireReceiver);
 			Debug.Log ("Hit " + hitObjects[0].name);
+			animator.ResetTrigger("Sword Attack");
 		}
 		else
 		if (equippedWeapon.name == "Crossbow"){
@@ -105,4 +107,10 @@ public class Equipment : MonoBehaviour {
 		}
 
 	}
+	/*
+	//To reset animations
+	void NoAttack(){
+		animator.ResetTrigger("Sword Attack");
+	}
+	*/
 }

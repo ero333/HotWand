@@ -123,12 +123,12 @@ TextureImporter:
       name: main_hoja_base_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 2
         y: 154
-        width: 12
+        width: 18
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.6390629, y: 0.48074576}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: main_hoja_base_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 26
         y: 154
-        width: 12
+        width: 18
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.63906264, y: 0.48074633}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: main_hoja_base_2
       rect:
         serializedVersion: 2
-        x: 59
+        x: 54
         y: 154
-        width: 15
+        width: 20
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.56257933, y: 0.47111923}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: main_hoja_base_3
       rect:
         serializedVersion: 2
-        x: 86
+        x: 83
         y: 154
-        width: 19
+        width: 22
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.46047693, y: 0.5000012}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: main_hoja_base_4
       rect:
         serializedVersion: 2
-        x: 118
+        x: 113
         y: 154
-        width: 15
+        width: 20
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55006254, y: 0.47111803}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,9 +223,9 @@ TextureImporter:
       name: main_hoja_base_5
       rect:
         serializedVersion: 2
-        x: 146
+        x: 140
         y: 154
-        width: 12
+        width: 18
         height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -243,9 +243,9 @@ TextureImporter:
       name: main_hoja_base_6
       rect:
         serializedVersion: 2
-        x: 8
+        x: 2
         y: 122
-        width: 12
+        width: 18
         height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -263,12 +263,12 @@ TextureImporter:
       name: main_hoja_base_7
       rect:
         serializedVersion: 2
-        x: 32
+        x: 26
         y: 122
-        width: 12
+        width: 18
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.6251564, y: 0.52888256}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: main_hoja_base_8
       rect:
         serializedVersion: 2
-        x: 59
+        x: 54
         y: 122
-        width: 15
+        width: 20
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5750942, y: 0.5192548}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -303,12 +303,12 @@ TextureImporter:
       name: main_hoja_base_9
       rect:
         serializedVersion: 2
-        x: 86
+        x: 83
         y: 122
-        width: 19
+        width: 22
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.47111803}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: main_hoja_base_10
       rect:
         serializedVersion: 2
-        x: 118
+        x: 113
         y: 122
-        width: 15
+        width: 20
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55006254, y: 0.5192548}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: main_hoja_base_11
       rect:
         serializedVersion: 2
-        x: 146
+        x: 140
         y: 122
-        width: 12
+        width: 18
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.61125016, y: 0.5096277}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

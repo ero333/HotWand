@@ -7,6 +7,11 @@ public class PlayerInteract : MonoBehaviour {
 	public GameObject currentWeaponOnFloor = null;
 	public Weapon currentWeaponScript = null;
 	public Equipment equipment;
+	
+	public int counter = 35;
+	public bool endAnim = false;
+
+	public Animator animator;
 
 	void Update(){
 		//Pick up item from the floor
@@ -30,6 +35,12 @@ public class PlayerInteract : MonoBehaviour {
 		if(Input.GetMouseButtonDown(0) && (gameObject.GetComponent<Equipment>().equippedWeapon != null)){
 			//Check the inventory if we have something equipped
 			equipment.Attack();
+			animator.SetTrigger("Sword Attack");
+			endAnim = true;
+		}
+
+		if (this.GetComponent<SpriteRenderer>().sprite.name == "Player_Attack_Sword_4"){
+				animator.ResetTrigger("Sword Attack");
 		}
 	}
 
