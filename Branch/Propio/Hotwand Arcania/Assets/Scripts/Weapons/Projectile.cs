@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour {
 	public Vector3 direction;
 	private Vector2 target;
 	public float speed;
+    
 
 	// time for killing the projectile if it lasts for too long
 	public float deathTimer = 10.0f;
