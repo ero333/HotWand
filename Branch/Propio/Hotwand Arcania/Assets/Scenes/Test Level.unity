@@ -142,7 +142,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 127173675}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d6e35e079592e34b91c572aba7497ae, type: 3}
   m_Name: 
@@ -275,6 +275,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
+<<<<<<< HEAD
   maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
@@ -283,6 +284,14 @@ MonoBehaviour:
   centerOffset: 1
   orientation: 1
   enableRotation: 1
+=======
+  speed: 1
+  enableRotation: 0
+  rotationIn2D: 1
+  rotationSpeed: 10
+  interpolatePathSwitches: 1
+  switchPathInterpolationSpeed: 5
+>>>>>>> 190686de2370e07da168fa6d4ee239a4f34819f2
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
