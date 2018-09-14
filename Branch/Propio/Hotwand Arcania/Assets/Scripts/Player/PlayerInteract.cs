@@ -33,17 +33,11 @@ public class PlayerInteract : MonoBehaviour {
 		//Attack
 		if(Input.GetMouseButtonDown(0) && (gameObject.GetComponent<Equipment>().equippedWeapon != null)){
 			//Check the inventory if we have something equipped
-			//equipment.Attack();
+			equipment.Attack();
 
 			if (gameObject.GetComponent<Equipment>().equippedWeapon.name == "Sword")
 			{
 				animator.SetTrigger("Sword Attack");
-				Collider2D[] hitObjects = Physics2D.OverlapCircleAll (transform.position, 0.4f);
-				//Hit only the closest enemy
-				if (hitObjects.Length > 1) {
-					hitObjects[1].SendMessage("TakeDamage", 2, SendMessageOptions.DontRequireReceiver);
-					Debug.Log ("Hit " + hitObjects[1].name);
-				}
 			}
 		}
 	}
