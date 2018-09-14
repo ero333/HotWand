@@ -101,8 +101,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   speed: 1.5
   deathTimer: 3
+=======
+  speed: 1
+  deathTimer: 1
+>>>>>>> 68a64aba9390a49e6eb06fb4794bd24dc3c54ffb
 =======
   speed: 1
   deathTimer: 1
