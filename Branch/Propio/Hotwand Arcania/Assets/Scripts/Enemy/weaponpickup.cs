@@ -45,6 +45,7 @@ public class weaponpickup : StateMachineBehaviour {
 		if (distanceToPickup < 0.6f)
 		{
 			weapon.SetActive(false);
+			enemy.GetComponent<WeaponPickup>().weaponEquipped = weapon;
 			anim.SetBool("has weapon", true);
 		}
 
