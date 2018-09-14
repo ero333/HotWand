@@ -100,8 +100,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   speed: 1.5
   deathTimer: 3
+=======
+  speed: 1
+  deathTimer: 1
+>>>>>>> 68a64aba9390a49e6eb06fb4794bd24dc3c54ffb
 --- !u!212 &212308823572857534
 SpriteRenderer:
   m_ObjectHideFlags: 1
