@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Idle : MonoBehaviour {
+public class KnockedDown : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

@@ -14,9 +14,9 @@ public class Equipment : MonoBehaviour {
 	public Animator animator;
 
 	//Damage Modifiers for weapons
-	public float punchDamage;
-	public float swordDamage;
-	public float wandProjectileDamage;
+	public int punchDamage;
+	public int swordDamage;
+	public int wandProjectileDamage;
 
 	public void EquipWeapon(GameObject item)
 	{
@@ -78,7 +78,6 @@ public class Equipment : MonoBehaviour {
 			animator.SetBool("Wand Stance", false);
 			animator.SetBool("Sword Stance", false);
 			animator.SetBool("Crossbow Stance", false);
-			animator.ResetTrigger("Sword Attack");
 		}
 	}
 
@@ -87,7 +86,10 @@ public class Equipment : MonoBehaviour {
 		if (equippedWeapon == null){
 			Collider2D[] hitObjects = Physics2D.OverlapCircleAll (transform.position, 1.0f);
 			//Hit only the closest enemy
-			hitObjects[1].SendMessage("TakeDamage", punchDamage, SendMessageOptions.DontRequireReceiver);
+			if (hitObjects.Length > 1) {
+				hitObjects[1].SendMessage("TakeDamage", punchDamage, SendMessageOptions.DontRequireReceiver);
+				Debug.Log ("Hit " + hitObjects[1].name);
+			}
 		}
 		else
 		if (equippedWeapon.name == "Wand"){
@@ -95,11 +97,14 @@ public class Equipment : MonoBehaviour {
 		}
 		else
 		if (equippedWeapon.name == "Sword"){
+			/*
 			Collider2D[] hitObjects = Physics2D.OverlapCircleAll (transform.position, 1.0f);
 			//Hit only the closest enemy
-			hitObjects[1].SendMessage("TakeDamage", swordDamage, SendMessageOptions.DontRequireReceiver);
-			Debug.Log ("Hit " + hitObjects[0].name);
-			animator.ResetTrigger("Sword Attack");
+			if (hitObjects.Length > 1) {
+				hitObjects[1].SendMessage("TakeDamage", swordDamage, SendMessageOptions.DontRequireReceiver);
+				Debug.Log ("Hit " + hitObjects[1].name);
+			}
+			*/
 		}
 		else
 		if (equippedWeapon.name == "Crossbow"){

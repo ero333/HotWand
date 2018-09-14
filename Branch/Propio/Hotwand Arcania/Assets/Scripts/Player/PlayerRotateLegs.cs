@@ -2,15 +2,17 @@
 using System.Collections;
 
 public class PlayerRotateLegs : MonoBehaviour {
-	Vector3 rot;
+	//Vector3 rot;
 	
 	public Animator animator;
 
+	/*
 	// Use this for initialization
 	void Start () {
 		rot = new Vector3 (0,0,0);
 	}
-	
+	*/
+
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKey(KeyCode.W))

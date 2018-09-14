@@ -207,20 +207,20 @@ namespace Pathfinding {
 		 * The AI will try to follow/move towards this target.
 		 * It can be a point on the ground where the player has clicked in an RTS for example, or it can be the player object in a zombie game.
 		 *
-		 * \deprecated In 4.1 this will automatically add a \link Pathfinding.AIDestinationSetter AIDestinationSetter\endlink component and set the target on that component.
+		 * \deprecated In 4.1 this will automatically add a \link Pathfinding.Chase Chase\endlink component and set the target on that component.
 		 * Try instead to use the #destination property which does not require a transform to be created as the target or use
-		 * the AIDestinationSetter component directly.
+		 * the Chase component directly.
 		 */
-		[System.Obsolete("Use the destination property or the AIDestinationSetter component instead")]
+		[System.Obsolete("Use the destination property or the Chase component instead")]
 		public Transform target {
 			get {
-				var setter = GetComponent<AIDestinationSetter>();
+				var setter = GetComponent<Chase>();
 				return setter != null ? setter.target : null;
 			}
 			set {
 				targetCompatibility = null;
-				var setter = GetComponent<AIDestinationSetter>();
-				if (setter == null) setter = gameObject.AddComponent<AIDestinationSetter>();
+				var setter = GetComponent<Chase>();
+				if (setter == null) setter = gameObject.AddComponent<Chase>();
 				setter.target = value;
 				destination = value != null ? value.position : new Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity);
 			}
