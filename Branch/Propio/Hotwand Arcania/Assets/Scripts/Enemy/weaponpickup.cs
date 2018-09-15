@@ -54,5 +54,14 @@ public class weaponpickup : StateMachineBehaviour {
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		enemy.GetComponent<WeaponPickup>().enabled = false;
+		if (enemy.GetComponent<WeaponPickup>().weaponEquipped.name == "Crossbow")
+		{
+			anim.SetBool("Crossbow Equipped", true);
+		}
+		else
+		if (enemy.GetComponent<WeaponPickup>().weaponEquipped.name == "Wand")
+		{
+			anim.SetBool("Wand Equipped", true);
+		}
 	}
 }

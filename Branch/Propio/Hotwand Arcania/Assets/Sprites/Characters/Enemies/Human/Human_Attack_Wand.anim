@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Punch
+  m_Name: Human_Attack_Wand
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,11 +19,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
-    - time: 0.25
-      value: {fileID: 21300002, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
-    - time: 0.43333334
-      value: {fileID: 21300004, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
+      value: {fileID: 21300000, guid: 30a750738331ae84eb58a25e971ec29d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -43,20 +39,18 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
-    - {fileID: 21300002, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
-    - {fileID: 21300004, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
+    - {fileID: 21300000, guid: 30a750738331ae84eb58a25e971ec29d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.45000002
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

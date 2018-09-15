@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
-public class meleeattack : StateMachineBehaviour {
+public class rangedAttack : StateMachineBehaviour {
 
 	GameObject enemy;
 	GameObject player;
@@ -15,19 +16,20 @@ public class meleeattack : StateMachineBehaviour {
 		anim = enemy.GetComponent<Animator>();
 	}
 
-	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+	//OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		anim.SetTrigger("Punch");
+		enemy.GetComponent<RangedAttack>().enabled = true;
+		enemy.GetComponent<AIPath>().maxSpeed = 0f;
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		anim.SetFloat("distance", Vector2.Distance(enemy.transform.position, player.transform.position));
-		anim.SetTrigger("Punch");
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		anim.ResetTrigger("Punch");
+		enemy.GetComponent<RangedAttack>().enabled = false;
+		enemy.GetComponent<AIPath>().maxSpeed = 1.3f;
 	}
 }
