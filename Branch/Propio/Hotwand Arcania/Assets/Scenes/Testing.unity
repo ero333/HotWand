@@ -9892,15 +9892,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf69789b2b56d742a9af4fe05088a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   shootingDelay: 1
   damage: 0
   attackDelay: 0
+=======
+  shootingDelay: 0
+>>>>>>> a66c8dff3d9dffafcfcead031c0ddc26c0f6a0c7
   rangedAnchorPoint: {fileID: 1853098982}
   wandProjectile: {fileID: 1058132660431762, guid: 70902946e05fb1a448d1d4c92536a76b,
     type: 2}
   crossbowProjectile: {fileID: 1460672691732440, guid: 6352547c3b40c2e4d854a02241842802,
     type: 2}
+<<<<<<< HEAD
   player: {fileID: 1770201058}
+=======
+  player: {fileID: 0}
+>>>>>>> a66c8dff3d9dffafcfcead031c0ddc26c0f6a0c7
 --- !u!114 &940387904
 MonoBehaviour:
   m_ObjectHideFlags: 0
