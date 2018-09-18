@@ -9891,12 +9891,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf69789b2b56d742a9af4fe05088a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startShooting: 0.4
+  shootingDelay: 0
   rangedAnchorPoint: {fileID: 1853098982}
   wandProjectile: {fileID: 1702649385802132, guid: 3bd9ff1dfc81dc4449c770b7a12ed2e5,
     type: 2}
   crossbowProjectile: {fileID: 1871697312866144, guid: 6063f75274f19834cbcd3827acfca551,
     type: 2}
+  player: {fileID: 0}
 --- !u!114 &940387904
 MonoBehaviour:
   m_ObjectHideFlags: 0
