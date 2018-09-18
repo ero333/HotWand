@@ -93,6 +93,7 @@ public class Equipment : MonoBehaviour {
 		}
 		else
 		if (equippedWeapon.name == "Wand"){
+			
 			Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 		}
 		else

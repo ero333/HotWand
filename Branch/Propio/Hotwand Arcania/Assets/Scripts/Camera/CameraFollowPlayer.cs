@@ -11,6 +11,7 @@ public class CameraFollowPlayer : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		cam = Camera.main;
+		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"));
 	}
 	
 	// Update is called once per frame

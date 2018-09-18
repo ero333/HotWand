@@ -7716,7 +7716,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -9633,6 +9633,7 @@ GameObject:
   - component: {fileID: 940387902}
   - component: {fileID: 940387893}
   - component: {fileID: 940387892}
+  - component: {fileID: 940387907}
   - component: {fileID: 940387903}
   - component: {fileID: 940387901}
   - component: {fileID: 940387904}
@@ -9737,14 +9738,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.26, y: 0.12}
+    oldSize: {x: 0.12, y: 0.26}
     newSize: {x: 0.12, y: 0.26}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27, y: 0.11}
+  m_Size: {x: 0.11, y: 0.27}
   m_EdgeRadius: 0
 --- !u!50 &940387897
 Rigidbody2D:
@@ -9801,7 +9802,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300010, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19adb6d8458b59540806554daa465d80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9825,7 +9826,7 @@ Transform:
   - {fileID: 1185312285}
   - {fileID: 1853098983}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &940387900
 MonoBehaviour:
@@ -9891,12 +9892,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf69789b2b56d742a9af4fe05088a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startShooting: 0.4
+  shootingDelay: 1
+  damage: 0
+  attackDelay: 0
   rangedAnchorPoint: {fileID: 1853098982}
-  wandProjectile: {fileID: 1702649385802132, guid: 3bd9ff1dfc81dc4449c770b7a12ed2e5,
+  wandProjectile: {fileID: 1058132660431762, guid: 70902946e05fb1a448d1d4c92536a76b,
     type: 2}
-  crossbowProjectile: {fileID: 1871697312866144, guid: 6063f75274f19834cbcd3827acfca551,
+  crossbowProjectile: {fileID: 1460672691732440, guid: 6352547c3b40c2e4d854a02241842802,
     type: 2}
+  player: {fileID: 1770201058}
 --- !u!114 &940387904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9939,6 +9943,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   target: {fileID: 1770201058}
+--- !u!114 &940387907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940387891}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377fe84ddda2d642b80716c5a475ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 2.5
+  damage: 1
+  attackDelay: 2
+  animator: {fileID: 940387905}
 --- !u!1 &1140355925
 GameObject:
   m_ObjectHideFlags: 0
@@ -10063,11 +10082,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4226633213805158, guid: 098a8127862035d469323a91844624d9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.721
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 4226633213805158, guid: 098a8127862035d469323a91844624d9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.24
+      value: -0.76
       objectReference: {fileID: 0}
     - target: {fileID: 4226633213805158, guid: 098a8127862035d469323a91844624d9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10312,6 +10331,7 @@ GameObject:
   - component: {fileID: 1770201052}
   - component: {fileID: 1770201051}
   - component: {fileID: 1770201050}
+  - component: {fileID: 1770201059}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -10487,14 +10507,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1770201049}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.004, y: -2.83, z: 0}
+  m_LocalPosition: {x: -0.004, y: -2.83, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1387299498}
   - {fileID: 258683206}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1770201059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770201049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d684cad6d80a6468560e14655254f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1770201051}
+  dead: 0
 --- !u!1 &1853098982
 GameObject:
   m_ObjectHideFlags: 0

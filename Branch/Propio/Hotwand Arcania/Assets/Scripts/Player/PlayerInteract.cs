@@ -13,31 +13,34 @@ public class PlayerInteract : MonoBehaviour {
 	public Animator animator;
 
 	void Update(){
-		//Pick up item from the floor
-		if(Input.GetMouseButtonDown(1)){
-			if (currentWeaponOnFloor){
-				//Check to see if this object is to be stored in inventory
-				if (currentWeaponScript.equippable)
-				{
-					equipment.EquipWeapon(currentWeaponOnFloor);
-					currentWeaponOnFloor.SendMessage("PickedUp");
-					currentWeaponOnFloor = null;
+		if (!GetComponent<Health>().dead)
+		{
+			//Pick up item from the floor
+			if(Input.GetMouseButtonDown(1)){
+				if (currentWeaponOnFloor){
+					//Check to see if this object is to be stored in inventory
+					if (currentWeaponScript.equippable)
+					{
+						equipment.EquipWeapon(currentWeaponOnFloor);
+						currentWeaponOnFloor.SendMessage("PickedUp");
+						currentWeaponOnFloor = null;
+					}
+				}
+				else 
+				if (!currentWeaponOnFloor){
+					equipment.DropWeapon();
 				}
 			}
-			else 
-			if (!currentWeaponOnFloor){
-				equipment.DropWeapon();
-			}
-		}
 
-		//Attack
-		if(Input.GetMouseButtonDown(0) && (gameObject.GetComponent<Equipment>().equippedWeapon != null)){
-			//Check the inventory if we have something equipped
-			equipment.Attack();
+			//Attack
+			if(Input.GetMouseButtonDown(0) && (gameObject.GetComponent<Equipment>().equippedWeapon != null)){
+				//Check the inventory if we have something equipped
+				equipment.Attack();
 
-			if (gameObject.GetComponent<Equipment>().equippedWeapon.name == "Sword")
-			{
-				animator.SetTrigger("Sword Attack");
+				if (gameObject.GetComponent<Equipment>().equippedWeapon.name == "Sword")
+				{
+					animator.SetTrigger("Sword Attack");
+				}
 			}
 		}
 	}
@@ -59,3 +62,4 @@ public class PlayerInteract : MonoBehaviour {
 		}
 	}
 }
+
