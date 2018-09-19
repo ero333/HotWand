@@ -5,28 +5,26 @@ namespace Pathfinding {
 	public class WeaponPickup : VersionedMonoBehaviour {
 		/** The object that the AI should move to */
 		public GameObject weaponEquipped;
-		Transform target;
+		public GameObject target;
+		Transform targetPos;
+		GameObject targetWeapon;
 		IAstarAI ai;
-
-		void Start()
+		public void FindClosestWeapon()
 		{
-			GameObject[] weapons;
-			weapons = GameObject.FindGameObjectsWithTag("Weapon");
+			float distanceToClosestWeapon = Mathf.Infinity;
 			GameObject closestWeapon = null;
-			float distance = Mathf.Infinity;
-			Vector3 position = transform.position;
-			foreach (GameObject weapon in weapons)
-			{
-				Vector3 diff = weapon.transform.position - position;
-				float curDistance = diff.sqrMagnitude;
-				if (curDistance < distance)
-				{
-					closestWeapon = weapon;
-					distance = curDistance;
+			GameObject[] allWeapons = GameObject.FindGameObjectsWithTag("Weapon");
+
+			foreach (GameObject currentWeapon in allWeapons) {
+				float distanceToEnemy = (currentWeapon.transform.position - this.transform.position).sqrMagnitude;
+				if (distanceToEnemy < distanceToClosestWeapon) {
+					distanceToClosestWeapon = distanceToEnemy;
+					closestWeapon = currentWeapon;
 				}
 			}
-
-			target = closestWeapon.transform;
+		
+			targetPos = closestWeapon.transform;
+			target = closestWeapon;
 		}
 		void OnEnable () {
 			ai = GetComponent<IAstarAI>();
@@ -43,7 +41,10 @@ namespace Pathfinding {
 
 		/** Updates the AI's destination every frame */
 		void Update () {
-			if (target != null && ai != null) ai.destination = target.position;
+			FindClosestWeapon();
+			if (targetPos != null && ai != null) ai.destination = targetPos.position;
 		}
+
+
 	}
 }

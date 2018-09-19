@@ -9,9 +9,9 @@ public class RotateToTarget : MonoBehaviour {
 	
 	// Update is called once per frame
 	private void Update () {
-		Vector2 direction = target.position - transform.position;
-		float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-		Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-		transform.rotation = Quaternion.Slerp(transform.rotation, rotation, speed * Time.deltaTime);
+		Vector3 targetDir = target.position - transform.position;
+		float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
+		Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
 	}
 }
