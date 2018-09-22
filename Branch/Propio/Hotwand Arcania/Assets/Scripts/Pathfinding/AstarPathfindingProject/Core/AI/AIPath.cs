@@ -386,6 +386,8 @@ namespace Pathfinding {
 			return position;
 		}
 
+		
+
 	#if UNITY_EDITOR
 		[System.NonSerialized]
 		int gizmoHash = 0;
