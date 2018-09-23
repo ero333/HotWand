@@ -21,9 +21,9 @@ TagManager:
   - 
   - Wall
   - Floor
-  - Player
   - Enemy
-  - Obstacle
+  - Player
+  - 
   - 
   - 
   - 

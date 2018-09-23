@@ -232,8 +232,8 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Player Detected
+  - m_ConditionMode: 4
+    m_ConditionEvent: distance
     m_EventTreshold: 1.3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102851816588112216}
@@ -499,8 +499,8 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Player Detected
+  - m_ConditionMode: 3
+    m_ConditionEvent: distance
     m_EventTreshold: 1.3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102296699634784392}
@@ -1004,13 +1004,13 @@ AnimatorStateMachine:
     m_Position: {x: 276, y: 108, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102672452422158200}
-    m_Position: {x: 564, y: 180, z: 0}
+    m_Position: {x: 528, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102662140151514746}
     m_Position: {x: 524.78784, y: 30.93927, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102648320335574346}
-    m_Position: {x: 300, y: -60, z: 0}
+    m_Position: {x: 276, y: -48, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
