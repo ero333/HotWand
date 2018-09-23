@@ -13,12 +13,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Sword Stance
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 0}
   - m_Name: Axe Stance
     m_Type: 4
@@ -26,23 +27,27 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+=======
+    m_Controller: {fileID: 9100000}
+>>>>>>> 945bba51b11c6afc5e668598b0adfa2a7478e327
   - m_Name: Wand Stance
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Crossbow Stance
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Sword Attack
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 0}
   - m_Name: Axe Attack
     m_Type: 9
@@ -50,12 +55,15 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+=======
+    m_Controller: {fileID: 9100000}
+>>>>>>> 945bba51b11c6afc5e668598b0adfa2a7478e327
   - m_Name: Dead
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1248,6 +1256,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102313859331950414
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Player_Attack_Axe
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d2d2957922d7449cb904e8f9806348a7, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102395055152323710
 AnimatorState:
   serializedVersion: 5
@@ -1453,6 +1486,7 @@ AnimatorStateMachine:
     m_Position: {x: 132, y: 504, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102395055152323710}
+<<<<<<< HEAD
     m_Position: {x: 1080, y: 96, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102030331894868350}
@@ -1460,6 +1494,12 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1102962546910726418}
     m_Position: {x: 420, y: 768, z: 0}
+=======
+    m_Position: {x: 876, y: 84, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102313859331950414}
+    m_Position: {x: 911, y: 149, z: 0}
+>>>>>>> 945bba51b11c6afc5e668598b0adfa2a7478e327
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
