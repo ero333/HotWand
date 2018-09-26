@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
+  damage: 2
   speed: 0.4
   deathTimer: 3
 --- !u!212 &212632026092805842

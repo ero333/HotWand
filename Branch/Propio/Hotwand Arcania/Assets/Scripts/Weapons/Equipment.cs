@@ -98,12 +98,11 @@ public class Equipment : MonoBehaviour {
 		}
 		else
 		if (equippedWeapon.name == "Sword"){
-			Collider2D[] hitObjects = Physics2D.OverlapCircleAll (transform.position, 0.4f);
+			Collider2D hitObject = Physics2D.OverlapCircle(transform.position, 0.4f);
 			//Hit only the closest enemy
-			if (hitObjects.Length > 1) {
-				hitObjects[1].SendMessage("TakeDamage", swordDamage, SendMessageOptions.DontRequireReceiver);
-				Debug.Log ("Hit " + hitObjects[1].name);
-			}
+			//if (hitObjects.Length > 1) {
+			hitObject.SendMessage("TakeDamage", swordDamage, SendMessageOptions.DontRequireReceiver);
+			Debug.Log ("Hit " + hitObject.name);
 		}
 		else
 		if (equippedWeapon.name == "Crossbow"){

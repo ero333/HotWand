@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class MeleeAttack : MonoBehaviour {
 	private Transform target;
@@ -24,8 +25,16 @@ public class MeleeAttack : MonoBehaviour {
 		if (distanceToPlayer < attackRange){
 			//Check to see if enough time has passed since we last attacked
 			if (Time.time > lastAttackTime + attackDelay){
-				animator.SetTrigger("Punch");
-				target.SendMessage("TakeDamage", damage);
+				if (gameObject.GetComponent<WeaponPickup>().weaponEquipped.name == "Sword")
+				{
+					animator.SetTrigger("Sword");
+					target.SendMessage("TakeDamage", damage*1.5);
+				}
+				else
+				{
+					animator.SetTrigger("Punch");
+					target.SendMessage("TakeDamage", damage*1.5);
+				}
 				//Record the time we attacked
 				lastAttackTime = Time.time;
 			}

@@ -103,18 +103,18 @@ TextureImporter:
       name: Human_Attack_Sword_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 8
+        width: 23
+        height: 21
+      alignment: 9
+      pivot: {x: 0.3777174, y: 0.23958328}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a5276519ad25c14fbfa054c3cae3eaf
+      spriteID: 3adab904c5b253d4d852fd3376372d60
       vertices: []
       indices: 
       edges: []
@@ -124,17 +124,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 27
-        y: 3
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 8
+        width: 24
+        height: 19
+      alignment: 9
+      pivot: {x: 0.36328125, y: 0.25328946}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39da6131aa09d06488f494fef160a84b
+      spriteID: 4b181aa66e4742c45bfe6302597211e8
       vertices: []
       indices: 
       edges: []
@@ -143,18 +143,18 @@ TextureImporter:
       name: Human_Attack_Sword_2
       rect:
         serializedVersion: 2
-        x: 50
-        y: 1
-        width: 22
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 52
+        y: 3
+        width: 26
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3377404, y: 0.3125001}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 195b0fbb561f57642b9214a7865db1ed
+      spriteID: 11e08be096190ca46b8a9bf18aefdc33
       vertices: []
       indices: 
       edges: []
@@ -163,18 +163,18 @@ TextureImporter:
       name: Human_Attack_Sword_3
       rect:
         serializedVersion: 2
-        x: 78
-        y: 4
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 80
+        y: 1
+        width: 23
+        height: 31
+      alignment: 9
+      pivot: {x: 0.3777174, y: 0.25806454}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a5056b23e24c4a49979c5ab4a1f7ae9
+      spriteID: 7a3e3df657ad44748a7d504cc5e0ad5a
       vertices: []
       indices: 
       edges: []
@@ -183,18 +183,18 @@ TextureImporter:
       name: Human_Attack_Sword_4
       rect:
         serializedVersion: 2
-        x: 113
-        y: 3
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 108
+        y: 0
+        width: 21
+        height: 34
+      alignment: 9
+      pivot: {x: 0.41815513, y: 0.14613965}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 814e16d56f6d56a488ceb96fec475f30
+      spriteID: 46ca733f8ea185741b597b1ce7a01198
       vertices: []
       indices: 
       edges: []

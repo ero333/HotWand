@@ -42,11 +42,30 @@ public class weaponpickup : StateMachineBehaviour {
 		if (enemy.GetComponent<WeaponPickup>().weaponEquipped.name == "Crossbow")
 		{
 			anim.SetBool("Crossbow Equipped", true);
+			anim.SetBool("Ranged Mode", true);
 		}
 		else
 		if (enemy.GetComponent<WeaponPickup>().weaponEquipped.name == "Wand")
 		{
 			anim.SetBool("Wand Equipped", true);
+			anim.SetBool("Ranged Mode", true);
+		}
+		else
+		if (enemy.GetComponent<WeaponPickup>().weaponEquipped.name == "Sword")
+		{
+			anim.SetBool("Sword Equipped", true);
+			anim.SetBool("Melee Mode", true);
+		}
+		else
+		if (enemy.GetComponent<WeaponPickup>().weaponEquipped.name == "Axe")
+		{
+			anim.SetBool("Axe Equipped", true);
+			anim.SetBool("Melee Mode", true);
+		}
+		else
+		{
+			anim.SetBool("Melee Mode", true);
+			anim.SetBool("Ranged Mode", false);
 		}
 	}
 }

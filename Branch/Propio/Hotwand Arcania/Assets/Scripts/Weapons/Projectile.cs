@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour {
 
 	public Vector3 direction;
 	private Vector2 target;
+	public int damage;
 	public float speed;
     
 
@@ -34,6 +35,7 @@ public class Projectile : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Enemy")){
 			Destroy(this.gameObject);
+			other.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
 		}
 		else
 		if(other.CompareTag("Wall")){
