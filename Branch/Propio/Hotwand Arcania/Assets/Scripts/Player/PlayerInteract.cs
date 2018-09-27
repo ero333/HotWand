@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {
-
 	public GameObject currentWeaponOnFloor = null;
 	public Weapon currentWeaponScript = null;
 	public Equipment equipment;
@@ -33,33 +32,33 @@ public class PlayerInteract : MonoBehaviour {
 			}
 
 			//Attack
-			if(Input.GetMouseButtonDown(0) && (gameObject.GetComponent<Equipment>().equippedWeapon != null)){
-				//Check the inventory if we have something equipped
+			if(Input.GetMouseButtonDown(0)){
 				equipment.Attack();
-
-				if (gameObject.GetComponent<Equipment>().equippedWeapon.name == "Sword")
-				{
-					animator.SetTrigger("Sword Attack");
-				}
 			}
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
-		if(other.CompareTag("Weapon")){
-			Debug.Log(other.name);
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.CompareTag("Weapon"))
+		{
+			//Debug.Log(other.name);
 			currentWeaponOnFloor = other.gameObject;
 			currentWeaponScript = currentWeaponOnFloor.GetComponent<Weapon>();
 		}
 	}
 
-	void OnTriggerExit2D(Collider2D other){
-		if(other.CompareTag("Weapon")){
-			if(other.gameObject == currentWeaponOnFloor){
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if(other.CompareTag("Weapon"))
+		{
+			if(other.gameObject == currentWeaponOnFloor)
+			{
 				currentWeaponOnFloor = null;
 				currentWeaponScript = null;
 			}
 		}
 	}
+
 }
 

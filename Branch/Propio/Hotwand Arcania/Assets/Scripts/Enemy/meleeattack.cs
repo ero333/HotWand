@@ -4,30 +4,25 @@ using UnityEngine;
 
 public class meleeattack : StateMachineBehaviour {
 
-	GameObject enemy;
 	GameObject player;
-	Animator anim;
 
 	void Awake()
 	{
-		enemy = GameObject.FindGameObjectWithTag("Enemy");
 		player = GameObject.FindGameObjectWithTag("Player");
-		anim = enemy.GetComponent<Animator>();
 	}
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		enemy.GetComponent<MeleeAttack>().enabled = true;
+		animator.GetComponent<MeleeAttack>().enabled = true;
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		anim.SetFloat("distance", Vector2.Distance(enemy.transform.position, player.transform.position));
+		animator.SetFloat("distance", Vector2.Distance(animator.transform.position, player.transform.position));
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		enemy.GetComponent<MeleeAttack>().enabled = false;
-		//anim.ResetTrigger("Punch");
+		animator.GetComponent<MeleeAttack>().enabled = false;
 	}
 }

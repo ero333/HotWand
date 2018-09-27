@@ -10,6 +10,10 @@ TagManager:
   - Interactable
   - Bullet
   - Enemy
+  - Sword
+  - Crossbow
+  - Wand
+  - Axe
   layers:
   - Default
   - TransparentFX
@@ -23,8 +27,8 @@ TagManager:
   - Floor
   - Enemy
   - Player
-  - 
-  - 
+  - MeleeHitboxPlayer
+  - MeleeHitboxEnemy
   - 
   - 
   - 
@@ -46,6 +50,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Walls
+    uniqueID: 524838879
     locked: 0
   - name: Player
     uniqueID: 2428775429

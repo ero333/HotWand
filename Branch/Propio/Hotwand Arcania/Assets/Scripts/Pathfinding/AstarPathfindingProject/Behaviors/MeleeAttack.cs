@@ -10,10 +10,11 @@ public class MeleeAttack : MonoBehaviour {
 	private float lastAttackTime;
 	public float attackDelay;
 
-	public Animator animator;
+	private Animator animator;
 	// Use this for initialization
 	void Start () {
 		target = GameObject.FindGameObjectWithTag("Player").transform;
+		animator = gameObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -25,15 +26,18 @@ public class MeleeAttack : MonoBehaviour {
 		if (distanceToPlayer < attackRange){
 			//Check to see if enough time has passed since we last attacked
 			if (Time.time > lastAttackTime + attackDelay){
-				if (gameObject.GetComponent<WeaponPickup>().weaponEquipped.name == "Sword")
+				if (gameObject.GetComponent<WeaponPickup>().weaponEquipped != null)
 				{
-					animator.SetTrigger("Sword");
-					target.SendMessage("TakeDamage", damage*1.5);
+					if (gameObject.GetComponent<WeaponPickup>().weaponEquipped.tag == "Sword")
+					{
+						animator.SetTrigger("Sword");
+						if (target != null) target.SendMessage("TakeDamage", damage * 1.5, SendMessageOptions.DontRequireReceiver);
+					}
 				}
 				else
 				{
 					animator.SetTrigger("Punch");
-					target.SendMessage("TakeDamage", damage*1.5);
+					if (target != null) target.SendMessage("TakeDamage", damage * 1.5, SendMessageOptions.DontRequireReceiver);
 				}
 				//Record the time we attacked
 				lastAttackTime = Time.time;

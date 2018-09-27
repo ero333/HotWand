@@ -7,13 +7,13 @@ public class DetectPlayer : MonoBehaviour
 	public float viewAngle;
 	public GameObject player;
     public Transform target;
-	public Animator animator;
+	private Animator animator;
 
 	public LayerMask layersIWant;
 	 void Start()
 	 {
-		 playerInRange = false;
-	 
+		playerInRange = false;
+	 	animator = gameObject.GetComponent<Animator>();
 	 }
     void Update()
     {

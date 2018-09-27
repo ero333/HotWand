@@ -20,9 +20,8 @@ public class EnemyHealth : MonoBehaviour {
 		{
 			dead = true;
 			animator.SetBool("Dead", true);
+            sprite.sortingOrder = 3;
 		}
-		this.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-		this.GetComponent<Rigidbody2D>().angularVelocity = 0f;
 		Debug.Log("Got Hit.");
 	}
 }

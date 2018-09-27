@@ -12,6 +12,8 @@ public class CameraFollowPlayer : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		cam = Camera.main;
 		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"));
+		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("MeleeHitboxPlayer"));
+		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("MeleeHitboxEnemy"));
 	}
 	
 	// Update is called once per frame

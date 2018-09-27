@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed94d0d502a09354c8417822b647dd6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: Sword
   equippable: 1
 --- !u!212 &212978593173875030
 SpriteRenderer:

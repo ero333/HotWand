@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114080141074504426}
   m_Layer: 0
   m_Name: Wand
-  m_TagString: Interactable
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed94d0d502a09354c8417822b647dd6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: Wand
   equippable: 1
 --- !u!212 &212359294228011328
 SpriteRenderer:

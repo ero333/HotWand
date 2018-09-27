@@ -17,7 +17,7 @@ public class RangedAttack : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player").transform;	
-		switch (GetComponent<WeaponPickup>().weaponEquipped.name)
+		switch (GetComponent<WeaponPickup>().weaponEquipped.tag)
 		{
 			case "Wand": projectile = wandProjectile;
 			break;

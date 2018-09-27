@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Equipment : MonoBehaviour {
+public GameObject equippedWeapon;
+[SerializeField]	private GameObject meleeHitbox;	
+[SerializeField]	private GameObject wandProjectile;
+[SerializeField]	private GameObject crossbowProjectile;
 
-	public GameObject equippedWeapon;
-	
-	public GameObject wandProjectile;
-	public GameObject crossbowProjectile;
+[SerializeField]	private GameObject meleeAnchorPoint;
+[SerializeField]	private GameObject rangedAnchorPoint;
 
-	public GameObject rangedAnchorPoint;
 
 	public Animator animator;
 
@@ -38,31 +39,42 @@ public class Equipment : MonoBehaviour {
 		}
 
 		//Animation
-		if (item.name == "Sword")
+		switch (item.GetComponent<Weapon>().weaponName)
 		{
-			animator.SetBool("Sword Stance", true);	
-			animator.SetBool("Wand Stance", false);	
-			animator.SetBool("Crossbow Stance", false);
-		}
-		else
-		if (item.name == "Wand")
-		{
-			animator.SetBool("Wand Stance", true);
-			animator.SetBool("Sword Stance", false);
-			animator.SetBool("Crossbow Stance", false);	
-		}
-		else
-		if (item.name == "Crossbow")
-		{
-			animator.SetBool("Crossbow Stance", true);
-			animator.SetBool("Wand Stance", false);
-			animator.SetBool("Sword Stance", false);	
-		}
-		else
-		{
-			animator.SetBool("Wand Stance", false);
-			animator.SetBool("Sword Stance", false);
-			animator.SetBool("Crossbow Stance", false);
+			case "Sword":
+				animator.SetBool("Sword Stance", true);	
+				animator.SetBool("Axe Stance", false);	
+				animator.SetBool("Wand Stance", false);	
+				animator.SetBool("Crossbow Stance", false);
+			break;
+
+			case "Axe":
+				animator.SetBool("Sword Stance", false);	
+				animator.SetBool("Axe Stance", true);	
+				animator.SetBool("Wand Stance", false);	
+				animator.SetBool("Crossbow Stance", false);
+			break;
+
+			case "Wand":
+				animator.SetBool("Sword Stance", false);	
+				animator.SetBool("Axe Stance", false);	
+				animator.SetBool("Wand Stance", true);	
+				animator.SetBool("Crossbow Stance", false);
+			break;
+
+			case "Crossbow":
+				animator.SetBool("Sword Stance", false);
+				animator.SetBool("Axe Stance", false);		
+				animator.SetBool("Wand Stance", false);	
+				animator.SetBool("Crossbow Stance", true);
+			break;
+
+			default:
+				animator.SetBool("Sword Stance", false);
+				animator.SetBool("Axe Stance", false);
+				animator.SetBool("Wand Stance", false);
+				animator.SetBool("Crossbow Stance", false);
+			break;
 		}
 	}
 
@@ -75,45 +87,49 @@ public class Equipment : MonoBehaviour {
 			equippedWeapon.SetActive(true);
 			equippedWeapon = null;
 
-			animator.SetBool("Wand Stance", false);
+			//We make sure to clean up animation parameters
 			animator.SetBool("Sword Stance", false);
+			animator.SetBool("Axe Stance", false);
+			animator.SetBool("Wand Stance", false);
 			animator.SetBool("Crossbow Stance", false);
 		}
 	}
 
 	public void Attack()
 	{
-		if (equippedWeapon == null){
-			Collider2D[] hitObjects = Physics2D.OverlapCircleAll (transform.position, 1.0f);
-			//Hit only the closest enemy
-			if (hitObjects.Length > 1) {
-				hitObjects[1].SendMessage("TakeDamage", punchDamage, SendMessageOptions.DontRequireReceiver);
-				Debug.Log ("Hit " + hitObjects[1].name);
+		GameObject swordAttack;
+		GameObject axeAttack;
+
+		if (equippedWeapon != null)
+		{
+			switch (equippedWeapon.GetComponent<Weapon>().weaponName)
+			{
+				case "Sword":
+					swordAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+					if (swordAttack != null) swordAttack.GetComponent<MeleeHitboxPlayer>().damage = 2;
+					animator.SetTrigger("Sword Attack");
+				break;
+
+				case "Axe":
+					axeAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+					if (axeAttack != null) axeAttack.GetComponent<MeleeHitboxPlayer>().damage = 3;
+					animator.SetTrigger("Axe Attack");
+				break;
+
+				case "Wand":
+					Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+				break;
+
+				case "Crossbow":
+					Instantiate(crossbowProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+				break;
 			}
 		}
 		else
-		if (equippedWeapon.name == "Wand"){
-			
-			Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+		{
+			//PUNCH MECHANIC
+			animator.SetTrigger("Punch");
+			Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
 		}
-		else
-		if (equippedWeapon.name == "Sword"){
-			Collider2D hitObject = Physics2D.OverlapCircle(transform.position, 0.4f);
-			//Hit only the closest enemy
-			//if (hitObjects.Length > 1) {
-			hitObject.SendMessage("TakeDamage", swordDamage, SendMessageOptions.DontRequireReceiver);
-			Debug.Log ("Hit " + hitObject.name);
-		}
-		else
-		if (equippedWeapon.name == "Crossbow"){
-			Instantiate(crossbowProjectile, rangedAnchorPoint.transform.position, transform.rotation);
-		}
-
 	}
-	/*
-	//To reset animations
-	void NoAttack(){
-		animator.ResetTrigger("Sword Attack");
-	}
-	*/
 }
