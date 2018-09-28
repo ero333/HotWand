@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Enemy_Legs
+  m_Name: Orc_Legs
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Moving
