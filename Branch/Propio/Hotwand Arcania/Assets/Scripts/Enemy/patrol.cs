@@ -24,24 +24,35 @@ public class patrol : StateMachineBehaviour {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.SetFloat("distance", Vector2.Distance(animator.transform.position, player.transform.position));
 		
+		animator.GetComponent<AIPath>().maxSpeed = 0.6f;
+
 		//Looking for weapon only
 		float distanceToClosestWeapon = Mathf.Infinity;
 		GameObject closestWeapon = null;
 		GameObject[] allWeapons = GameObject.FindGameObjectsWithTag("Weapon");
 
-		foreach (GameObject currentWeapon in allWeapons) {
-			float distanceToEnemy = (currentWeapon.transform.position - animator.transform.position).sqrMagnitude;
-			if (distanceToEnemy < distanceToClosestWeapon) {
-				distanceToClosestWeapon = distanceToEnemy;
-				closestWeapon = currentWeapon;
-			}
-		}
-
-		if (closestWeapon != null)
+		if (allWeapons != null)
 		{
-			target = closestWeapon.transform;
+			animator.SetBool("weapon exists", true);
+			foreach (GameObject currentWeapon in allWeapons) {
+				float distanceToEnemy = (currentWeapon.transform.position - animator.transform.position).sqrMagnitude;
+				if (distanceToEnemy < distanceToClosestWeapon) {
+					distanceToClosestWeapon = distanceToEnemy;
+					closestWeapon = currentWeapon;
+					break;
+				}
+			}
+
+			if (closestWeapon != null)
+			{
+				target = closestWeapon.transform;
+			}
+			animator.SetFloat("distance from weapon", Vector2.Distance(animator.transform.position, target.position));
 		}
-		animator.SetFloat("distance from weapon", Vector2.Distance(animator.transform.position, target.position));
+		else
+		{
+			animator.SetBool("weapon exists", false);
+		}
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

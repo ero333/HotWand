@@ -21,7 +21,7 @@ public class DetectPlayer : MonoBehaviour
             Vector3 C = Quaternion.AngleAxis(90 + viewAngle / 2, -transform.forward) * -transform.right;
             if (SignedAngleBetween(transform.up, dirToTarget, transform.up) <= SignedAngleBetween(transform.up, C, transform.up) || viewAngle == 360)
             {
-				RaycastHit2D enemySight = Physics2D.Raycast(transform.position, dirToTarget, 10.0f, layersIWant);
+				RaycastHit2D enemySight = Physics2D.Raycast(transform.position, dirToTarget, 15.0f, layersIWant);
 
 				if (enemySight.collider != null)
 				{

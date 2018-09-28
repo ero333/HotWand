@@ -24,8 +24,8 @@ public class EnemyProjectile : MonoBehaviour {
 	public Vector3 direction;
 	private Vector2 target;
 	private Transform player;
+	public int damage;
 	public float speed;
-    
 
 	// time for killing the projectile if it lasts for too long
 	public float deathTimer = 10.0f;
@@ -58,6 +58,7 @@ public class EnemyProjectile : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
 			Destroy(this.gameObject);
+			other.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
 		}
 		else
 		if(other.CompareTag("Wall")){

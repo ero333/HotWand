@@ -14,10 +14,12 @@ public class RangedAttack : MonoBehaviour {
 	GameObject projectile;
 	public Transform player;
 
+	private float speed = 50f;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player").transform;	
-		switch (GetComponent<WeaponPickup>().weaponEquipped.tag)
+		switch (GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName)
 		{
 			case "Wand": projectile = wandProjectile;
 			break;
@@ -30,15 +32,15 @@ public class RangedAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Time.time > lastAttackTime + attackDelay){
-			//Raycast to see if we have line of sight to the target
-			//RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, attackRange);
-			//Check to see if we hit anything and what it was
-			//if (hit.transform == player)
-			//{
+		Vector3 targetDir = player.position - transform.position;
+		float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
+		Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
+
+		if (Time.time > lastAttackTime + attackDelay)
+		{
 				GameObject newProjectile = Instantiate(projectile, rangedAnchorPoint.transform.position, rangedAnchorPoint.transform.rotation);
 				lastAttackTime = Time.time;
-			//}
 		}
 	}
 }

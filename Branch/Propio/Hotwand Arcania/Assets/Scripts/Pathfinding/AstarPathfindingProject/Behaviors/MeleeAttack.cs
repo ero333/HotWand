@@ -6,9 +6,11 @@ using Pathfinding;
 public class MeleeAttack : MonoBehaviour {
 	private Transform target;
 	public float attackRange;
-	public int damage;
 	private float lastAttackTime;
 	public float attackDelay;
+
+	[SerializeField]	private GameObject meleeHitbox;	
+	[SerializeField]	private GameObject meleeAnchorPoint;
 
 	private Animator animator;
 	// Use this for initialization
@@ -28,17 +30,30 @@ public class MeleeAttack : MonoBehaviour {
 			if (Time.time > lastAttackTime + attackDelay){
 				if (gameObject.GetComponent<WeaponPickup>().weaponEquipped != null)
 				{
-					if (gameObject.GetComponent<WeaponPickup>().weaponEquipped.tag == "Sword")
+					GameObject swordAttack;
+					GameObject axeAttack;
+
+					switch (gameObject.GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName)
 					{
-						animator.SetTrigger("Sword");
-						if (target != null) target.SendMessage("TakeDamage", damage * 1.5, SendMessageOptions.DontRequireReceiver);
+						case "Sword":
+							swordAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+							if (swordAttack != null) swordAttack.GetComponent<MeleeHitboxEnemy>().damage = 2;
+							animator.SetTrigger("Sword");
+						break;
+
+						case "Axe":
+							axeAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+							if (axeAttack != null) axeAttack.GetComponent<MeleeHitboxEnemy>().damage = 3;
+							animator.SetTrigger("Axe");
+						break;
 					}
 				}
 				else
 				{
 					animator.SetTrigger("Punch");
-					if (target != null) target.SendMessage("TakeDamage", damage * 1.5, SendMessageOptions.DontRequireReceiver);
+					Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
 				}
+				
 				//Record the time we attacked
 				lastAttackTime = Time.time;
 			}

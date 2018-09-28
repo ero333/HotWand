@@ -24,8 +24,8 @@ namespace Pathfinding {
 				}
 			}
 		
-			targetPos = closestWeapon.transform;
-			target = closestWeapon;
+			if (closestWeapon != null ) targetPos = closestWeapon.transform;
+			if (closestWeapon != null ) target = closestWeapon;
 		}
 		void OnEnable () {
 			ai = GetComponent<IAstarAI>();
@@ -43,6 +43,7 @@ namespace Pathfinding {
 		/** Updates the AI's destination every frame */
 		void Update () {
 			FindClosestWeapon();
+
 			if (targetPos != null && ai != null) ai.destination = targetPos.position;
 		}
 
