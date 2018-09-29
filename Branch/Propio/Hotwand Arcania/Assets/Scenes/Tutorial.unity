@@ -2005,7 +2005,7 @@ GameObject:
   - component: {fileID: 764948477}
   - component: {fileID: 764948481}
   m_Layer: 0
-  m_Name: BolaCristal (1)
+  m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
