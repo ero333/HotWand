@@ -9,7 +9,7 @@ public class changeLevel : MonoBehaviour {
     {
         if (ChangeScene.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene (1);
+            SceneManager.LoadScene (3);
             Destroy(gameObject);
         }
     }
