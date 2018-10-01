@@ -47,7 +47,7 @@ public class patrol : StateMachineBehaviour {
 			{
 				target = closestWeapon.transform;
 			}
-			animator.SetFloat("distance from weapon", Vector2.Distance(animator.transform.position, target.position));
+			if (target != null ) animator.SetFloat("distance from weapon", Vector2.Distance(animator.transform.position, target.position));
 		}
 		else
 		{

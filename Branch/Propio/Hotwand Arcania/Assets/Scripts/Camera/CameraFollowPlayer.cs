@@ -23,7 +23,7 @@ public class CameraFollowPlayer : MonoBehaviour {
 	void Update () {
 		if (Input.GetKey (KeyCode.LeftShift)) {
 			followPlayer = false;
-			player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+			player.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
 		} else {
 			followPlayer = true;
 		}

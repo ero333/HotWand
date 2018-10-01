@@ -123,10 +123,10 @@ TextureImporter:
       name: Elf_Main_Sheet_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 152
-        width: 12
-        height: 27
+        x: 2
+        y: 158
+        width: 27
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,7 +134,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 786c786d4ef369743bf1f065bb0edf2c
+      spriteID: 71006a3d95a5ae84e9d927b178826610
       vertices: []
       indices: 
       edges: []
@@ -143,10 +143,10 @@ TextureImporter:
       name: Elf_Main_Sheet_1
       rect:
         serializedVersion: 2
-        x: 27
-        y: 151
-        width: 13
-        height: 27
+        x: 35
+        y: 159
+        width: 27
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47a5aa3081fabe549ab7ecb2c7a3d849
+      spriteID: ccafe118db4ef864e9b4aa533cefe68f
       vertices: []
       indices: 
       edges: []
@@ -163,10 +163,10 @@ TextureImporter:
       name: Elf_Main_Sheet_2
       rect:
         serializedVersion: 2
-        x: 58
-        y: 151
-        width: 15
-        height: 27
+        x: 70
+        y: 155
+        width: 27
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c20fcd5bc16eb4c809eb09ac3eafe5
+      spriteID: 53c82e410f181d64c8d543c2aca16216
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: Elf_Main_Sheet_3
       rect:
         serializedVersion: 2
-        x: 86
-        y: 151
-        width: 18
-        height: 27
+        x: 107
+        y: 156
+        width: 27
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5df9f63f5556f8241af53c3b75d084ea
+      spriteID: 4f92dac671692534fbf061dcdba269ed
       vertices: []
       indices: 
       edges: []
@@ -203,10 +203,10 @@ TextureImporter:
       name: Elf_Main_Sheet_4
       rect:
         serializedVersion: 2
-        x: 113
-        y: 151
-        width: 15
-        height: 27
+        x: 146
+        y: 157
+        width: 27
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b505fd36afb044742a541caa8002668a
+      spriteID: a5c924ba856a2a341b9e9f5fb5263ef4
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
       name: Elf_Main_Sheet_5
       rect:
         serializedVersion: 2
-        x: 142
-        y: 151
-        width: 13
-        height: 27
+        x: 187
+        y: 156
+        width: 27
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,7 +234,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98a0b626c8535824da9322c169af0356
+      spriteID: d7aaa0a1f462ed749b349be01e75102a
       vertices: []
       indices: 
       edges: []
@@ -243,18 +243,18 @@ TextureImporter:
       name: Elf_Main_Sheet_6
       rect:
         serializedVersion: 2
-        x: 4
-        y: 120
-        width: 12
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2
+        y: 128
+        width: 27
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5212186}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2113616ac0087b04896c750478db6c72
+      spriteID: e0ac7161006cbc14ca2c0232d759203e
       vertices: []
       indices: 
       edges: []
@@ -263,10 +263,10 @@ TextureImporter:
       name: Elf_Main_Sheet_7
       rect:
         serializedVersion: 2
-        x: 27
-        y: 120
-        width: 13
-        height: 27
+        x: 35
+        y: 127
+        width: 27
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df670bd4e63a6e749a33023baabf6abd
+      spriteID: 3f8f71e634fdcb141904613b63e008e7
       vertices: []
       indices: 
       edges: []
@@ -283,10 +283,10 @@ TextureImporter:
       name: Elf_Main_Sheet_8
       rect:
         serializedVersion: 2
-        x: 57
-        y: 119
-        width: 15
-        height: 27
+        x: 72
+        y: 126
+        width: 27
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,7 +294,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f26261f6d8f95684e94c1e5aba862646
+      spriteID: 78aafdc7e46ecd5409df7198588d8dbd
       vertices: []
       indices: 
       edges: []
@@ -303,10 +303,10 @@ TextureImporter:
       name: Elf_Main_Sheet_9
       rect:
         serializedVersion: 2
-        x: 86
-        y: 120
-        width: 18
-        height: 27
+        x: 108
+        y: 125
+        width: 27
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,7 +314,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ea95f71bc5751e498ea02c9d72ea168
+      spriteID: 5afd92bff593c394bab0c8f968a41c59
       vertices: []
       indices: 
       edges: []
@@ -323,10 +323,10 @@ TextureImporter:
       name: Elf_Main_Sheet_10
       rect:
         serializedVersion: 2
-        x: 113
-        y: 120
-        width: 15
-        height: 27
+        x: 146
+        y: 125
+        width: 27
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,7 +334,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec3c80dccacb6a943ba4015d0d6d5e92
+      spriteID: 72243e300ce1fb24589ed4e333670285
       vertices: []
       indices: 
       edges: []
@@ -343,10 +343,10 @@ TextureImporter:
       name: Elf_Main_Sheet_11
       rect:
         serializedVersion: 2
-        x: 142
-        y: 119
-        width: 13
-        height: 27
+        x: 183
+        y: 128
+        width: 27
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,7 +354,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a994fb338410b745a6173910606697a
+      spriteID: d8a9b78db7858184bb806a5b5de4b576
       vertices: []
       indices: 
       edges: []
@@ -363,10 +363,10 @@ TextureImporter:
       name: Elf_Main_Sheet_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 88
-        width: 21
-        height: 27
+        x: 4
+        y: 93
+        width: 27
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,7 +374,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 129a801eb76789247beb887fc42e0a6b
+      spriteID: c6e97d384fd310348b1b2d104c496caf
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: Elf_Main_Sheet_13
       rect:
         serializedVersion: 2
-        x: 23
-        y: 89
-        width: 25
-        height: 27
+        x: 38
+        y: 90
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,7 +394,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff38a737a43a37441adaf4f88bbe23ef
+      spriteID: 343b9662f80979f488910c33014dc0a2
       vertices: []
       indices: 
       edges: []
@@ -403,10 +403,10 @@ TextureImporter:
       name: Elf_Main_Sheet_14
       rect:
         serializedVersion: 2
-        x: 49
-        y: 87
-        width: 29
-        height: 27
+        x: 74
+        y: 88
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,7 +414,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbf40852d8e613c4faa29361545f6a8c
+      spriteID: d968b345158bf244b985696b33d215ee
       vertices: []
       indices: 
       edges: []
@@ -423,10 +423,10 @@ TextureImporter:
       name: Elf_Main_Sheet_15
       rect:
         serializedVersion: 2
-        x: 78
-        y: 87
-        width: 30
-        height: 26
+        x: 112
+        y: 83
+        width: 26
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,7 +434,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fc367163cf8fd24c9ebe3fda8f67f02
+      spriteID: 5ffea9391d7d40f43a3bd3cc10402373
       vertices: []
       indices: 
       edges: []
@@ -443,10 +443,10 @@ TextureImporter:
       name: Elf_Main_Sheet_16
       rect:
         serializedVersion: 2
-        x: 108
-        y: 87
-        width: 29
-        height: 27
+        x: 153
+        y: 83
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,7 +454,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3f22f18e3261774b87f2056caca895a
+      spriteID: f5df801176413d248abdf194d2826b6e
       vertices: []
       indices: 
       edges: []
@@ -463,10 +463,10 @@ TextureImporter:
       name: Elf_Main_Sheet_17
       rect:
         serializedVersion: 2
-        x: 139
-        y: 88
-        width: 25
-        height: 27
+        x: 187
+        y: 85
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,7 +474,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c65d7f2bad07f684d985561513ded2ad
+      spriteID: 075edce391b7c6f43a2891dd656a33d9
       vertices: []
       indices: 
       edges: []
@@ -483,10 +483,10 @@ TextureImporter:
       name: Elf_Main_Sheet_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 54
-        width: 21
-        height: 27
+        x: 5
+        y: 55
+        width: 27
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,7 +494,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f16c962f4ce528044b13cec20ee43c39
+      spriteID: be90dd13494bb5642b347f154ac46b0f
       vertices: []
       indices: 
       edges: []
@@ -503,10 +503,10 @@ TextureImporter:
       name: Elf_Main_Sheet_19
       rect:
         serializedVersion: 2
-        x: 22
-        y: 54
-        width: 25
-        height: 27
+        x: 39
+        y: 50
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,7 +514,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40f2254f84509bd4f9a4c6ff5d1daf20
+      spriteID: f94cff04745db9645bca33c10b85d054
       vertices: []
       indices: 
       edges: []
@@ -523,10 +523,10 @@ TextureImporter:
       name: Elf_Main_Sheet_20
       rect:
         serializedVersion: 2
-        x: 50
-        y: 53
-        width: 29
-        height: 27
+        x: 74
+        y: 49
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -534,7 +534,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 653fae039988afe4c835fd8c8feb8d44
+      spriteID: b7709156f17b95843b17da8630f89b2d
       vertices: []
       indices: 
       edges: []
@@ -543,10 +543,10 @@ TextureImporter:
       name: Elf_Main_Sheet_21
       rect:
         serializedVersion: 2
-        x: 80
-        y: 52
-        width: 30
-        height: 26
+        x: 115
+        y: 47
+        width: 26
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,7 +554,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f5d05015b4174a489698dc761490443
+      spriteID: d96d60adb23dadd4790905ce9bd49d9c
       vertices: []
       indices: 
       edges: []
@@ -563,10 +563,10 @@ TextureImporter:
       name: Elf_Main_Sheet_22
       rect:
         serializedVersion: 2
-        x: 110
-        y: 53
-        width: 29
-        height: 27
+        x: 149
+        y: 48
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -574,7 +574,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d994a8b6a923f0e4982d36c5806eb289
+      spriteID: 29b17a108f18d874f81580ae93e89932
       vertices: []
       indices: 
       edges: []
@@ -583,10 +583,10 @@ TextureImporter:
       name: Elf_Main_Sheet_23
       rect:
         serializedVersion: 2
-        x: 139
-        y: 54
-        width: 25
-        height: 27
+        x: 183
+        y: 50
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,7 +594,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b954aa480de628e45ab5b9b3bca27edf
+      spriteID: bb4ef360d4faf874a8384d7c48660d81
       vertices: []
       indices: 
       edges: []
@@ -614,7 +614,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef3217f42740ebc4aafcfd6a68c9cdb4
+      spriteID: e5b6397cedd71d54e8891918156b0387
       vertices: []
       indices: 
       edges: []

@@ -7,7 +7,9 @@ public class Health : MonoBehaviour {
 	public bool dead;
 	public bool knocked;
 	public int health;
+	private float knockedTimer;
     private SpriteRenderer sprite;
+
 		
 	//Getting Child's Sprite
 	private Transform child_transform;
@@ -20,23 +22,53 @@ public class Health : MonoBehaviour {
 		sprite = GetComponent<SpriteRenderer>();
 		child_transform = gameObject.transform.GetChild(0);
 		child_object = child_transform.gameObject;
-		child_sprite = child_object.GetComponent<SpriteRenderer>();
+		//child_sprite = child_object.GetComponent<SpriteRenderer>();
+	}
+
+	public void Update()
+	{
+		if ((knocked) || (dead))
+		{
+			if (sprite) sprite.sortingLayerName = "Dead";
+			if (child_object) child_object.SetActive(false);
+			GetComponent<Animator>().SetBool("Knocked", true);
+			GetComponent<RotateToCursor>().enabled = false;
+			GetComponent<Movement>().enabled = false;
+			GetComponent<PlayerInteract>().enabled = false;
+		}
+		else
+		if (!knocked)
+		{
+			if (sprite) sprite.sortingLayerName = "Player";
+			if (child_object) child_object.SetActive(true);
+			GetComponent<Animator>().SetBool("Knocked", false);
+			GetComponent<RotateToCursor>().enabled = true;
+			GetComponent<Movement>().enabled = true;
+			GetComponent<PlayerInteract>().enabled = true;
+		}
+
+		/////////////Knocked Logic
+		if (knocked)
+		{
+			if (Time.time > knockedTimer + 2)
+			{
+				knocked = false;
+				knockedTimer = Time.time;
+			}
+		}
 	}
 	public void TakeDamage(int damage)
 	{
-		health -= damage;
 		if (health <= 0){
 			Debug.Log("Dead");
 			anim.SetBool("Dead", true);
 			dead = true;
-			if (sprite) sprite.sortingLayerName = "Dead";		
-			if (child_sprite) child_sprite.sortingLayerName = "Dead";
 		}
 		else
-		if (health == 1)
+		if (health > 0)
 		{
+			health -= damage;
 			knocked = true;
-			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
 		}
 	}
 }

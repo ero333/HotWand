@@ -1765,7 +1765,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: distance
-    m_EventTreshold: 0.6
+    m_EventTreshold: 0.3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102851816588112216}
   m_Solo: 0
@@ -2266,7 +2266,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Sword_Attacking
+  m_Name: Elf_Sword_Attacking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2356,7 +2356,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Attack_Axe
+  m_Name: Elf_Attack_Axe
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2386,7 +2386,7 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Idle
+  m_Name: Elf_Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2450,7 +2450,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Axe_Attacking
+  m_Name: Elf_Axe_Attacking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2504,7 +2504,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Knocked
+  m_Name: Elf_Knocked
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2536,7 +2536,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Attack_Wand
+  m_Name: Elf_Attack_Wand
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2565,7 +2565,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Attack_Crossbow
+  m_Name: Elf_Attack_Crossbow
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2594,7 +2594,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Dead
+  m_Name: Elf_Dead
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2680,7 +2680,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Walking
+  m_Name: Elf_Walking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2744,7 +2744,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Sword
+  m_Name: Elf_Sword
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2774,7 +2774,7 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Punch
+  m_Name: Elf_Punch
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
