@@ -103,10 +103,10 @@ TextureImporter:
       name: Orc_Attack_Sword_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 8
-        width: 23
-        height: 21
+        x: 2
+        y: 111
+        width: 19
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,7 +114,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4abe176161a0ba4bab0df1cfd01a108
+      spriteID: 9a019b1ae757bb54095dd4fcb3528536
       vertices: []
       indices: 
       edges: []
@@ -123,10 +123,10 @@ TextureImporter:
       name: Orc_Attack_Sword_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 4
-        width: 23
-        height: 25
+        x: 2
+        y: 76
+        width: 24
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,7 +134,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 882a4217cdce2a842a60c836f8df142c
+      spriteID: 4db972ab427f320408ed2de5ef62ec8a
       vertices: []
       indices: 
       edges: []
@@ -143,10 +143,10 @@ TextureImporter:
       name: Orc_Attack_Sword_2
       rect:
         serializedVersion: 2
-        x: 50
-        y: 1
-        width: 23
-        height: 28
+        x: 2
+        y: 50
+        width: 28
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89d0041fa6df346479cf05184dcba6b2
+      spriteID: f2d41fa509d6f674da205b2829608c9f
       vertices: []
       indices: 
       edges: []
@@ -163,10 +163,10 @@ TextureImporter:
       name: Orc_Attack_Sword_3
       rect:
         serializedVersion: 2
-        x: 76
-        y: 5
-        width: 30
-        height: 24
+        x: 2
+        y: 26
+        width: 25
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a5d7ef084e786f4baeb5c87b2df6a21
+      spriteID: 8969718d7e7a6b342ba390d7faedf45e
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: Orc_Attack_Sword_4
       rect:
         serializedVersion: 2
-        x: 111
-        y: 10
-        width: 39
-        height: 19
+        x: 2
+        y: 1
+        width: 21
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9014ee4fc697394ea674fc0461ab3e2
+      spriteID: 7d1a43f426c09be4bbd2d29f94d8c837
       vertices: []
       indices: 
       edges: []

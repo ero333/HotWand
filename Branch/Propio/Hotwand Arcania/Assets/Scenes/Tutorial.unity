@@ -1721,11 +1721,11 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300024, guid: 8c44363aacab5994c81cc8cd5d499021,
+      objectReference: {fileID: 21300006, guid: 8c44363aacab5994c81cc8cd5d499021,
         type: 3}
     - target: {fileID: 4037248225298944, guid: ad68589276f4d7e4581fc2a866b0d1bb, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.325
+      value: 0.86125
       objectReference: {fileID: 0}
     - target: {fileID: 212684044044459032, guid: ad68589276f4d7e4581fc2a866b0d1bb,
         type: 2}
