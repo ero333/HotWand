@@ -2266,7 +2266,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Sword_Attacking
+  m_Name: Orc_Sword_Attacking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2282,7 +2282,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4e28e4a20760a2e46be210bafd8e0db0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 18d89a55e9a7041459cb4e115c09deaf, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2315,31 +2315,6 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 0}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102279817127532424
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Orc_Torso_Walking
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 56e9eb09c4a4b1442a64edd1795df0aa, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2381,7 +2356,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Attack_Axe
+  m_Name: Orc_Attack_Axe
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2399,7 +2374,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6eaf8c4470d30274d9cda616dd7870bb, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6d946d1393d0f5f459439f4c9bd3cc46, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2411,7 +2386,7 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Idle
+  m_Name: Orc_Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2432,32 +2407,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d35a914deb982f3459e13ceb64ce1447, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102461960298511598
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Orc_Legs_Walkng
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4498ecae2fc48a84ca866c165fcc40f0, type: 2}
+  m_Motion: {fileID: 7400000, guid: cc5d53cce41271d4c8bb8937cdb90d6d, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2500,7 +2450,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Axe_Attacking
+  m_Name: Orc_Axe_Attacking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2516,7 +2466,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4e28e4a20760a2e46be210bafd8e0db0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3e2a1768d50a8454092dd1fcee09b386, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2554,7 +2504,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Knocked
+  m_Name: Orc_Knocked
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2574,32 +2524,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 62a3407b0b0caab478a833fadb968732, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102593840290059618
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Orc_Walk
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7a679ea381b5d3f4696d73ae4f2e76d8, type: 2}
+  m_Motion: {fileID: 7400000, guid: a02ff0742c1e6a04db7d53c9e4e734a1, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2611,7 +2536,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Attack_Wand
+  m_Name: Orc_Attack_Wand
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2628,7 +2553,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e296567a9abc8864a8188091d8df819c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 81a2cac543336854caf34489146bf2c0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2640,7 +2565,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Attack_Crossbow
+  m_Name: Orc_Attack_Crossbow
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2657,7 +2582,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a1e49637d3eacfa4d852ca61291dc983, type: 2}
+  m_Motion: {fileID: 7400000, guid: d0e6b9e23e5bf204da2d861983064f2f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2669,7 +2594,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Dead
+  m_Name: Orc_Dead
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2682,7 +2607,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 62a3407b0b0caab478a833fadb968732, type: 2}
+  m_Motion: {fileID: 7400000, guid: 29887fdf4e884554cb43a276f6c8de45, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2755,7 +2680,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Walking
+  m_Name: Orc_Walking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2776,7 +2701,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 311feed481680d9499209804839585ef, type: 2}
+  m_Motion: {fileID: 7400000, guid: ba40d904bb7a3214b8d81a5239d4d965, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2819,7 +2744,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Sword
+  m_Name: Orc_Sword
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2837,7 +2762,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6eaf8c4470d30274d9cda616dd7870bb, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4178aec89b982e3458ad814c74dec3fc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2849,7 +2774,7 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Human_Punch
+  m_Name: Orc_Punch
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2866,7 +2791,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: df20764d8976c034ebf135169ea940e2, type: 2}
+  m_Motion: {fileID: 7400000, guid: 582741b1f80b6354ebe6f4f5f2638a26, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2912,16 +2837,7 @@ AnimatorStateMachine:
     m_Position: {x: 588, y: 108, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102579415258810622}
-    m_Position: {x: 683.40393, y: -147.93655, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102593840290059618}
-    m_Position: {x: 718.40393, y: -82.936554, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102279817127532424}
-    m_Position: {x: 753.40393, y: -17.936554, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102461960298511598}
-    m_Position: {x: 788.40393, y: 47.063446, z: 0}
+    m_Position: {x: 684, y: -144, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
