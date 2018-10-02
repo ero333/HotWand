@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212416937714436642}
   - component: {fileID: 61172901394308300}
   - component: {fileID: 114195879647035568}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Crossbow
   m_TagString: Weapon
   m_Icon: {fileID: 0}

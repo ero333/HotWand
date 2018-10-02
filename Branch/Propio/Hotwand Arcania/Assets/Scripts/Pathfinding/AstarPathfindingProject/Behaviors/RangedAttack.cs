@@ -12,7 +12,7 @@ public class RangedAttack : MonoBehaviour {
 	public GameObject wandProjectile;
 	public GameObject crossbowProjectile;
 	GameObject projectile;
-	public Transform player;
+	private Transform player;
 
 	private float speed = 50f;
 

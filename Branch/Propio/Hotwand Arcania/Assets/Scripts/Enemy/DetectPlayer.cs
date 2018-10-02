@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class DetectPlayer : MonoBehaviour
 {
 	public bool playerInRange;
 	public float viewAngle;
-	public GameObject player;
-    public Transform target;
+	private GameObject player;
+    private Transform target;
 	private Animator animator;
 
 	public LayerMask layersIWant;
@@ -14,7 +15,9 @@ public class DetectPlayer : MonoBehaviour
 	 {
 		playerInRange = false;
 	 	animator = gameObject.GetComponent<Animator>();
-	 }
+        player = GameObject.FindGameObjectWithTag("Player");
+        target = player.transform;
+    }
     void Update()
     {
 			Vector3 dirToTarget = target.transform.position - transform.position;

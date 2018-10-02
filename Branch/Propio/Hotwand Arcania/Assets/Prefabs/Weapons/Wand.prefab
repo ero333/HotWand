@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212359294228011328}
   - component: {fileID: 61731398811760506}
   - component: {fileID: 114080141074504426}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wand
   m_TagString: Weapon
   m_Icon: {fileID: 0}
