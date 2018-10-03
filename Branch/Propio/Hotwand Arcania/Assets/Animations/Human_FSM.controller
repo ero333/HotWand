@@ -1547,9 +1547,9 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 4
+  - m_ConditionMode: 3
     m_ConditionEvent: distance from weapon
-    m_EventTreshold: 1.3
+    m_EventTreshold: 1
   - m_ConditionMode: 2
     m_ConditionEvent: has weapon
     m_EventTreshold: 0

@@ -97,8 +97,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1669835280225692}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.639, y: -2.286, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.1664402, y: 0.13469768, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4985132707302932}
@@ -316,7 +316,6 @@ MonoBehaviour:
     type: 2}
   crossbowProjectile: {fileID: 1460672691732440, guid: 6352547c3b40c2e4d854a02241842802,
     type: 2}
-  player: {fileID: 0}
 --- !u!114 &114473864483676626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,7 +328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  target: {fileID: 0}
 --- !u!114 &114490573033477020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -420,8 +418,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInRange: 0
   viewAngle: 120
-  player: {fileID: 0}
-  target: {fileID: 0}
   layersIWant:
     serializedVersion: 2
     m_Bits: 2304
