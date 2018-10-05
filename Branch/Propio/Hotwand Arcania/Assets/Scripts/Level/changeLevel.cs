@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class changeLevel : MonoBehaviour {
 
+    public GameObject cutsceneManager;
     void OnTriggerEnter2D(Collider2D ChangeScene)
     {
-        if (ChangeScene.gameObject.CompareTag("Player"))
+        if (cutsceneManager.GetComponent<SceneSequence>().cutsceneStep == 4)
         {
-            SceneManager.LoadScene (3);
-            Destroy(gameObject);
+            if (ChangeScene.gameObject.CompareTag("Player"))
+            {
+                SceneManager.LoadScene(3);
+                Destroy(gameObject);
+            }
         }
     }
 }
