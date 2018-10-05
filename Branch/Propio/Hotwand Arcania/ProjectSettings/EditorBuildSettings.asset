@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 220f99c0d7e0d1e4798ee8ea423a15a5
   - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+    guid: e37e7952da6d5b54d9b9baf0f6acf929
+  - enabled: 1
     path: Assets/Scenes/Testing.unity
     guid: 57987b90b7a79934ba5503f554771507
   - enabled: 1
@@ -17,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenaBaseLvl1.unity
     guid: 4d18470ad70c30547b4d467b3b13830c
+  - enabled: 1
+    path: Assets/Scenes/EscenaBaseLvl2.unity
+    guid: 623080fd64138ea4cb2578c18bf078b6
+  - enabled: 1
+    path: Assets/Scenes/EscenaBaseJulio.unity
+    guid: fdd443df9d7884354b85cea3ed2f5a3c
+  - enabled: 1
+    path: Assets/Scenes/EscenaBaseFlorPaz.unity
+    guid: 099c6478bfac69841b820e2134da54ac
   m_configObjects: {}
