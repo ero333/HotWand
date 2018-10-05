@@ -38,12 +38,14 @@ public class MeleeAttack : MonoBehaviour {
 						case "Sword":
 							swordAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
 							if (swordAttack != null) swordAttack.GetComponent<MeleeHitboxEnemy>().damage = 2;
+							attackDelay = attackDelay * 1f;
 							animator.SetTrigger("Sword");
 						break;
 
 						case "Axe":
 							axeAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
 							if (axeAttack != null) axeAttack.GetComponent<MeleeHitboxEnemy>().damage = 3;
+							attackDelay = attackDelay * 1.25f;
 							animator.SetTrigger("Axe");
 						break;
 					}

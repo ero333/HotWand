@@ -103,18 +103,18 @@ TextureImporter:
       name: Elf_Attack_Sword_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 21
-        height: 27
+        x: 6
+        y: 112
+        width: 22
+        height: 35
       alignment: 9
-      pivot: {x: 0.35879177, y: 0.49421963}
+      pivot: {x: 0.39346316, y: 0.19307251}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47222151ac3d0fa4bb310c2d57805fea
+      spriteID: d4c6c5e0638a6504fbcc769fb4af103b
       vertices: []
       indices: 
       edges: []
@@ -123,18 +123,18 @@ TextureImporter:
       name: Elf_Attack_Sword_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 1
-        width: 20
-        height: 26
+        x: 5
+        y: 80
+        width: 23
+        height: 27
       alignment: 9
-      pivot: {x: 0.35953483, y: 0.5600279}
+      pivot: {x: 0.41507933, y: 0.2612785}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a76218df86097e84b834d28d6d016c07
+      spriteID: 9f72a298e7576ac4caf33cfc30b76fe6
       vertices: []
       indices: 
       edges: []
@@ -143,18 +143,18 @@ TextureImporter:
       name: Elf_Attack_Sword_2
       rect:
         serializedVersion: 2
-        x: 55
-        y: 1
-        width: 22
-        height: 26
+        x: 3
+        y: 55
+        width: 26
+        height: 22
       alignment: 9
-      pivot: {x: 0.32973948, y: 0.54802233}
+      pivot: {x: 0.43990228, y: 0.31356117}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbcdda91e1a44fa429431f9bd80ca0d6
+      spriteID: 83b7454582648e645ba6a6ef74815215
       vertices: []
       indices: 
       edges: []
@@ -163,18 +163,18 @@ TextureImporter:
       name: Elf_Attack_Sword_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 2
-        width: 27
-        height: 23
+        x: 3
+        y: 29
+        width: 26
+        height: 20
       alignment: 9
-      pivot: {x: 0.25722107, y: 0.5882149}
+      pivot: {x: 0.43990228, y: 0.3535118}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67a1a16da9761dc43baf2aa8f95bfe0a
+      spriteID: 0b224909c57258e4797654bb63e4c305
       vertices: []
       indices: 
       edges: []
@@ -183,18 +183,18 @@ TextureImporter:
       name: Elf_Attack_Sword_4
       rect:
         serializedVersion: 2
-        x: 112
-        y: 2
-        width: 35
-        height: 22
+        x: 1
+        y: 4
+        width: 27
+        height: 21
       alignment: 9
-      pivot: {x: 0.19231458, y: 0.6064131}
+      pivot: {x: 0.49999988, y: 0.34188616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a18d896f2842dc341b607e8fed2cf23c
+      spriteID: c7d8c5b0565cb2142a5ecd89f56176c8
       vertices: []
       indices: 
       edges: []

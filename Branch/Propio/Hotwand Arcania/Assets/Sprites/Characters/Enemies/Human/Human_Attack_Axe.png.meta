@@ -103,18 +103,18 @@ TextureImporter:
       name: Human_Attack_Axe_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 5
-        width: 21
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 1
+        width: 31
+        height: 21
+      alignment: 9
+      pivot: {x: 0.19997016, y: 0.4186507}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ccba6ecfacd06140a630da6fd7547e3
+      spriteID: b03e32a6847c94b49af8df1a700cbe05
       vertices: []
       indices: 
       edges: []
@@ -123,18 +123,18 @@ TextureImporter:
       name: Human_Attack_Axe_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 7
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 38
+        y: 0
+        width: 29
+        height: 21
+      alignment: 9
+      pivot: {x: 0.16618767, y: 0.46384475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b2e06d75dfc5bb47b37519284bf217f
+      spriteID: 338965be167514246a58dbf68a90c106
       vertices: []
       indices: 
       edges: []
@@ -143,18 +143,18 @@ TextureImporter:
       name: Human_Attack_Axe_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 2
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 0
+        width: 34
+        height: 21
+      alignment: 9
+      pivot: {x: 0.16503255, y: 0.44576716}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3718dc693ed39514cb1abb926756d7d7
+      spriteID: 928ae2235653c2a4d94562d9eafdfb14
       vertices: []
       indices: 
       edges: []
@@ -163,18 +163,18 @@ TextureImporter:
       name: Human_Attack_Axe_3
       rect:
         serializedVersion: 2
-        x: 75
-        y: 9
-        width: 36
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 112
+        y: 0
+        width: 27
+        height: 36
+      alignment: 9
+      pivot: {x: 0.22582245, y: 0.18891467}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c960b1b261e6ad44afb9a7db5115e7d
+      spriteID: 9f34d6edfd70c5f47ac66da43fbf254c
       vertices: []
       indices: 
       edges: []
@@ -183,18 +183,18 @@ TextureImporter:
       name: Human_Attack_Axe_4
       rect:
         serializedVersion: 2
-        x: 114
-        y: 22
-        width: 41
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 148
+        y: 0
+        width: 16
+        height: 41
+      alignment: 9
+      pivot: {x: 0.49999905, y: 0.21759257}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95495aa2a37d7a248a89c6a4bf5d8ef6
+      spriteID: 4a01d9b2559611d4785bf21db483653c
       vertices: []
       indices: 
       edges: []

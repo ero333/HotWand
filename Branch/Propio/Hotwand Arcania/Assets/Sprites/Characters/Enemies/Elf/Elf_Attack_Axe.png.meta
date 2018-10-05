@@ -102,18 +102,18 @@ TextureImporter:
       name: Elf_Attack_Axe_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 6
+        x: 9
+        y: 91
         width: 24
-        height: 38
+        height: 51
       alignment: 9
-      pivot: {x: 0.39293942, y: 0.6239645}
+      pivot: {x: 0.34737954, y: 0.13711308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06a9c28637a9ac64a880dff303e3f9a3
+      spriteID: e65be7d2dfb7ff84983c33886cdcb2b2
       vertices: []
       indices: 
       edges: []
@@ -122,18 +122,18 @@ TextureImporter:
       name: Elf_Attack_Axe_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 0
-        width: 21
-        height: 41
+        x: 3
+        y: 60
+        width: 42
+        height: 24
       alignment: 9
-      pivot: {x: 0.3368603, y: 0.6984531}
+      pivot: {x: 0.27508572, y: 0.29115072}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52a4a7c974869c045ae539309862c5ed
+      spriteID: 49cee0f7cc5212d408e70dd3562f9e32
       vertices: []
       indices: 
       edges: []
@@ -142,18 +142,18 @@ TextureImporter:
       name: Elf_Attack_Axe_2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 1
-        width: 24
-        height: 42
+        x: 5
+        y: 34
+        width: 41
+        height: 21
       alignment: 9
-      pivot: {x: 0.30372205, y: 0.7141204}
+      pivot: {x: 0.28370625, y: 0.33475694}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9ec8a9c5c997a546a210d4eadc5f155
+      spriteID: 57ad700c0b7d3d841b088fb14d0dd0fc
       vertices: []
       indices: 
       edges: []
@@ -162,18 +162,18 @@ TextureImporter:
       name: Elf_Attack_Axe_3
       rect:
         serializedVersion: 2
-        x: 91
-        y: 13
-        width: 51
+        x: 2
+        y: 1
+        width: 38
         height: 24
       alignment: 9
-      pivot: {x: 0.13893397, y: 0.6249036}
+      pivot: {x: 0.3528756, y: 0.42770597}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 345895c61c5ec6244ba97440a5668452
+      spriteID: d80463d75e1169b40bb8e3b7e3fc2421
       vertices: []
       indices: 
       edges: []

@@ -16,12 +16,6 @@ namespace Pathfinding {
 		/** The object that the AI should move to */
 		public Transform target;
 		IAstarAI ai;
-
-        private void Start()
-        {
-            target = GameObject.FindGameObjectWithTag("Player").transform;
-        }
-
         void OnEnable () {
 			ai = GetComponent<IAstarAI>();
 			// Update the destination right before searching for a path as well.
