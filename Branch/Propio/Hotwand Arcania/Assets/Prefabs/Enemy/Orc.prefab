@@ -35,6 +35,7 @@ GameObject:
   - component: {fileID: 114014703809686740}
   - component: {fileID: 95554088365648222}
   - component: {fileID: 114052895708815538}
+  - component: {fileID: 114878669305968488}
   m_Layer: 10
   m_Name: Orc
   m_TagString: Enemy
@@ -255,7 +256,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  target: {fileID: 0}
 --- !u!114 &114173188282440880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -360,7 +360,6 @@ MonoBehaviour:
     type: 2}
   crossbowProjectile: {fileID: 1460672691732440, guid: 6352547c3b40c2e4d854a02241842802,
     type: 2}
-  player: {fileID: 0}
 --- !u!114 &114656048957433872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -374,8 +373,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInRange: 0
   viewAngle: 120
-  player: {fileID: 0}
-  target: {fileID: 0}
   layersIWant:
     serializedVersion: 2
     m_Bits: 2304
@@ -439,6 +436,17 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 0
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!114 &114878669305968488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1373910370790456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352a9c690e3a57e4d83e48212668afd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212086466294572766
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -472,7 +480,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -518,7 +526,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 8c44363aacab5994c81cc8cd5d499021, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -564,7 +572,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8c44363aacab5994c81cc8cd5d499021, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

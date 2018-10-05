@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour {
 	private Transform child_transform;
 	private GameObject child_object;
 	private SpriteRenderer child_sprite;
+	private GameObject portal;
 	public void Start()
 	{
 		dead = false;
@@ -20,6 +21,8 @@ public class EnemyHealth : MonoBehaviour {
 		child_transform = gameObject.transform.GetChild(0);
 		child_object = child_transform.gameObject;
 		child_sprite = child_object.GetComponent<SpriteRenderer>();
+
+		portal = GameObject.FindGameObjectWithTag("Portal");
 	}
 
 	public void TakeDamage(int damage) {
@@ -30,6 +33,8 @@ public class EnemyHealth : MonoBehaviour {
 			animator.SetBool("Dead", true);
             if (sprite) sprite.sortingLayerName = "Dead";
 			if (child_sprite) child_sprite.sortingLayerName = "Dead";
+			
+			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
 		}
 		else
 		if (health == 1)

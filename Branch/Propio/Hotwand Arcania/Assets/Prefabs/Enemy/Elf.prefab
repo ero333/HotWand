@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 114502134358236050}
   - component: {fileID: 95993449130175552}
   - component: {fileID: 114801133147594496}
+  - component: {fileID: 114605072586399894}
   m_Layer: 10
   m_Name: Elf
   m_TagString: Enemy
@@ -333,8 +334,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInRange: 0
   viewAngle: 120
-  player: {fileID: 0}
-  target: {fileID: 0}
   layersIWant:
     serializedVersion: 2
     m_Bits: 2304
@@ -347,6 +346,17 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4db85a7a607d24542b2060d88d89a261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114605072586399894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895218687968890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352a9c690e3a57e4d83e48212668afd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114690642449493194
@@ -375,7 +385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  target: {fileID: 0}
 --- !u!114 &114813755678542408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -424,7 +433,6 @@ MonoBehaviour:
     type: 2}
   crossbowProjectile: {fileID: 1460672691732440, guid: 6352547c3b40c2e4d854a02241842802,
     type: 2}
-  player: {fileID: 0}
 --- !u!114 &114981258772921488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -472,7 +480,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a02618dbe896b094e8f5c012d61e5dd0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -518,7 +526,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300024, guid: a02618dbe896b094e8f5c012d61e5dd0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -564,7 +572,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

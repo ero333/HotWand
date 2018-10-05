@@ -19,6 +19,7 @@ TagManager:
   - Cutscene3
   - Cutscene4
   - Cutscene5
+  - Portal
   layers:
   - Default
   - TransparentFX
