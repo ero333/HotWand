@@ -13,6 +13,8 @@ public GameObject equippedWeapon;
 
 
 	public Animator animator;
+	public int crossbowAmmo = 30;
+	public int wandAmmo = 50;
 
 	//Damage Modifiers for weapons
 	public int punchDamage;
@@ -117,11 +119,13 @@ public GameObject equippedWeapon;
 				break;
 
 				case "Wand":
-					Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+					wandAmmo = wandAmmo - 1;
+					if (wandAmmo > 0) Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 				break;
 
 				case "Crossbow":
-					Instantiate(crossbowProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+					crossbowAmmo = crossbowAmmo - 1;
+					if (crossbowAmmo > 0) Instantiate(crossbowProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 				break;
 			}
 		}
