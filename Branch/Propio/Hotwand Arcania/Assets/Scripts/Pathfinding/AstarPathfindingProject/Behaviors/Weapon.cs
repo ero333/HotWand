@@ -10,30 +10,46 @@ public class Weapon : MonoBehaviour {
 	public int weaponAmmo;
 	private bool hasAmmo;
 
+
+	public Vector3 direction;
+	private Vector2 target;
+	public float speed;
+	public bool beingThrown;
+    
+	private Quaternion lastRotation;
+
 	void Start()
 	{
-		weaponType = null;
-		if (weaponName != null)
+		direction.x = Vector2.right.x;
+		direction.y = Vector2.right.y;
+		direction.z = 0;
+		lastRotation = transform.rotation;
+	}
+			
+			
+	void Update()
+	{		
+		if (beingThrown)
 		{
-			switch (weaponName)
-			{
-				case "Wand":
-					weaponType = "Ranged";
-				break;
+			transform.Translate(direction*4*Time.deltaTime);
+			//transform.rotation = Quaternion.Slerp(this.transform.rotation,new Quaternion(this.transform.rotation.x,this.transform.rotation.y,this.transform.rotation.z-1,this.transform.rotation.w), Time.deltaTime * 10);
+			lastRotation = transform.rotation;
+		}
+		else
+		{
+			transform.Translate(new Vector3(0,0,0));
+			transform.rotation = lastRotation;
+		}
+	}
 
-				case "Crossbow":
-					weaponType = "Ranged";
-				
-				break;
-
-				case "Sword":
-					weaponType = "Melee";
-				break;
-
-				case "Axe":
-					weaponType = "Melee";
-				break;
-			}
+	void OnTriggerEnter2D(Collider2D other){
+		if ((beingThrown) && (other.CompareTag("Enemy"))){
+			beingThrown = false;
+			other.SendMessage("TakeDamage", 1, SendMessageOptions.DontRequireReceiver);
+		}
+		else
+		if ((beingThrown) && (other.CompareTag("Wall"))){
+			beingThrown = false;
 		}
 	}
 	public void PickedUp(){

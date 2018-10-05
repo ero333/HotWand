@@ -41,6 +41,7 @@ public class EnemyHealth : MonoBehaviour {
 		{
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
 			Debug.Log("Got Knocked.");
+			transform.Translate(new Vector3(0,0,0));
 		}
 		
 		Debug.Log("Got Hit.");

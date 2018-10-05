@@ -9,10 +9,11 @@ public class knocked : StateMachineBehaviour {
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		animator.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+		animator.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
 		animator.GetComponent<Rigidbody2D>().angularVelocity = 0.0f;
 		animator.GetComponent<AIPath>().maxSpeed = 0.0f;
 		animator.GetComponent<AIPath>().enabled = false;
+		animator.GetComponent<Chase>().enabled = false;
 		animator.GetComponent<CircleCollider2D>().enabled = false;
 	}
 
@@ -29,6 +30,7 @@ public class knocked : StateMachineBehaviour {
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.GetComponent<AIPath>().maxSpeed = 0.6f;
 		animator.GetComponent<AIPath>().enabled = true;
+		animator.GetComponent<Chase>().enabled = true;
 		animator.GetComponent<CircleCollider2D>().enabled = true;
 	}
 }

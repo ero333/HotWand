@@ -7,6 +7,6 @@ public class Enemy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		portal = GameObject.FindGameObjectWithTag("Portal");
-		portal.GetComponent<NextLevel>().enemiesAlive += 1;
+		if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive += 1;
 	}
 }
