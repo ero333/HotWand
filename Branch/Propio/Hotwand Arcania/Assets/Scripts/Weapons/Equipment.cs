@@ -119,7 +119,7 @@ public GameObject equippedWeapon;
 				break;
 
 				case "Wand":
-					wandAmmo = wandAmmo - 1;
+					wandAmmo = wandAmmo -1;
 					if (wandAmmo > 0) Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 				break;
 
