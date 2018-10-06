@@ -43,7 +43,7 @@ public class CutsceneDisplay : MonoBehaviour {
 	void inputControl()
 	{
 		activeCutscene = cutsceneBits [cutsceneCounter];
-		if (Input.GetKeyDown (KeyCode.Return) || Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetMouseButton (0) || Input.GetKeyDown (KeyCode.Space)) {
 			if (cutsceneCounter < cutsceneBits.Length-1) {
 				cutsceneCounter++;
 			} else {
