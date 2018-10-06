@@ -9,6 +9,8 @@ public class Health : MonoBehaviour {
 	public int health;
 	private float knockedTimer;
     private SpriteRenderer sprite;
+	public Equipment equipment;
+	public PlayerInteract interact;
 
 		
 	//Getting Child's Sprite
@@ -49,12 +51,14 @@ public class Health : MonoBehaviour {
 
 		/////////////Knocked Logic
 		if (knocked)
-		{
+		{			
 			if (Time.time > knockedTimer + 2)
 			{
 				knocked = false;
 				knockedTimer = Time.time;
+
 			}
+			equipment.DropWeapon();
 		}
 	}
 	public void TakeDamage(int damage)

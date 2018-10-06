@@ -5,6 +5,10 @@ using UnityEngine;
 public class Equipment : MonoBehaviour {
 public GameObject equippedWeapon;
 [SerializeField]	private GameObject meleeHitbox;	
+[SerializeField]	private GameObject swordPrefab;	
+[SerializeField]	private GameObject axePrefab;	
+[SerializeField]	private GameObject wandPrefab;	
+[SerializeField]	private GameObject crossbowPrefab;	
 [SerializeField]	private GameObject wandProjectile;
 [SerializeField]	private GameObject crossbowProjectile;
 
@@ -80,6 +84,58 @@ public GameObject equippedWeapon;
 		}
 	}
 
+	public void ThrowWeapon()
+	{	
+		GameObject thrownSword;
+		GameObject thrownAxe;
+		GameObject thrownWand;
+		GameObject thrownCrossbow;
+
+		if (equippedWeapon != null)
+		{
+			switch (equippedWeapon.GetComponent<Weapon>().weaponName)
+			{
+				case "Sword":
+					thrownSword = Instantiate(swordPrefab, meleeAnchorPoint.transform.position, transform.rotation);
+					thrownSword.GetComponent<Weapon>().beingThrown = true;
+					Destroy(equippedWeapon);
+					ResetStance();
+				break;
+
+				case "Axe":
+					thrownAxe = Instantiate(axePrefab, meleeAnchorPoint.transform.position, transform.rotation);
+					thrownAxe.GetComponent<Weapon>().beingThrown = true;
+					Destroy(equippedWeapon);
+					ResetStance();
+				break;
+
+				case "Wand":
+					thrownWand = Instantiate(wandPrefab, meleeAnchorPoint.transform.position, transform.rotation);
+					thrownWand.GetComponent<Weapon>().beingThrown = true;
+					Destroy(equippedWeapon);
+					ResetStance();
+				break;
+
+				case "Crossbow":
+					thrownCrossbow = Instantiate(crossbowPrefab, meleeAnchorPoint.transform.position, transform.rotation);
+					thrownCrossbow.GetComponent<Weapon>().beingThrown = true;
+					Destroy(equippedWeapon);
+					ResetStance();
+				break;
+			}
+		}
+	}
+
+	public void ResetStance()
+	{
+		equippedWeapon = null;
+
+		//We make sure to clean up animation parameters
+		animator.SetBool("Sword Stance", false);
+		animator.SetBool("Axe Stance", false);
+		animator.SetBool("Wand Stance", false);
+		animator.SetBool("Crossbow Stance", false);
+	}
 	public void DropWeapon()
 	{
 		//We check if we do have something equipped
@@ -87,13 +143,7 @@ public GameObject equippedWeapon;
 		{
 			equippedWeapon.transform.position = transform.position;
 			equippedWeapon.SetActive(true);
-			equippedWeapon = null;
-
-			//We make sure to clean up animation parameters
-			animator.SetBool("Sword Stance", false);
-			animator.SetBool("Axe Stance", false);
-			animator.SetBool("Wand Stance", false);
-			animator.SetBool("Crossbow Stance", false);
+			ResetStance();
 		}
 	}
 

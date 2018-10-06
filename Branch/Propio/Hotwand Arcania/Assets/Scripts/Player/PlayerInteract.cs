@@ -6,9 +6,6 @@ public class PlayerInteract : MonoBehaviour {
 	public GameObject currentWeaponOnFloor = null;
 	public Weapon currentWeaponScript = null;
 	public Equipment equipment;
-	
-	public int counter = 35;
-
 	public Animator animator;
 
 	void Update(){
@@ -27,7 +24,7 @@ public class PlayerInteract : MonoBehaviour {
 				}
 				else 
 				if (!currentWeaponOnFloor){
-					equipment.DropWeapon();
+					equipment.ThrowWeapon();
 				}
 			}
 
