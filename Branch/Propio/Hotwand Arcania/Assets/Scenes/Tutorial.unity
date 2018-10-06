@@ -185,8 +185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Bien! Muy bien! Eso no ha sido tan dif\xEDcil eh? Ya puedes dirigirte por
-    el portal a tu primer misi\xF3n oficial..."
+  Text: "Excelente! Eso no fue tan dif\xEDcil eh? Ya puedes dirigirte por el portal
+    a tu primer misi\xF3n...(No me defraudes!)."
 --- !u!4 &48085617
 Transform:
   m_ObjectHideFlags: 0
@@ -346,7 +346,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: 'Ganlin, bienvenido a tu prueba. '
+  Text: 'Hola Ganlin. Bienvenido. Todo lo que aprendiste en la vida se pone a prueba
+    ahora. '
 --- !u!1 &468873966
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,7 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Aqu\xED demostrar\xE1s si eres digno de ser parte de la organizaci\xF3n..."
+  Text: "Aqu\xED demostrar\xE1s si eres digno de ser parte de la cofrad\xEDa..."
 --- !u!4 &1010298079
 Transform:
   m_ObjectHideFlags: 0
@@ -938,7 +939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "No te ha temblado el pulso eh? Me gusta, contin\xFAa as\xED..."
+  Text: "No te ha temblado el pulso eh? Me empiezas a agradar. Contin\xFAa as\xED..."
 --- !u!4 &1121078923
 Transform:
   m_ObjectHideFlags: 0
@@ -981,7 +982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Agarrala con el bot\xF2n derecho del mouse!!"
+  Text: "Agarrala con el bot\xF2n derecho de tu mouse!! (Sabes que es un Mouse, verdad?)."
 --- !u!4 &1227915009
 Transform:
   m_ObjectHideFlags: 0
@@ -1324,7 +1325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: Tienes manos! Felicitaciones...
+  Text: Que novedad...Tienes manos! Felicitaciones...
 --- !u!1 &1403980691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,8 +1368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Incre\xEDble! Te confunden con un Detective seguido? Tienes que matar al
-    humano del otro cuarto."
+  Text: "Incre\xEDble! Te confunden con un Mercenario seguido? Ahora tienes que enfrentar
+    al humano del otro cuarto. (Recuerda: Es tu vida o la de tu enemigo)"
 --- !u!1 &1418244807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,7 +1399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Mu\xE9vete! Con W-A-S-D! o no sabes moverte?!?!"
+  Text: "Mu\xE9vete! Con las teclas W-A-S-D! =O no sabes moverte?!..."
 --- !u!4 &1418244809
 Transform:
   m_ObjectHideFlags: 0
@@ -9811,7 +9812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Ves esa varita ah\xED? Agarrala!"
+  Text: "Ves esa varita ah\xED? Ve por ella!"
 --- !u!4 &1834748627
 Transform:
   m_ObjectHideFlags: 0
@@ -10070,7 +10071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: Ahora ve y mata al hombre de la izquierda...
+  Text: A tu izquierda tienes a tu enemigo. Defiendete disparandole con tu varita...
 --- !u!1 &2007527686
 GameObject:
   m_ObjectHideFlags: 0
