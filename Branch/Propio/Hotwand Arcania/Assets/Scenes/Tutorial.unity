@@ -346,8 +346,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: 'Hola Ganlin. Bienvenido. Todo lo que aprendiste en la vida se pone a prueba
-    ahora. '
+  Text: Hola Ganlin. Bienvenido. Todo lo que aprendiste en la vida se pone a prueba
+    ahora. (press spacebar)
 --- !u!1 &468873966
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,11 +529,11 @@ MonoBehaviour:
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: 99eeb3a2667db8a44bb79c62a005fced, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_Alignment: 4
     m_WordWrap: 1
-    m_RichText: 0
-    m_TextClipping: 1
+    m_RichText: 1
+    m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
     m_FixedWidth: 0
@@ -777,7 +777,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.3056959}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -788,7 +788,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.7278478}
   m_EdgeRadius: 0
 --- !u!4 &1028755899
 Transform:
@@ -820,6 +820,7 @@ MonoBehaviour:
   cutsceneBits:
   - {fileID: 205336238}
   - {fileID: 1010298078}
+  - {fileID: 1418244808}
   - {fileID: 1418244808}
   activeFace: {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
   bg: {fileID: 2800000, guid: c2b08dda8c0afca4a9d825c1b51b92c2, type: 3}
@@ -879,11 +880,11 @@ MonoBehaviour:
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: 99eeb3a2667db8a44bb79c62a005fced, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_Alignment: 4
     m_WordWrap: 1
-    m_RichText: 0
-    m_TextClipping: 1
+    m_RichText: 1
+    m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
     m_FixedWidth: 0
@@ -1257,10 +1258,10 @@ MonoBehaviour:
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: 99eeb3a2667db8a44bb79c62a005fced, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_Alignment: 4
     m_WordWrap: 1
-    m_RichText: 0
+    m_RichText: 1
     m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
@@ -1368,8 +1369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Incre\xEDble! Te confunden con un Mercenario seguido? Ahora tienes que enfrentar
-    al humano del otro cuarto. (Recuerda: Es tu vida o la de tu enemigo)"
+  Text: '(Recuerda: Es tu vida o la de tu enemigo)'
 --- !u!1 &1418244807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,7 +1399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Mu\xE9vete! Con las teclas W-A-S-D! =O no sabes moverte?!..."
+  Text: "Mu\xE9vete! Con las teclas W-A-S-D! O no sabes moverte?!..."
 --- !u!4 &1418244809
 Transform:
   m_ObjectHideFlags: 0
@@ -1549,10 +1549,10 @@ MonoBehaviour:
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: 99eeb3a2667db8a44bb79c62a005fced, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_Alignment: 4
     m_WordWrap: 1
-    m_RichText: 0
+    m_RichText: 1
     m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
@@ -1634,7 +1634,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faces:
   - {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
-  Text: "Lo \xFAltimo que tendr\xE1s que hacer para completar tu iniciaci\xF3n ser\xE1..."
+  Text: "Incre\xEDble! Te confunden con un Mercenario seguido? Ahora tienes que enfrentar
+    al humano del otro cuarto. "
 --- !u!4 &1474525494
 Transform:
   m_ObjectHideFlags: 0
@@ -1783,10 +1784,10 @@ MonoBehaviour:
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: 99eeb3a2667db8a44bb79c62a005fced, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_Alignment: 4
     m_WordWrap: 1
-    m_RichText: 0
+    m_RichText: 1
     m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
@@ -9961,10 +9962,10 @@ MonoBehaviour:
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: 99eeb3a2667db8a44bb79c62a005fced, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_Alignment: 4
     m_WordWrap: 1
-    m_RichText: 0
+    m_RichText: 1
     m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
