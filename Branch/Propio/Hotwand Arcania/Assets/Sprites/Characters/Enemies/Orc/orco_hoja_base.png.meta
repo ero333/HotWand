@@ -123,7 +123,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87c1fd2cf006e2e43a27696ad60350b0
+      spriteID: 2c1c09463d1a5524e9bfa7fe143fb3fd
       vertices: []
       indices: 
       edges: []
@@ -143,7 +143,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3da48d91161bbe4ca2dc3f158502163
+      spriteID: 96d75dea601fce4449717d10bd1d2dba
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd0faebffd1a0c242bc68eae66f16a1c
+      spriteID: 921a481978229ea4e91d93a9a8a3ad18
       vertices: []
       indices: 
       edges: []
@@ -183,7 +183,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e1b8671372dbf9429267024ef9b4f55
+      spriteID: 014c164392f705f48855e10dba8ba66e
       vertices: []
       indices: 
       edges: []
@@ -203,7 +203,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba6af7fb687f9fe45b0c02e948ef98d7
+      spriteID: 5859b324063df0c499d4e7b5d1f29b40
       vertices: []
       indices: 
       edges: []
@@ -223,7 +223,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c555604d6b666f64bae3cc7543821a30
+      spriteID: 8f7cbf24034a0e847b4480792d4bb1cc
       vertices: []
       indices: 
       edges: []
@@ -243,7 +243,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3332d82adcefae478aa8e5048bc4c55
+      spriteID: 9337cd33ce4b29042a54bc93cb5f7914
       vertices: []
       indices: 
       edges: []
@@ -263,7 +263,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7e07d2fb2c3ac7498d980eb9f4618e8
+      spriteID: c82289079ecf97e479c281ac4f01065a
       vertices: []
       indices: 
       edges: []
@@ -283,7 +283,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d05524256c57084b90f615ac33c3c6c
+      spriteID: 6e0369a0e0f2b7545811ec5cba15e849
       vertices: []
       indices: 
       edges: []
@@ -303,7 +303,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cde049b1c95ef94da0030d6729e4c43
+      spriteID: 372fb09cfa5f98b409f2aadfb3106ad9
       vertices: []
       indices: 
       edges: []
@@ -323,7 +323,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04943fd6fed7c7147b514072e656e56b
+      spriteID: 3f203ce04ba6fdc44a740e59ef2dc01d
       vertices: []
       indices: 
       edges: []
@@ -343,7 +343,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9400510753e01b542a85625b99ec4f45
+      spriteID: 68b0f429a105b9b4c88ca5e029791b7c
       vertices: []
       indices: 
       edges: []
@@ -352,10 +352,10 @@ TextureImporter:
       name: orco_hoja_base_12
       rect:
         serializedVersion: 2
-        x: 127
-        y: 2
-        width: 47
-        height: 103
+        x: 0
+        y: 59
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,7 +363,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e362ede8474adb43a0bbbc38a3b8a8d
+      spriteID: 934d229d12bb7ee478340e8512af8610
       vertices: []
       indices: 
       edges: []
@@ -372,7 +372,7 @@ TextureImporter:
       name: orco_hoja_base_13
       rect:
         serializedVersion: 2
-        x: 0
+        x: 35
         y: 59
         width: 30
         height: 25
@@ -383,7 +383,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea543ac8803977245be56249faa2998c
+      spriteID: 0d51bc90becf2e548ac2809a5afb9ab4
       vertices: []
       indices: 
       edges: []
@@ -392,10 +392,10 @@ TextureImporter:
       name: orco_hoja_base_14
       rect:
         serializedVersion: 2
-        x: 35
+        x: 69
         y: 59
-        width: 30
-        height: 25
+        width: 25
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,7 +403,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0686bc5e18091c0499987856cd3fddaf
+      spriteID: 98b70a45aa24a8947a906d46088f1c6c
       vertices: []
       indices: 
       edges: []
@@ -412,7 +412,7 @@ TextureImporter:
       name: orco_hoja_base_15
       rect:
         serializedVersion: 2
-        x: 69
+        x: 99
         y: 59
         width: 25
         height: 30
@@ -423,7 +423,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 187b47b3351da1941b8b354eac2f18ff
+      spriteID: c6b9996474374a642be43f200f700b96
       vertices: []
       indices: 
       edges: []
@@ -432,26 +432,6 @@ TextureImporter:
       name: orco_hoja_base_16
       rect:
         serializedVersion: 2
-        x: 99
-        y: 59
-        width: 25
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a5c5617364efc64b9bfad1747069a66
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orco_hoja_base_17
-      rect:
-        serializedVersion: 2
         x: 0
         y: 30
         width: 30
@@ -463,13 +443,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 561f2c0142d14ae42a94f3df89aa11ed
+      spriteID: 8e28ac4267d3f844f943ae2149c248f2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orco_hoja_base_18
+      name: orco_hoja_base_17
       rect:
         serializedVersion: 2
         x: 35
@@ -483,13 +463,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0eb73ee447de5242a012a0e7e940d57
+      spriteID: b7ceb7233758826438b6d6ce9cb5ff42
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orco_hoja_base_19
+      name: orco_hoja_base_18
       rect:
         serializedVersion: 2
         x: 69
@@ -503,13 +483,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e00f9e8ad5e4f06409a126c787e41a8d
+      spriteID: 50d26c01851b30546957783c5fdd597b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orco_hoja_base_20
+      name: orco_hoja_base_19
       rect:
         serializedVersion: 2
         x: 99
@@ -523,13 +503,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff746a7dfe4708843bf72f91bf665ba0
+      spriteID: 763a5c97493ad0a489fb28437a5d2460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orco_hoja_base_21
+      name: orco_hoja_base_20
       rect:
         serializedVersion: 2
         x: 0
@@ -543,13 +523,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51040ab95a76c02429001defda38a275
+      spriteID: 6341ace20af5c664bb3315dc8a5620a8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orco_hoja_base_22
+      name: orco_hoja_base_21
       rect:
         serializedVersion: 2
         x: 35
@@ -563,13 +543,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e517737059bf744fb07384271b74978
+      spriteID: 039e434cded50c5419dfa8483382708c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orco_hoja_base_23
+      name: orco_hoja_base_22
       rect:
         serializedVersion: 2
         x: 69
@@ -583,13 +563,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64f32d97c06ba864bb5af94ab0f8995d
+      spriteID: 80d0f886dffb9584892a58d98a087f9e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orco_hoja_base_24
+      name: orco_hoja_base_23
       rect:
         serializedVersion: 2
         x: 98
@@ -603,7 +583,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c409823343ecb7449d2b7f886451f1a
+      spriteID: a375e83cfc9033041870c9c3e077bcd3
       vertices: []
       indices: 
       edges: []
