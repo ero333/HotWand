@@ -20,6 +20,7 @@ TagManager:
   - Cutscene4
   - Cutscene5
   - Portal
+  - Main
   layers:
   - Default
   - TransparentFX

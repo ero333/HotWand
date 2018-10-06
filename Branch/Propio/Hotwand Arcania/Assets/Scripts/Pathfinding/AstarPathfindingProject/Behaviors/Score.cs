@@ -6,26 +6,20 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour {
 
 
-	private float puntaje = 0.0f;
+	public int score;
 	public Text scoreText;
 
-	
-
-	void Awake()
-	{
-	
-	}
 
 	// Use this for initialization
 	void Start () {
-		scoreText.text = "Score: " + puntaje;
+		scoreText.text = "Score: " + score;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 		
-		puntaje += puntaje;
-		scoreText.text = "Score: " + ((int)puntaje).ToString(); 
+		
+		//puntaje += puntaje;
+		scoreText.text = "Score: " + score.ToString(); 
 	}
 }

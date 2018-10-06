@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class EnemyHealth : MonoBehaviour {
 	
 	public WeaponPickup weaponPickup;
 
+	private GameObject main;
 
 	//Getting Child's Sprite
 	private Transform child_transform;
@@ -28,7 +30,11 @@ public class EnemyHealth : MonoBehaviour {
 		child_sprite = child_object.GetComponent<SpriteRenderer>();
 
 		portal = GameObject.FindGameObjectWithTag("Portal");
+
+		main = GameObject.FindGameObjectWithTag("Main");
+
 	}
+
 
 	public void TakeDamage(int damage) {
 		health -= damage;
@@ -40,6 +46,7 @@ public class EnemyHealth : MonoBehaviour {
 			if (child_sprite) child_sprite.sortingLayerName = "Dead";
 			
 			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
+			if (main != null) main.GetComponent<Score>().score += 1;
 
 			if (GetComponent<WeaponPickup>().weaponEquipped != null)
 			{
@@ -47,7 +54,7 @@ public class EnemyHealth : MonoBehaviour {
 				weaponPickup.weaponEquipped.SetActive(true);
 				weaponPickup.weaponEquipped = null;
 				animator.SetBool("has weapon", false);
-			}
+			}	
 		}
 		else
 		if (health >= 1)
