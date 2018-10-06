@@ -7593,7 +7593,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1895218687968890, guid: d2c07a5be9ba8b64d87ffe2b8f09273f, type: 2}
       propertyPath: m_Name
-      value: Elf (1)
+      value: Elf
       objectReference: {fileID: 0}
     - target: {fileID: 114813755678542408, guid: d2c07a5be9ba8b64d87ffe2b8f09273f,
         type: 2}

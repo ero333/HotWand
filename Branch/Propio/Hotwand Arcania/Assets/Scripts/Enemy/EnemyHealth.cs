@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour {
 
@@ -13,17 +14,25 @@ public class EnemyHealth : MonoBehaviour {
 	private Transform child_transform;
 	private GameObject child_object;
 	private SpriteRenderer child_sprite;
+
+	//Player Score
+	private GameObject player;
+
+
 	public void Start()
+
 	{
 		dead = false;
 		sprite = GetComponent<SpriteRenderer>();
 		child_transform = gameObject.transform.GetChild(0);
 		child_object = child_transform.gameObject;
 		child_sprite = child_object.GetComponent<SpriteRenderer>();
+		player = GameObject.FindGameObjectWithTag("Player");
 	}
 
 	public void TakeDamage(int damage) {
 		health -= damage;
+		//player.GetComponentsInParent<Score>().puntaje += 2;
 		if (health <= 0)
 		{
 			dead = true;
