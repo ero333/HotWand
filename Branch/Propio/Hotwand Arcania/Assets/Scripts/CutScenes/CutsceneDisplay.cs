@@ -43,7 +43,7 @@ public class CutsceneDisplay : MonoBehaviour {
 	void inputControl()
 	{
 		activeCutscene = cutsceneBits [cutsceneCounter];
-		if (Input.GetMouseButton (0) || Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetKeyDown (KeyCode.Space)) {
 			if (cutsceneCounter < cutsceneBits.Length-1) {
 				cutsceneCounter++;
 			} else {
@@ -76,7 +76,7 @@ public class CutsceneDisplay : MonoBehaviour {
 		GUI.matrix = Matrix4x4.TRS(Vector3.zero,Quaternion.identity,scale);
 		if (display == true) {
 			GUI.DrawTexture (new Rect (0, 0, originalWidth, originalHeight), bg);
-			GUI.DrawTexture (new Rect (originalWidth - 500, originalHeight / 2-400, 500, 500), activeFace);
+			GUI.DrawTexture (new Rect (originalWidth - 800, originalHeight / 2-400, 500, 500), activeFace);
 			GUI.Box (new Rect (originalWidth / 2-500, originalHeight - 220, 1000, 100), activeCutscene.Text,text);
 		}
 		GUI.matrix = svMat;
