@@ -821,7 +821,6 @@ MonoBehaviour:
   - {fileID: 205336238}
   - {fileID: 1010298078}
   - {fileID: 1418244808}
-  - {fileID: 1418244808}
   activeFace: {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
   bg: {fileID: 2800000, guid: c2b08dda8c0afca4a9d825c1b51b92c2, type: 3}
   text:
