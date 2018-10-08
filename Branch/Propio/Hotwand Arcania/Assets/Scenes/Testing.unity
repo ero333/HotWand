@@ -7913,7 +7913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &807864257
 MonoBehaviour:
@@ -10052,7 +10052,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4358462033678724, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114393006492918260, guid: bd9cd0f6bf4701747a4ebdce1d240904,
         type: 2}
@@ -10419,7 +10419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4042692248449106, guid: e9383c8bd18e7d34283cf78400b385a7, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 212111404710642136, guid: e9383c8bd18e7d34283cf78400b385a7,
         type: 2}
@@ -10468,6 +10468,36 @@ Prefab:
       propertyPath: bg
       value: 
       objectReference: {fileID: 2800000, guid: 159744738702a3d4fa39f6508cdfc973, type: 3}
+    - target: {fileID: 114910162432117734, guid: e9383c8bd18e7d34283cf78400b385a7,
+        type: 2}
+      propertyPath: swordDelay
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114910162432117734, guid: e9383c8bd18e7d34283cf78400b385a7,
+        type: 2}
+      propertyPath: axeDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114910162432117734, guid: e9383c8bd18e7d34283cf78400b385a7,
+        type: 2}
+      propertyPath: wandDelay
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114910162432117734, guid: e9383c8bd18e7d34283cf78400b385a7,
+        type: 2}
+      propertyPath: uziwandDelay
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114910162432117734, guid: e9383c8bd18e7d34283cf78400b385a7,
+        type: 2}
+      propertyPath: icewandDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114910162432117734, guid: e9383c8bd18e7d34283cf78400b385a7,
+        type: 2}
+      propertyPath: crossbowDelay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9383c8bd18e7d34283cf78400b385a7, type: 2}
   m_IsPrefabAsset: 0

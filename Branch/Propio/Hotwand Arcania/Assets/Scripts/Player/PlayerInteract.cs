@@ -15,7 +15,9 @@ public class PlayerInteract : MonoBehaviour {
 	[SerializeField] private float uziwandDelay;
 	[SerializeField] private float icewandDelay;
 	[SerializeField] private float crossbowDelay;
+
 	private float attackDelay;
+	
 	void Update(){
 		if (!GetComponent<Health>().dead)
 		{
@@ -67,11 +69,15 @@ public class PlayerInteract : MonoBehaviour {
 			}
 
 			//Attack
-			if ((Time.time > lastAttackTime + attackDelay) && (Input.GetMouseButtonDown(0)))
+			if (Time.time > lastAttackTime + attackDelay) 
 			{
-				equipment.Attack();
-				lastAttackTime = Time.time;
+				if (Input.GetMouseButtonDown(0))
+				{
+					equipment.Attack();
+					lastAttackTime = Time.time;
+				}
 			}
+
 		}
 	}
 

@@ -72,7 +72,7 @@ public class Health : MonoBehaviour {
 
 
 		if (dead == true) {
-			if (Input.GetKeyDown (KeyCode.R)) {
+			if (Input.anyKey) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
 			}
 		}
