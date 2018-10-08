@@ -101,10 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Crossbow
   equippable: 1
-  weaponType: 
-  weaponAmmo: 0
+  weaponAmmo: 40
   direction: {x: 0, y: 0, z: 0}
-  speed: 0
+  fireRate: 1.5
   beingThrown: 0
 --- !u!212 &212416937714436642
 SpriteRenderer:

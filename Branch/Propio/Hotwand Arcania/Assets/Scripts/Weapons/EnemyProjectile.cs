@@ -46,7 +46,7 @@ public class EnemyProjectile : MonoBehaviour {
 		Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
 		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
 
-		transform.Translate (direction*8*Time.deltaTime);
+		transform.Translate (direction*speed*Time.deltaTime);
 
 		deathTimer -= Time.deltaTime;
 		if(deathTimer<=0)

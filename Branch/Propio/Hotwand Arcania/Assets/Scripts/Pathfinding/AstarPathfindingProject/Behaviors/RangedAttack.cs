@@ -6,7 +6,6 @@ public class RangedAttack : MonoBehaviour {
 
 	public int damage;
 	private float lastAttackTime;
-	public float attackDelay;
 
 	public GameObject rangedAnchorPoint;
 	public GameObject wandProjectile;
@@ -37,7 +36,7 @@ public class RangedAttack : MonoBehaviour {
 		Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
 		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
 
-		if (Time.time > lastAttackTime + attackDelay)
+		if (Time.time > lastAttackTime + 2)
 		{
 				GameObject newProjectile = Instantiate(projectile, rangedAnchorPoint.transform.position, rangedAnchorPoint.transform.rotation);
 				lastAttackTime = Time.time;

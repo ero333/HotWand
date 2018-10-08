@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
   damage: 1
-  speed: 2.5
+  speed: 5
   deathTimer: 3
 --- !u!212 &212110316202338686
 SpriteRenderer:

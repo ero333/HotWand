@@ -7,7 +7,15 @@ public class PlayerInteract : MonoBehaviour {
 	public Weapon currentWeaponScript = null;
 	public Equipment equipment;
 	public Animator animator;
+	private float lastAttackTime;
 
+	[SerializeField] private float swordDelay;
+	[SerializeField] private float axeDelay;
+	[SerializeField] private float wandDelay;
+	[SerializeField] private float uziwandDelay;
+	[SerializeField] private float icewandDelay;
+	[SerializeField] private float crossbowDelay;
+	private float attackDelay;
 	void Update(){
 		if (!GetComponent<Health>().dead)
 		{
@@ -28,9 +36,41 @@ public class PlayerInteract : MonoBehaviour {
 				}
 			}
 
+			if (equipment.equippedWeapon != null)
+			{
+				switch (equipment.equippedWeapon.GetComponent<Weapon>().weaponName)
+				{
+					case "Sword":
+						attackDelay = swordDelay;
+					break;
+
+					case "Axe":
+						attackDelay = axeDelay;
+					break;
+
+					case "Wand":
+						attackDelay = wandDelay;
+					break;
+
+					case "Uziwand":
+						attackDelay = uziwandDelay;
+					break;
+
+					case "Ice Wand":
+						attackDelay = icewandDelay;
+					break;
+
+					case "Crossbow":
+						attackDelay = crossbowDelay;
+					break;
+				}
+			}
+
 			//Attack
-			if(Input.GetMouseButtonDown(0)){
+			if ((Time.time > lastAttackTime + attackDelay) && (Input.GetMouseButtonDown(0)))
+			{
 				equipment.Attack();
+				lastAttackTime = Time.time;
 			}
 		}
 	}

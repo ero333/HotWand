@@ -101,10 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Axe
   equippable: 1
-  weaponType: 
   weaponAmmo: 0
   direction: {x: 0, y: 0, z: 0}
-  speed: 0
+  fireRate: 1
   beingThrown: 0
 --- !u!212 &212810052880885170
 SpriteRenderer:

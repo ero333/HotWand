@@ -5,13 +5,21 @@ using UnityEngine;
 public class Equipment : MonoBehaviour {
 public GameObject equippedWeapon;
 [SerializeField]	private GameObject meleeHitbox;	
+
+//Weapon Prefabs
 [SerializeField]	private GameObject swordPrefab;	
 [SerializeField]	private GameObject axePrefab;	
 [SerializeField]	private GameObject wandPrefab;	
+[SerializeField]	private GameObject uziwandPrefab;	
+[SerializeField]	private GameObject icewandPrefab;	
 [SerializeField]	private GameObject crossbowPrefab;	
+
+//All projectiles for each weapon
 [SerializeField]	private GameObject wandProjectile;
+[SerializeField]	private GameObject uziwandProjectile;
 [SerializeField]	private GameObject crossbowProjectile;
 
+//The points from where the hitbox objects will be created
 [SerializeField]	private GameObject meleeAnchorPoint;
 [SerializeField]	private GameObject rangedAnchorPoint;
 
@@ -68,6 +76,20 @@ public GameObject equippedWeapon;
 				animator.SetBool("Crossbow Stance", false);
 			break;
 
+			case "Uziwand":
+				animator.SetBool("Sword Stance", false);	
+				animator.SetBool("Axe Stance", false);	
+				animator.SetBool("Wand Stance", true);	
+				animator.SetBool("Crossbow Stance", false);
+			break;
+
+			case "Ice Wand":
+				animator.SetBool("Sword Stance", false);	
+				animator.SetBool("Axe Stance", false);	
+				animator.SetBool("Wand Stance", true);	
+				animator.SetBool("Crossbow Stance", false);
+			break;
+
 			case "Crossbow":
 				animator.SetBool("Sword Stance", false);
 				animator.SetBool("Axe Stance", false);		
@@ -116,6 +138,20 @@ public GameObject equippedWeapon;
 					ResetStance();
 				break;
 
+				case "Uziwand":
+					thrownWand = Instantiate(uziwandPrefab, meleeAnchorPoint.transform.position, transform.rotation);
+					thrownWand.GetComponent<Weapon>().beingThrown = true;
+					Destroy(equippedWeapon);
+					ResetStance();
+				break;
+
+				case "Ice Wand":
+					thrownWand = Instantiate(icewandPrefab, meleeAnchorPoint.transform.position, transform.rotation);
+					thrownWand.GetComponent<Weapon>().beingThrown = true;
+					Destroy(equippedWeapon);
+					ResetStance();
+				break;
+
 				case "Crossbow":
 					thrownCrossbow = Instantiate(crossbowPrefab, meleeAnchorPoint.transform.position, transform.rotation);
 					thrownCrossbow.GetComponent<Weapon>().beingThrown = true;
@@ -157,26 +193,50 @@ public GameObject equippedWeapon;
 			switch (equippedWeapon.GetComponent<Weapon>().weaponName)
 			{
 				case "Sword":
-					swordAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
-					if (swordAttack != null) swordAttack.GetComponent<MeleeHitboxPlayer>().damage = 2;
-					animator.SetTrigger("Sword Attack");
+						swordAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+						if (swordAttack != null) swordAttack.GetComponent<MeleeHitboxPlayer>().damage = 2;
+						animator.SetTrigger("Sword Attack");
 				break;
 
 				case "Axe":
-					axeAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
-					if (axeAttack != null) axeAttack.GetComponent<MeleeHitboxPlayer>().damage = 3;
-					animator.SetTrigger("Axe Attack");
+						axeAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+						if (axeAttack != null) axeAttack.GetComponent<MeleeHitboxPlayer>().damage = 3;
+						animator.SetTrigger("Axe Attack");
 				break;
 
 				case "Wand":
-					wandAmmo = wandAmmo -1;
-					if (wandAmmo > 0) Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+					if (equippedWeapon.GetComponent<Weapon>().weaponAmmo > 0) 
+					{
+							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
+							Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+					}
+				break;
+
+				case "Uziwand":
+					if (equippedWeapon.GetComponent<Weapon>().weaponAmmo > 0) 
+					{
+							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
+							Instantiate(uziwandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+					}
+				break;
+
+				case "Ice Wand":
+					if (equippedWeapon.GetComponent<Weapon>().weaponAmmo > 0) 
+					{
+							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
+							Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+					}
 				break;
 
 				case "Crossbow":
-					crossbowAmmo = crossbowAmmo - 1;
-					if (crossbowAmmo > 0) Instantiate(crossbowProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+					if (equippedWeapon.GetComponent<Weapon>().weaponAmmo > 0) 
+					{
+							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
+							Instantiate(crossbowProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+					}
 				break;
+
+
 			}
 		}
 		else
