@@ -354,7 +354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  attackDelay: 1
   rangedAnchorPoint: {fileID: 1972933096224800}
   wandProjectile: {fileID: 1058132660431762, guid: 70902946e05fb1a448d1d4c92536a76b,
     type: 2}
@@ -388,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 0}
+  target: {fileID: 4042692248449106, guid: e9383c8bd18e7d34283cf78400b385a7, type: 2}
 --- !u!114 &114738446222720830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -403,6 +402,7 @@ MonoBehaviour:
   health: 5
   dead: 0
   animator: {fileID: 95554088365648222}
+  weaponPickup: {fileID: 0}
 --- !u!114 &114788590449063496
 MonoBehaviour:
   m_ObjectHideFlags: 1
