@@ -1,8 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour {
+
+	float originalWidth = 1280.0f; //turn these to floats to fix placement issue
+	float originalHeight = 720.0f;
+	Vector3 scale;
+	public GUIStyle text;
+	public Texture2D bg;
+
+
 	public Animator anim;
 	public bool dead;
 	public bool knocked;
@@ -60,6 +68,15 @@ public class Health : MonoBehaviour {
 			}
 			equipment.DropWeapon();
 		}
+
+
+
+		if (dead == true) {
+			if (Input.GetKeyDown (KeyCode.R)) {
+				SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
+			}
+		}
+
 	}
 	public void TakeDamage(int damage)
 	{
@@ -74,5 +91,23 @@ public class Health : MonoBehaviour {
 			health -= damage;
 			knocked = true;
 		}
+	}
+
+	void OnGUI()
+	{
+		GUI.depth = 0;
+		scale.x = Screen.width/originalWidth;
+		scale.y = Screen.height/originalHeight;
+		scale.z =1;
+		var svMat = GUI.matrix;
+		GUI.matrix = Matrix4x4.TRS(Vector3.zero,Quaternion.identity,scale);
+
+		if (dead == true) {
+			//Rect posForRestart = new Rect (0,0,originalWidth,originalHeight);
+			//GUI.DrawTexture (posForRestart,bg);
+			//SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+		}
+
+		GUI.matrix = svMat;
 	}
 }
