@@ -16,7 +16,7 @@ public class patrol : StateMachineBehaviour {
 	//OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.GetComponent<Patrol>().enabled = true;
-		animator.GetComponent<AIPath>().maxSpeed = 0.6f;
+		animator.GetComponent<AIPath>().maxSpeed = 0.9f;
 		animator.SetBool("Walking", true);
 	}
 
@@ -24,7 +24,7 @@ public class patrol : StateMachineBehaviour {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.SetFloat("distance", Vector2.Distance(animator.transform.position, player.transform.position));
 		
-		animator.GetComponent<AIPath>().maxSpeed = 0.6f;
+		animator.GetComponent<AIPath>().maxSpeed = 0.9f;
 
 		//Looking for weapon only
 		float distanceToClosestWeapon = Mathf.Infinity;
