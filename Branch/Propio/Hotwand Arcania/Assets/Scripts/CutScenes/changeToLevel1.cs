@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Pathfinding;
+using UnityEngine.Analytics;
 
 public class changeToLevel1 : MonoBehaviour {
 
@@ -21,6 +20,10 @@ public class changeToLevel1 : MonoBehaviour {
         {
             if (ChangeScene.gameObject.CompareTag("Player"))
             {
+                Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {
+                    {"nivel", 1}
+                });
                 SceneManager.LoadScene(4);
                 Destroy(gameObject);
             }

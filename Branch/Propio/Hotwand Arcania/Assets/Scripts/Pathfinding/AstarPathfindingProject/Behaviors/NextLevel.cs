@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class NextLevel : MonoBehaviour {
 
@@ -25,6 +26,10 @@ public class NextLevel : MonoBehaviour {
         {
             if (ChangeScene.gameObject.CompareTag("Player"))
             {
+                Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {
+                    {"nivel", nextLevel}
+                });
                 SceneManager.LoadScene(nextLevel+3);
                 Destroy(gameObject);
             }
