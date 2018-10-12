@@ -10,7 +10,8 @@ public class Main_Menu : MonoBehaviour {
 
 	public void PlayGame()
 	{
-        print("nivel 1");
+        print("EmpezarNivel");
+        print(SceneManager.GetActiveScene().buildIndex + 2);
 		Analytics.CustomEvent("EmpezarNivel", new Dictionary<string,object> 
 		{
 			{"nivel", SceneManager.GetActiveScene().buildIndex + 2}
