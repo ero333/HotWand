@@ -17,7 +17,7 @@ public class chase : StateMachineBehaviour {
 		animator.GetComponent<Chase>().enabled = true;
 		animator.GetComponent<AIPath>().enableRotation = false;
 		animator.GetComponent<RotateToTarget>().enabled = true;
-		animator.GetComponent<AIPath>().maxSpeed = 1.6f;
+		animator.GetComponent<AIPath>().maxSpeed = 0.8f;
 		animator.SetBool("Walking", true);
 	}
 
