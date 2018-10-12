@@ -189,7 +189,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -10, y: -10}
-  m_SizeDelta: {x: 240, y: 140}
+  m_SizeDelta: {x: 120, y: 70}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &882526926
 MonoBehaviour:
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 0
+  m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -7699,8 +7699,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2, y: 0.1000061}
-  m_SizeDelta: {x: -55.3, y: -51.2}
+  m_AnchoredPosition: {x: 0.30000305, y: 0}
+  m_SizeDelta: {x: -30.6, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292007255
 MonoBehaviour:
@@ -7723,7 +7723,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d8eb470d4a8cd94ea9804721732796c, type: 3}
-    m_FontSize: 24
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -7731,7 +7731,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Score:'
@@ -9275,7 +9275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d4b55d2d21c47baba1d3e49cbffa89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  puntaje: 0
   scoreText: {fileID: 1292007255}
 --- !u!1001 &1819827275
 Prefab:
