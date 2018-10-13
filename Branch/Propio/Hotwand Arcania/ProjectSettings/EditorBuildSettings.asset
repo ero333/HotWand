@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 220f99c0d7e0d1e4798ee8ea423a15a5
   - enabled: 1
+    path: Assets/Scenes/Calificar.unity
+    guid: 110394a94f003114daaaf71a8e1b66e4
+  - enabled: 1
+    path: Assets/Scenes/Agradecimiento.unity
+    guid: 8b933a76f49e07f40a7014ccc239663a
+  - enabled: 1
     path: Assets/Scenes/LevelSelection.unity
     guid: e37e7952da6d5b54d9b9baf0f6acf929
   - enabled: 1
@@ -33,12 +39,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Lvl5.unity
     guid: b67e7375ebfbf48468308e15a44883a2
   - enabled: 1
-    path: Assets/Scenes/Lvl7.unity
+    path: Assets/Scenes/Lvl6.unity
     guid: 1d788268991d08941b51b379aaec066c
   - enabled: 1
-    path: Assets/Scenes/Lvl8.unity
-    guid: a36e998ef42adc047b3dd01d56c83f62
+    path: Assets/Scenes/Lvl7.unity
+    guid: b6cbbe1eae9c7334b8c37e6bab669a84
   - enabled: 1
-    path: Assets/Scenes/Lvl9.unity
+    path: Assets/Scenes/Lvl8.unity
+    guid: 6ba4b6d065450d44fb4219ac271012d0
+  - enabled: 1
+    path: Assets/Scenes/LvlFinal.unity
     guid: 47935ac1240354b7aac270d0c0aaeacb
   m_configObjects: {}

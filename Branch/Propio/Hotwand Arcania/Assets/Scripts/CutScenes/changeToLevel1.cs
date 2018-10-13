@@ -24,7 +24,7 @@ public class changeToLevel1 : MonoBehaviour {
                 {
                     {"nivel", 1}
                 });
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene(6);
                 Destroy(gameObject);
             }
         }

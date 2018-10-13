@@ -8,12 +8,12 @@ public class LoadOnClick : MonoBehaviour {
 
 	public void LoadScene(int level)
     {
-        //print("LoadOnClick");
-        //print(level);
-        if (level >2)        
+        print("LoadOnClick");
+        print(level);
+        if (level >4)        
         {
-            //print("EmpezarNivel");
-            //print(level);
+            print("EmpezarNivel");
+            print(level);
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
             {
                 {"nivel", level-3}
@@ -24,22 +24,22 @@ public class LoadOnClick : MonoBehaviour {
 
     public void SelectLevel(int level)
     {
-       // print("SelectLevel");
-        //print(level);
+        print("SelectLevel");
+        print(level);
         if (level > 2)
         {
-            //print("NivelSeleccionado");
-            //print(level-3);
+            print("NivelSeleccionado");
+            print(level-5);
             Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
             {
-                {"nivel", level-3}
+                {"nivel", level-5}
             });
 
-           // print("EmpezarNivel");
-            //print(level-3);
+            print("EmpezarNivel");
+            print(level-5);
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
             {
-                {"nivel", level-3}
+                {"nivel", level-5}
             });
 
         }

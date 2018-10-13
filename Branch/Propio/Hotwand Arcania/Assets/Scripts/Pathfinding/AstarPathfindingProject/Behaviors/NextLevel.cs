@@ -30,7 +30,7 @@ public class NextLevel : MonoBehaviour {
                 {
                     {"nivel", nextLevel}
                 });
-                SceneManager.LoadScene(nextLevel+3);
+                SceneManager.LoadScene(nextLevel+5);
                 Destroy(gameObject);
             }
         }
