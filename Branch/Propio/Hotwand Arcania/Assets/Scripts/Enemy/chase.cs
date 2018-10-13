@@ -21,15 +21,15 @@ public class chase : StateMachineBehaviour {
 
 
 
-        if ( animator.name.Substring(0,3) == "Elf" )
+        if ( animator.name.Substring(0,2) == "Elf" )
         {
             animator.GetComponent<AIPath>().maxSpeed = 1.4f;
         };
-        if (animator.name.Substring(0, 3) == "Orc")
+        if (animator.name.Substring(0, 2) == "Orc")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.8f;
         };
-        if (animator.name.Substring(0, 5) == "Human")
+        if (animator.name.Substring(0, 4) == "Human")
         {
             animator.GetComponent<AIPath>().maxSpeed = 1.0f;
         };

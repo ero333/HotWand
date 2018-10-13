@@ -16,15 +16,15 @@ public class patrol : StateMachineBehaviour {
 	//OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.GetComponent<Patrol>().enabled = true;
-        if (animator.name.Substring(0, 3) == "Elf")
+        if (animator.name.Substring(0, 2) == "Elf")
         {
             animator.GetComponent<AIPath>().maxSpeed = 1.0f;
         };
-        if (animator.name.Substring(0, 3) == "Orc")
+        if (animator.name.Substring(0, 2) == "Orc")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.6f;
         };
-        if (animator.name.Substring(0, 5) == "Human")
+        if (animator.name.Substring(0, 4) == "Human")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.8f;
         };
@@ -35,15 +35,15 @@ public class patrol : StateMachineBehaviour {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.SetFloat("distance", Vector2.Distance(animator.transform.position, player.transform.position));
 
-        if (animator.name.Substring(0, 3) == "Elf")
+        if (animator.name.Substring(0, 2) == "Elf")
         {
             animator.GetComponent<AIPath>().maxSpeed = 1.0f;
         };
-        if (animator.name.Substring(0, 3) == "Orc")
+        if (animator.name.Substring(0, 2) == "Orc")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.6f;
         };
-        if (animator.name.Substring(0, 5) == "Human")
+        if (animator.name.Substring(0, 4) == "Human")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.8f;
         };
