@@ -16,18 +16,39 @@ public class patrol : StateMachineBehaviour {
 	//OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.GetComponent<Patrol>().enabled = true;
-		animator.GetComponent<AIPath>().maxSpeed = 0.6f;
-		animator.SetBool("Walking", true);
+        if (animator.name.Substring(0, 3) == "Elf")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 1.0f;
+        };
+        if (animator.name.Substring(0, 3) == "Orc")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 0.6f;
+        };
+        if (animator.name.Substring(0, 5) == "Human")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 0.8f;
+        };
+        animator.SetBool("Walking", true);
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.SetFloat("distance", Vector2.Distance(animator.transform.position, player.transform.position));
-		
-		animator.GetComponent<AIPath>().maxSpeed = 0.6f;
 
-		//Looking for weapon only
-		float distanceToClosestWeapon = Mathf.Infinity;
+        if (animator.name.Substring(0, 3) == "Elf")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 1.0f;
+        };
+        if (animator.name.Substring(0, 3) == "Orc")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 0.6f;
+        };
+        if (animator.name.Substring(0, 5) == "Human")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 0.8f;
+        };
+        //Looking for weapon only
+        float distanceToClosestWeapon = Mathf.Infinity;
 		GameObject closestWeapon = null;
 		GameObject[] allWeapons = GameObject.FindGameObjectsWithTag("Weapon");
 

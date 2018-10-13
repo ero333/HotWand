@@ -7,7 +7,7 @@ public class chase : StateMachineBehaviour {
 
 	GameObject player;
 
-	void Awake()
+    void Awake()
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
@@ -17,8 +17,26 @@ public class chase : StateMachineBehaviour {
 		animator.GetComponent<Chase>().enabled = true;
 		animator.GetComponent<AIPath>().enableRotation = false;
 		animator.GetComponent<RotateToTarget>().enabled = true;
-		animator.GetComponent<AIPath>().maxSpeed = 0.8f;
-		animator.SetBool("Walking", true);
+
+
+
+
+        if ( animator.name.Substring(0,3) == "Elf" )
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 1.4f;
+        };
+        if (animator.name.Substring(0, 3) == "Orc")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 0.8f;
+        };
+        if (animator.name.Substring(0, 5) == "Human")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 1.0f;
+        };
+
+
+
+        animator.SetBool("Walking", true);
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
