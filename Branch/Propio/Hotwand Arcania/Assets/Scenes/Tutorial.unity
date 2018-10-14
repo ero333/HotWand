@@ -242,7 +242,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4358462033678724, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114490573033477020, guid: bd9cd0f6bf4701747a4ebdce1d240904,
         type: 2}
@@ -403,12 +403,12 @@ GameObject:
   - component: {fileID: 585500031}
   - component: {fileID: 585500030}
   m_Layer: 0
-  m_Name: "Cutscene N\xB01.1"
+  m_Name: "Cutscene N\xB02"
   m_TagString: Cutscene1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &585500030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -466,9 +466,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutsceneBits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1834748626}
   - {fileID: 1227915008}
   activeFace: {fileID: 2800000, guid: 550b472674abbec468a7a8bab9ce7018, type: 3}
@@ -759,7 +756,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &958823595 stripped
 GameObject:
@@ -1100,7 +1097,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4358462033678724, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1669835280225692, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
       propertyPath: m_Name
@@ -1175,10 +1172,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 732614319}
-  cutscene2: {fileID: 1424409866}
-  cutscene3: {fileID: 1492887235}
-  cutscene4: {fileID: 1841369920}
-  cutscene5: {fileID: 1386938549}
+  cutscene1: {fileID: 1028755897}
+  cutscene2: {fileID: 585500029}
+  cutscene3: {fileID: 1424409866}
+  cutscene4: {fileID: 1492887235}
+  cutscene5: {fileID: 1841369920}
+  cutscene6: {fileID: 1386938549}
   enemigo1: {fileID: 958823595}
   enemigo2: {fileID: 1351653990}
   cutsceneStep: 0
@@ -1196,7 +1195,7 @@ GameObject:
   - component: {fileID: 1386938551}
   - component: {fileID: 1386938550}
   m_Layer: 0
-  m_Name: "Cutscene N\xB05"
+  m_Name: "Cutscene N\xB06"
   m_TagString: Cutscene5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1486,7 +1485,7 @@ GameObject:
   - component: {fileID: 1424409868}
   - component: {fileID: 1424409867}
   m_Layer: 0
-  m_Name: "Cutscene N\xB02"
+  m_Name: "Cutscene N\xB03"
   m_TagString: Cutscene2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1721,7 +1720,7 @@ GameObject:
   - component: {fileID: 1492887237}
   - component: {fileID: 1492887236}
   m_Layer: 0
-  m_Name: "Cutscene N\xB03"
+  m_Name: "Cutscene N\xB04"
   m_TagString: Cutscene3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1968,7 +1967,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1638770233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 610913385}
@@ -9899,7 +9898,7 @@ GameObject:
   - component: {fileID: 1841369922}
   - component: {fileID: 1841369921}
   m_Layer: 0
-  m_Name: "Cutscene N\xB04"
+  m_Name: "Cutscene N\xB05"
   m_TagString: Cutscene4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10085,7 +10084,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4571262210790856, guid: 588c30fdbdf9e4e4aa04dab82a7ef2ee, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 588c30fdbdf9e4e4aa04dab82a7ef2ee, type: 2}
@@ -10462,7 +10461,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4282174080379862, guid: 644893c920072444e996c91e7008a254, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: cutsceneManager
@@ -10493,3 +10492,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutsceneManager: {fileID: 1373378693}
+--- !u!114 &2078342545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2078342543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf00be88e4c22c34ea41d2f6eb79ec58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesAlive: 20
+  nextLevel: 0

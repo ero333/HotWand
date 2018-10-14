@@ -5,10 +5,12 @@ using UnityEngine;
 public class SceneSequence : MonoBehaviour {
 
 	public GameObject player;
+	public GameObject cutscene1;
 	public GameObject cutscene2;
 	public GameObject cutscene3;
 	public GameObject cutscene4;
 	public GameObject cutscene5;
+	public GameObject cutscene6;
 	public GameObject enemigo1;
 	public GameObject enemigo2;
 	public int cutsceneStep;
@@ -27,6 +29,21 @@ public class SceneSequence : MonoBehaviour {
 		switch (cutsceneStep)
 			{
 				case 0:
+					if ((cutscene1 == null))		
+					{
+						timeLeft -= Time.deltaTime;
+						if (timeLeft < 0) 
+						{
+							if (cutscene2 != null) cutscene2.SetActive(true);
+							cutsceneStep = 1;
+
+							timeLeft = timeBetweenCutscenes;
+						}
+					
+					}
+				break;
+
+				case 1:
 					if (player.GetComponent<Equipment>().equippedWeapon != null)
 					{
 						if ((player.GetComponent<Equipment>().equippedWeapon.GetComponent<Weapon>().weaponName == "Wand"))		
@@ -34,8 +51,8 @@ public class SceneSequence : MonoBehaviour {
 							timeLeft -= Time.deltaTime;
 							if (timeLeft <= 0) 
 							{
-								if (cutscene2 != null) cutscene2.SetActive(true);
-								cutsceneStep = 1;
+								if (cutscene3 != null) cutscene3.SetActive(true);
+								cutsceneStep = 2;
 
 								timeLeft = timeBetweenCutscenes;
 							}
@@ -44,14 +61,14 @@ public class SceneSequence : MonoBehaviour {
 					}
 				break;
 
-				case 1:
+				case 2:
 					if ((enemigo1.GetComponent<EnemyHealth>().dead))		
 					{
 						timeLeft -= Time.deltaTime;
 						if (timeLeft < 0) 
 						{						
-							if (cutscene3 != null) cutscene3.SetActive(true);
-							cutsceneStep = 2;
+							if (cutscene4 != null) cutscene4.SetActive(true);
+							cutsceneStep = 3;
 
 							timeLeft = timeBetweenCutscenes;
 						}
@@ -59,7 +76,7 @@ public class SceneSequence : MonoBehaviour {
 					}
 				break;
 
-				case 2:
+				case 3:
 					if (player.GetComponent<Equipment>().equippedWeapon != null)
 					{
 						if ((player.GetComponent<Equipment>().equippedWeapon.GetComponent<Weapon>().weaponName == "Sword"))		
@@ -67,8 +84,8 @@ public class SceneSequence : MonoBehaviour {
 							timeLeft -= Time.deltaTime;
 							if (timeLeft < 0) 
 							{
-								if (cutscene4 != null) cutscene4.SetActive(true);
-								cutsceneStep = 3;
+								if (cutscene5 != null) cutscene5.SetActive(true);
+								cutsceneStep = 4;
 
 								timeLeft = timeBetweenCutscenes;
 							}
@@ -77,14 +94,14 @@ public class SceneSequence : MonoBehaviour {
 					}
 				break;
 
-				case 3:
+				case 4:
 					if ((enemigo2.GetComponent<EnemyHealth>().dead))		
 					{
 						timeLeft -= Time.deltaTime;
 						if (timeLeft < 0) 
 						{
-							if (cutscene5 != null) cutscene5.SetActive(true);
-							cutsceneStep = 4;
+							if (cutscene6 != null) cutscene6.SetActive(true);
+							cutsceneStep = 5;
 
 							timeLeft = timeBetweenCutscenes;
 						}

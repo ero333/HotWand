@@ -16,7 +16,7 @@ public class changeToLevel1 : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D ChangeScene)
     {
-        if (cutsceneManager.GetComponent<SceneSequence>().cutsceneStep == 4)
+        if (cutsceneManager.GetComponent<SceneSequence>().cutsceneStep == 5)
         {
             if (ChangeScene.gameObject.CompareTag("Player"))
             {
