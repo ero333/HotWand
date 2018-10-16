@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour {
                 Pause();
             }
         }
-
+/*
         if (Input.GetButtonDown("Esc"))
         {
             if (GameIsPause)
@@ -34,6 +34,7 @@ public class PauseMenu : MonoBehaviour {
                 Pause();
             }
         }
+*/
 	}
 
     public void Resume ()

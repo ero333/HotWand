@@ -85,6 +85,7 @@ GameObject:
   - component: {fileID: 4985132707302932}
   - component: {fileID: 212234633431424270}
   - component: {fileID: 95989338650478408}
+  - component: {fileID: 114199719020670266}
   m_Layer: 10
   m_Name: Legs
   m_TagString: Enemy
@@ -296,6 +297,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 20
+--- !u!114 &114199719020670266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873902297899312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1aa6a3d7977a9a428aab226fab98ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114303873069691990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -480,7 +492,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300010, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -526,7 +538,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300024, guid: ef4edcafc1250f145a6dc043dd363c51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -572,7 +584,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -69,6 +69,7 @@ GameObject:
   - component: {fileID: 4863120990288584}
   - component: {fileID: 212230575239211320}
   - component: {fileID: 95366246126756224}
+  - component: {fileID: 114956443736112166}
   m_Layer: 10
   m_Name: Legs
   m_TagString: Enemy
@@ -447,6 +448,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352a9c690e3a57e4d83e48212668afd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114956443736112166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962226634289828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1aa6a3d7977a9a428aab226fab98ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212086466294572766
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -480,7 +492,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -526,7 +538,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 8c44363aacab5994c81cc8cd5d499021, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -572,7 +584,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1449013487
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8c44363aacab5994c81cc8cd5d499021, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

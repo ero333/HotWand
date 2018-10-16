@@ -103,7 +103,7 @@ MonoBehaviour:
   equippable: 1
   weaponAmmo: 40
   direction: {x: 0, y: 0, z: 0}
-  fireRate: 1.5
+  attackDelay: 0
   beingThrown: 0
 --- !u!212 &212416937714436642
 SpriteRenderer:
@@ -137,8 +137,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1646246339
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 907361579ae5b3c4db5e87a023831c89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

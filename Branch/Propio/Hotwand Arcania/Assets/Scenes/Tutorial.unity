@@ -2631,6 +2631,16 @@ Prefab:
       propertyPath: m_Name
       value: Wand
       objectReference: {fileID: 0}
+    - target: {fileID: 212359294228011328, guid: a269f409ddc4fe54b8e76cd239e023d8,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212359294228011328, guid: a269f409ddc4fe54b8e76cd239e023d8,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a269f409ddc4fe54b8e76cd239e023d8, type: 2}
   m_IsPrefabAsset: 0
