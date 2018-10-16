@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4112733616154362}
   - component: {fileID: 212063360953238712}
+  - component: {fileID: 61608293250773390}
   m_Layer: 0
   m_Name: WeaponLocker
   m_TagString: Untagged
@@ -34,12 +35,37 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1387476353250980}
   m_LocalRotation: {x: -0.551715, y: -0.0062367097, z: 0.0021896313, w: 0.83400655}
-  m_LocalPosition: {x: -0.783, y: -4.516, z: -1.922}
+  m_LocalPosition: {x: -2.088, y: -2.224, z: -2.181}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -66.961006, y: -1.8770001, z: 1.542}
+--- !u!61 &61608293250773390
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1387476353250980}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.41, y: 0.35}
+    newSize: {x: 0.41, y: 0.35}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.41, y: 0.35}
+  m_EdgeRadius: 0
 --- !u!212 &212063360953238712
 SpriteRenderer:
   m_ObjectHideFlags: 1

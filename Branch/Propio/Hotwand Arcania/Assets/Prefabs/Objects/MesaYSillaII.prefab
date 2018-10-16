@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4654369678498938}
   - component: {fileID: 212253183159472282}
+  - component: {fileID: 61281930650060398}
   m_Layer: 0
   m_Name: MesaYSillaII
   m_TagString: Untagged
@@ -34,12 +35,37 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1243114574738310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.387, y: -4.445, z: 0}
+  m_LocalPosition: {x: -2.155, y: -0.558, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61281930650060398
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243114574738310}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.005}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.23, y: 0.2}
+    newSize: {x: 0.23, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.22, y: 0.1}
+  m_EdgeRadius: 0
 --- !u!212 &212253183159472282
 SpriteRenderer:
   m_ObjectHideFlags: 1
