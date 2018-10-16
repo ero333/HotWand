@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour {
-
-    public static bool RToRess = false;
-
+    
     float originalWidth = 1280.0f; //turn these to floats to fix placement issue
 	float originalHeight = 720.0f;
 	Vector3 scale;
 	public GUIStyle text;
 	public Texture2D bg;
+    public GameObject RestartButton;
 
 
 	public Animator anim;
@@ -75,11 +74,16 @@ public class Health : MonoBehaviour {
 
 
 		if (dead == true) {
-
+            RestartButton.gameObject.SetActive(true);
 			if (Input.GetKeyDown(KeyCode.R)) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
 			}
 		}
+
+        if (dead == false)
+        {
+            RestartButton.gameObject.SetActive(false);
+        }
 
 	}
 	public void TakeDamage(int damage)
