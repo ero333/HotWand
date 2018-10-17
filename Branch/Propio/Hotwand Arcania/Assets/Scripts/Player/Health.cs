@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour {
-
-	float originalWidth = 1280.0f; //turn these to floats to fix placement issue
+    
+    float originalWidth = 1280.0f; //turn these to floats to fix placement issue
 	float originalHeight = 720.0f;
 	Vector3 scale;
 	public GUIStyle text;
 	public Texture2D bg;
+    public GameObject RestartButton;
 
 
 	public Animator anim;
@@ -20,9 +21,10 @@ public class Health : MonoBehaviour {
 	public Equipment equipment;
 	public PlayerInteract interact;
 
-		
-	//Getting Child's Sprite
-	private Transform child_transform;
+
+
+    //Getting Child's Sprite
+    private Transform child_transform;
 	private GameObject child_object;
 	private SpriteRenderer child_sprite;
 	public void Start()
@@ -72,10 +74,16 @@ public class Health : MonoBehaviour {
 
 
 		if (dead == true) {
-			if (Input.anyKey) {
+            RestartButton.gameObject.SetActive(true);
+			if (Input.GetKeyDown(KeyCode.R)) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
 			}
 		}
+
+        if (dead == false)
+        {
+            RestartButton.gameObject.SetActive(false);
+        }
 
 	}
 	public void TakeDamage(int damage)

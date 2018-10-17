@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4797609939301544}
   - component: {fileID: 212220741812920218}
+  - component: {fileID: 58348921496649410}
   m_Layer: 0
   m_Name: Bolsa
   m_TagString: Untagged
@@ -34,12 +35,27 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1660770296390314}
   m_LocalRotation: {x: -0.42282876, y: -0, z: -0, w: 0.90620965}
-  m_LocalPosition: {x: 1.048, y: -4.529, z: 0}
-  m_LocalScale: {x: 0.59586, y: 0.59586, z: 0.59586}
+  m_LocalPosition: {x: 0.6701025, y: -3.0962763, z: -0.19995117}
+  m_LocalScale: {x: 0.59586, y: 0.59586006, z: 0.59586006}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -50.027004, y: 0, z: 0}
+--- !u!58 &58348921496649410
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1660770296390314}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00000023841858}
+  serializedVersion: 2
+  m_Radius: 0.07
 --- !u!212 &212220741812920218
 SpriteRenderer:
   m_ObjectHideFlags: 1
