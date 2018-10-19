@@ -25,7 +25,7 @@ public class MeleeAttack_Beast : MonoBehaviour {
 
 		//Check the distance between enemy and player to see if the player is close enough to attack
 		float distanceToPlayer = Vector3.Distance(transform.position, target.position);
-		if (distanceToPlayer < attackRange){
+		//if (distanceToPlayer < attackRange){
 			//Check to see if enough time has passed since we last attacked
 			if (Time.time > lastAttackTime + attackDelay){
 					animator.SetTrigger("Punch");
@@ -35,6 +35,6 @@ public class MeleeAttack_Beast : MonoBehaviour {
 				//Record the time we attacked
 				lastAttackTime = Time.time;
 			}
-		}
+		//}
 	}
 

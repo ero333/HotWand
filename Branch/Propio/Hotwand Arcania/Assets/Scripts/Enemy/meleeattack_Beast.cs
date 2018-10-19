@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Pathfinding;
 public class meleeattack_Beast : StateMachineBehaviour {
 
 	GameObject player;
@@ -13,6 +13,7 @@ public class meleeattack_Beast : StateMachineBehaviour {
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+		animator.GetComponent<AIPath>().enabled = false;
 		animator.GetComponent<MeleeAttack_Beast>().enabled = true;
 	}
 
@@ -24,5 +25,6 @@ public class meleeattack_Beast : StateMachineBehaviour {
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.GetComponent<MeleeAttack_Beast>().enabled = false;
+		animator.GetComponent<AIPath>().enabled = true;
 	}
 }
