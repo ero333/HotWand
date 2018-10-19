@@ -53,4 +53,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 8bcfbb049856b4692b7f0276ff219a73
+  - enabled: 1
+    path: Assets/Scenes/CutIntro.unity
+    guid: 0b47aff9e55c74c0b891bb5a14d57a5e
+  - enabled: 1
+    path: Assets/Scenes/CutPostTutorial.unity
+    guid: 9b383fb35b7d54f5cb3da53b183e66c8
+  - enabled: 1
+    path: Assets/Scenes/CutPreLevel1.unity
+    guid: a32167ab33ef047e7a2c40e15ed0bad1
+  - enabled: 1
+    path: Assets/Scenes/FinalCut.unity
+    guid: 70223383db2a04c899829cce8b5e507b
   m_configObjects: {}
