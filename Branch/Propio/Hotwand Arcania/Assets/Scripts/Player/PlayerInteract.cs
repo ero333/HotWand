@@ -69,15 +69,14 @@ public class PlayerInteract : MonoBehaviour {
 			}
 
 			//Attack
-			if (Time.time > lastAttackTime + attackDelay) 
+			if (Input.GetMouseButtonDown(0))
 			{
-				if (Input.GetMouseButtonDown(0))
-				{
+				if (Time.time > lastAttackTime + attackDelay) 
+				{	
 					equipment.Attack();
 					lastAttackTime = Time.time;
 				}
 			}
-
 		}
 	}
 

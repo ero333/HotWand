@@ -4,15 +4,12 @@ using UnityEngine;
 using Pathfinding;
 using UnityEngine.UI;
 
-public class EnemyHealth : MonoBehaviour {
+public class EnemyHealth_Dragon : MonoBehaviour {
 
 	public int health;
 	public bool dead = false;
 	public Animator animator;
 	private SpriteRenderer sprite;
-	
-	public WeaponPickup weaponPickup;
-
 	private GameObject main;
 
 	//Getting Child's Sprite
@@ -22,17 +19,13 @@ public class EnemyHealth : MonoBehaviour {
 	private GameObject portal;
 	public void Start()
 	{
-		weaponPickup = gameObject.GetComponent<WeaponPickup>();
 		dead = false;
 		sprite = GetComponent<SpriteRenderer>();
 		child_transform = gameObject.transform.GetChild(0);
 		child_object = child_transform.gameObject;
 		child_sprite = child_object.GetComponent<SpriteRenderer>();
-
 		portal = GameObject.FindGameObjectWithTag("Portal");
-
 		main = GameObject.FindGameObjectWithTag("Main");
-
 	}
 
 
@@ -46,15 +39,7 @@ public class EnemyHealth : MonoBehaviour {
 			if (child_sprite) child_sprite.sortingLayerName = "Dead";
 			
 			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
-			if (main != null) main.GetComponent<Score>().score += 1;
-
-			if (GetComponent<WeaponPickup>().weaponEquipped != null)
-			{
-				weaponPickup.weaponEquipped.transform.position = transform.position;
-				weaponPickup.weaponEquipped.SetActive(true);
-				weaponPickup.weaponEquipped = null;
-				animator.SetBool("has weapon", false);
-			}	
+			if (main != null) main.GetComponent<Score>().score += 1000;
 		}
 		else
 		if (health >= 1)
@@ -62,14 +47,6 @@ public class EnemyHealth : MonoBehaviour {
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
 			Debug.Log("Got Knocked.");
 			transform.Translate(new Vector3(0,0,0));
-
-			if (GetComponent<WeaponPickup>().weaponEquipped != null)
-			{
-				weaponPickup.weaponEquipped.transform.position = transform.position;
-				weaponPickup.weaponEquipped.SetActive(true);
-				weaponPickup.weaponEquipped = null;
-				animator.SetBool("has weapon", false);
-			}
 		}
 		
 		Debug.Log("Got Hit.");

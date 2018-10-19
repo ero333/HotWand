@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Pathfinding;
 public class RotateToTarget : MonoBehaviour {
 
 	public float speed = 5f;
