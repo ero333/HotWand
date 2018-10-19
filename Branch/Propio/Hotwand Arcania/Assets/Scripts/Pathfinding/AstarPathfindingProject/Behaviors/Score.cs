@@ -8,18 +8,18 @@ public class Score : MonoBehaviour {
 
 	public int score;
 	public Text scoreText;
+	public int ammo;
+	public Text ammoText;
 
 
 	// Use this for initialization
 	void Start () {
-		scoreText.text = "Score: " + score;
+		scoreText.text = "Score: " + score + "Ammo: " + ammo;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-		
 		//puntaje += puntaje;
-		scoreText.text = "Score: " + score.ToString(); 
+		scoreText.text = "Score: " + score.ToString() + "  " + "Ammo: " + ammo.ToString();
 	}
 }

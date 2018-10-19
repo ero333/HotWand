@@ -32,7 +32,11 @@ public GameObject equippedWeapon;
 	public int punchDamage;
 	public int swordDamage;
 	public int wandProjectileDamage;
+	private GameObject main;
 
+	public void Start(){
+		main = GameObject.FindGameObjectWithTag("Main");
+	}
 	public void EquipWeapon(GameObject item)
 	{
 		//Are we holding a weapon?
@@ -74,6 +78,7 @@ public GameObject equippedWeapon;
 				animator.SetBool("Axe Stance", false);	
 				animator.SetBool("Wand Stance", true);	
 				animator.SetBool("Crossbow Stance", false);
+				if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 			break;
 
 			case "Uziwand":
@@ -81,6 +86,7 @@ public GameObject equippedWeapon;
 				animator.SetBool("Axe Stance", false);	
 				animator.SetBool("Wand Stance", true);	
 				animator.SetBool("Crossbow Stance", false);
+				if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 			break;
 
 			case "Ice Wand":
@@ -88,6 +94,7 @@ public GameObject equippedWeapon;
 				animator.SetBool("Axe Stance", false);	
 				animator.SetBool("Wand Stance", true);	
 				animator.SetBool("Crossbow Stance", false);
+				if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 			break;
 
 			case "Crossbow":
@@ -95,6 +102,7 @@ public GameObject equippedWeapon;
 				animator.SetBool("Axe Stance", false);		
 				animator.SetBool("Wand Stance", false);	
 				animator.SetBool("Crossbow Stance", true);
+				if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 			break;
 
 			default:
@@ -207,7 +215,7 @@ public GameObject equippedWeapon;
 				case "Wand":
 					if (equippedWeapon.GetComponent<Weapon>().weaponAmmo > 0) 
 					{
-							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
+							if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
 							Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 					}
 				break;
@@ -217,6 +225,7 @@ public GameObject equippedWeapon;
 					{
 							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
 							Instantiate(uziwandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+							if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 					}
 				break;
 
@@ -225,6 +234,7 @@ public GameObject equippedWeapon;
 					{
 							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
 							Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+							if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 					}
 				break;
 
@@ -233,6 +243,7 @@ public GameObject equippedWeapon;
 					{
 							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
 							Instantiate(crossbowProjectile, rangedAnchorPoint.transform.position, transform.rotation);
+							if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 					}
 				break;
 
