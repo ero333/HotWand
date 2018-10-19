@@ -47,7 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lvl8.unity
     guid: 6ba4b6d065450d44fb4219ac271012d0
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/LvlFinal.unity
-    guid: 47935ac1240354b7aac270d0c0aaeacb
+    path: Assets/Scenes/Creditos.unity
+    guid: 8bcfbb049856b4692b7f0276ff219a73
   m_configObjects: {}
