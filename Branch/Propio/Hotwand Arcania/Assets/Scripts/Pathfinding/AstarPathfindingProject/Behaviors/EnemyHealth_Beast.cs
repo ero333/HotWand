@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth_Beast : MonoBehaviour {
 
@@ -17,7 +18,9 @@ public class EnemyHealth_Beast : MonoBehaviour {
 	private GameObject child_object;
 	private SpriteRenderer child_sprite;
 	private GameObject portal;
-	public void Start()
+    public float TiempoDead;
+
+    public void Start()
 	{
 		dead = false;
 		sprite = GetComponent<SpriteRenderer>();
@@ -26,13 +29,26 @@ public class EnemyHealth_Beast : MonoBehaviour {
 		child_sprite = child_object.GetComponent<SpriteRenderer>();
 		portal = GameObject.FindGameObjectWithTag("Portal");
 		main = GameObject.FindGameObjectWithTag("Main");
+        TiempoDead = 0;
 	}
 
+    public void Update()
+    {
+         if (dead)
+        {
+            print(Time.time);
+            if (Time.time - TiempoDead > 2)
+            {
+                SceneManager.LoadScene("FinalCut");
+            }
+        }
+    }
 
-	public void TakeDamage(int damage) {
+    public void TakeDamage(int damage) {
 		health -= damage;
 		if (health <= 0)
 		{
+            print("muerto");
 			dead = true;
 			animator.SetBool("Dead", true);
             if (sprite) sprite.sortingLayerName = "Dead";
@@ -40,7 +56,10 @@ public class EnemyHealth_Beast : MonoBehaviour {
 			
 			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
 			if (main != null) main.GetComponent<Score>().score += 1000;
-		}
+            TiempoDead = Time.time;
+
+
+        }
 		else
 		if (health >= 1)
 		{
