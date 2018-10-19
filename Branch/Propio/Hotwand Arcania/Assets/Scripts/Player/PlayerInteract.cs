@@ -88,6 +88,11 @@ public class PlayerInteract : MonoBehaviour {
 			currentWeaponOnFloor = other.gameObject;
 			currentWeaponScript = currentWeaponOnFloor.GetComponent<Weapon>();
 		}
+		else
+		if(other.CompareTag("Enemy"))
+		{
+			GetComponent<Health>().TakeDamage(1);
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other)
@@ -101,6 +106,8 @@ public class PlayerInteract : MonoBehaviour {
 			}
 		}
 	}
+
+	
 
 }
 

@@ -41,7 +41,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -73,7 +73,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +95,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,10 +108,10 @@ TextureImporter:
       name: cancerbero_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 96
-        width: 97
-        height: 58
+        x: 0
+        y: 19
+        width: 58
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,7 +119,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72fb5a63d709d458ea35608eaa339be8
+      spriteID: c3031c8d88c8f794aab86d5a83d21a38
       vertices: []
       indices: 
       edges: []
@@ -128,10 +128,10 @@ TextureImporter:
       name: cancerbero_1
       rect:
         serializedVersion: 2
-        x: 112
-        y: 96
-        width: 103
-        height: 58
+        x: 76
+        y: 13
+        width: 58
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,7 +139,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b8f51545ecff4972957b6dd54e4ff59
+      spriteID: 408532a3b07376045973c5717a0234b3
       vertices: []
       indices: 
       edges: []
@@ -148,10 +148,10 @@ TextureImporter:
       name: cancerbero_2
       rect:
         serializedVersion: 2
-        x: 220
-        y: 96
-        width: 104
-        height: 58
+        x: 153
+        y: 12
+        width: 58
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,7 +159,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77b7f0ce1fff8457ba9488cd2dcb8df1
+      spriteID: 1fcf0b108bf486948b09a0e14618500c
       vertices: []
       indices: 
       edges: []
@@ -168,10 +168,10 @@ TextureImporter:
       name: cancerbero_3
       rect:
         serializedVersion: 2
-        x: 335
-        y: 96
-        width: 98
-        height: 58
+        x: 226
+        y: 18
+        width: 58
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,7 +179,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0942ec71bf32496bb2c9738cf03e953
+      spriteID: d11936a0a16bce94192125a35bd28a9d
       vertices: []
       indices: 
       edges: []
@@ -188,10 +188,10 @@ TextureImporter:
       name: cancerbero_4
       rect:
         serializedVersion: 2
-        x: 446
-        y: 96
-        width: 98
-        height: 58
+        x: 298
+        y: 18
+        width: 58
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,7 +199,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e3875b4b01c5431e8bc2ca0ed76f4d8
+      spriteID: ba3baa0853accab45a25476f91e02509
       vertices: []
       indices: 
       edges: []
@@ -208,10 +208,10 @@ TextureImporter:
       name: cancerbero_5
       rect:
         serializedVersion: 2
-        x: 556
-        y: 96
-        width: 99
-        height: 58
+        x: 369
+        y: 17
+        width: 58
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,7 +219,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64187101a23734d07ae43068cef26f3f
+      spriteID: 3c7bdbd9e7202374b8433c463b5828b2
       vertices: []
       indices: 
       edges: []
@@ -228,10 +228,10 @@ TextureImporter:
       name: cancerbero_6
       rect:
         serializedVersion: 2
-        x: 670
-        y: 96
-        width: 104
-        height: 58
+        x: 442
+        y: 12
+        width: 58
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,7 +239,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da2ea44bb87de41bfb05c1893dc33e47
+      spriteID: 6ba9922939bd07e478a48db51adf529d
       vertices: []
       indices: 
       edges: []
@@ -248,10 +248,10 @@ TextureImporter:
       name: cancerbero_7
       rect:
         serializedVersion: 2
-        x: 782
-        y: 96
-        width: 103
-        height: 58
+        x: 519
+        y: 13
+        width: 58
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,7 +259,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddc0f3fe9fcf04e15b246ef4223b7eb2
+      spriteID: 75933530b2095fd45a0bafa3ad8458c2
       vertices: []
       indices: 
       edges: []
@@ -268,10 +268,10 @@ TextureImporter:
       name: cancerbero_8
       rect:
         serializedVersion: 2
-        x: 8
-        y: 8
-        width: 97
-        height: 74
+        x: 597
+        y: 19
+        width: 74
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,7 +279,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1a1a16662470410a85a82cc6afa5182
+      spriteID: 30247d9160edfed4d9a381ff71ba0ee8
       vertices: []
       indices: 
       edges: []
@@ -288,10 +288,10 @@ TextureImporter:
       name: cancerbero_9
       rect:
         serializedVersion: 2
-        x: 124
-        y: 9
-        width: 116
-        height: 70
+        x: 685
+        y: 12
+        width: 74
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,7 +299,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84b5c0eb3de045e3a1536d3f3a59f9f
+      spriteID: ec58ee0b1fd751d4089ba9c4517c00c5
       vertices: []
       indices: 
       edges: []

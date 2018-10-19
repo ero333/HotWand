@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class MeleeAttack_Dragon : MonoBehaviour {
+public class MeleeAttack_Beast : MonoBehaviour {
 	private Transform target;
 	public float attackRange;
 	private float lastAttackTime;

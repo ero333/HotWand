@@ -100,18 +100,18 @@ TextureImporter:
       name: Mage_Attack_Crossbow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 38
-        height: 23
+        x: 2
+        y: 41
+        width: 23
+        height: 36
       alignment: 9
-      pivot: {x: 0.26781797, y: 0.50774956}
+      pivot: {x: 0.507991, y: 0.2804699}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e040934f5aa9de64bb9baa2159110912
+      spriteID: d78405c37065bdc4c961386610f37bcf
       vertices: []
       indices: 
       edges: []
@@ -120,18 +120,18 @@ TextureImporter:
       name: Mage_Attack_Crossbow_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 3
-        width: 36
-        height: 23
+        x: 2
+        y: 0
+        width: 23
+        height: 38
       alignment: 9
-      pivot: {x: 0.27472338, y: 0.5038747}
+      pivot: {x: 0.52796847, y: 0.26542228}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb469c5c96fdb564da82f13d92cedf4d
+      spriteID: 4160b4f9fbf383745893cfc5e5ef5f32
       vertices: []
       indices: 
       edges: []

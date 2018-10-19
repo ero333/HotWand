@@ -4,7 +4,7 @@ using UnityEngine;
 using Pathfinding;
 using UnityEngine.UI;
 
-public class EnemyHealth_Dragon : MonoBehaviour {
+public class EnemyHealth_Beast : MonoBehaviour {
 
 	public int health;
 	public bool dead = false;

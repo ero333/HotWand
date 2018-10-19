@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class patrol_Dragon : StateMachineBehaviour {
+public class patrol_Beast : StateMachineBehaviour {
 	GameObject player;
 	Transform target;
 

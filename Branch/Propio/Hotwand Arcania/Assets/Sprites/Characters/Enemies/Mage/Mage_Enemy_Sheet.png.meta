@@ -123,17 +123,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 98
-        width: 18
-        height: 26
+        y: 139
+        width: 26
+        height: 18
       alignment: 9
-      pivot: {x: 0.6159979, y: 0.4853988}
+      pivot: {x: 0.53692603, y: 0.606675}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31d4f518366c34b4387c22def7eba15a
+      spriteID: a3bed53e0d807a5449aeeeeae0a74f22
       vertices: []
       indices: 
       edges: []
@@ -142,18 +142,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 98
-        width: 18
-        height: 26
+        x: 33
+        y: 139
+        width: 26
+        height: 18
       alignment: 9
-      pivot: {x: 0.6054524, y: 0.50730044}
+      pivot: {x: 0.4852298, y: 0.6280102}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9eb36e246879c048936ef026f939c43
+      spriteID: b228bf82ed9d77c4d88b6590102a2fde
       vertices: []
       indices: 
       edges: []
@@ -162,18 +162,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_2
       rect:
         serializedVersion: 2
-        x: 53
-        y: 98
-        width: 20
+        x: 65
+        y: 137
+        width: 27
         height: 26
-      alignment: 9
-      pivot: {x: 0.55694425, y: 0.4707976}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1de789f5a436294697abc6b24f83b42
+      spriteID: c2c0d9f271f5659479de8f8f892d2b40
       vertices: []
       indices: 
       edges: []
@@ -182,18 +182,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_3
       rect:
         serializedVersion: 2
-        x: 82
-        y: 98
-        width: 22
+        x: 97
+        y: 137
+        width: 27
         height: 26
-      alignment: 9
-      pivot: {x: 0.50862783, y: 0.50730044}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdc24482ffd019a4f8004bb10ea0d616
+      spriteID: 31d3fd5739cf20e4a94da150a77e1afb
       vertices: []
       indices: 
       edges: []
@@ -202,18 +202,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_4
       rect:
         serializedVersion: 2
-        x: 112
-        y: 98
-        width: 20
-        height: 26
+        x: 1
+        y: 112
+        width: 26
+        height: 20
       alignment: 9
-      pivot: {x: 0.5664345, y: 0.47809836}
+      pivot: {x: 0.5295409, y: 0.5480038}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706cc10f686ad9b48ac65bf6558f60ea
+      spriteID: 1e8f7acd7f97fd346b423a9acaebee39
       vertices: []
       indices: 
       edges: []
@@ -222,18 +222,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_5
       rect:
         serializedVersion: 2
-        x: 139
-        y: 98
-        width: 18
-        height: 26
+        x: 33
+        y: 112
+        width: 26
+        height: 20
       alignment: 9
-      pivot: {x: 0.6265428, y: 0.4853988}
+      pivot: {x: 0.47784454, y: 0.5864067}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7a255ef43d5c9e42a110cbd79311674
+      spriteID: 69a36d2696c8a66449c1db4d3641d14a
       vertices: []
       indices: 
       edges: []
@@ -242,18 +242,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_6
       rect:
         serializedVersion: 2
-        x: 1
-        y: 66
-        width: 18
-        height: 26
-      alignment: 9
-      pivot: {x: 0.6159979, y: 0.5146012}
+        x: 65
+        y: 108
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08373d0601f10044094d970b9d434b1e
+      spriteID: 88f0a9ca435fa3a4485eab4f5c8521b6
       vertices: []
       indices: 
       edges: []
@@ -262,18 +262,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_7
       rect:
         serializedVersion: 2
-        x: 25
-        y: 66
-        width: 18
-        height: 26
-      alignment: 9
-      pivot: {x: 0.61599773, y: 0.5292021}
+        x: 97
+        y: 108
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b53b21136a586648b2caba1f3bca1dd
+      spriteID: 48cb16165c9123e48a5c92e98e5b6d02
       vertices: []
       indices: 
       edges: []
@@ -282,18 +282,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_8
       rect:
         serializedVersion: 2
-        x: 53
-        y: 66
-        width: 20
-        height: 26
-      alignment: 9
-      pivot: {x: 0.5759258, y: 0.5146012}
+        x: 1
+        y: 82
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce220156ed756da41ad6b509fa6ea8c1
+      spriteID: af4414fb3e5a3f849b759d45566725be
       vertices: []
       indices: 
       edges: []
@@ -302,18 +302,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_9
       rect:
         serializedVersion: 2
-        x: 82
-        y: 66
-        width: 22
-        height: 26
+        x: 33
+        y: 82
+        width: 26
+        height: 22
       alignment: 9
-      pivot: {x: 0.48274404, y: 0.47809836}
+      pivot: {x: 0.52215564, y: 0.51745605}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5748bf4f5573cfb45947a7707b58aecd
+      spriteID: da050b80f575a98479b887bc32d87e65
       vertices: []
       indices: 
       edges: []
@@ -322,18 +322,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_10
       rect:
         serializedVersion: 2
-        x: 112
-        y: 66
-        width: 20
-        height: 26
-      alignment: 9
-      pivot: {x: 0.5664345, y: 0.5292021}
+        x: 65
+        y: 78
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bbdcfdde309dce418dfd8a1778f6367
+      spriteID: 03be08c8fa04a06489da2655eb523c1e
       vertices: []
       indices: 
       edges: []
@@ -342,18 +342,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_11
       rect:
         serializedVersion: 2
-        x: 139
-        y: 66
-        width: 18
-        height: 26
-      alignment: 9
-      pivot: {x: 0.6159973, y: 0.50730044}
+        x: 98
+        y: 78
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 755c81d6377c6f944ab21863c91474c0
+      spriteID: 85ee4befcbcda4748b671f93b592f95d
       vertices: []
       indices: 
       edges: []
@@ -363,17 +363,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 33
-        width: 22
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 53
+        width: 26
+        height: 20
+      alignment: 9
+      pivot: {x: 0.53692603, y: 0.5576042}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7553158f87e9f484ba884b4eb4e7c1f2
+      spriteID: 4f99b24e5ea59b74390eb732571003e6
       vertices: []
       indices: 
       edges: []
@@ -382,18 +382,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_13
       rect:
         serializedVersion: 2
-        x: 24
-        y: 33
-        width: 25
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 33
+        y: 53
+        width: 26
+        height: 20
+      alignment: 9
+      pivot: {x: 0.47784454, y: 0.5576042}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf5eae4c99e3af41b3c55c4e3b4ada2
+      spriteID: 9ec092b1783551f448645be67060d739
       vertices: []
       indices: 
       edges: []
@@ -402,10 +402,10 @@ TextureImporter:
       name: Mage_Enemy_Sheet_14
       rect:
         serializedVersion: 2
-        x: 49
-        y: 33
-        width: 29
-        height: 27
+        x: 65
+        y: 49
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,7 +413,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 463c6be50f0e611479aca8c924b9f15c
+      spriteID: ba4c75c157ae2f644ad6133b17bd2fa2
       vertices: []
       indices: 
       edges: []
@@ -422,10 +422,10 @@ TextureImporter:
       name: Mage_Enemy_Sheet_15
       rect:
         serializedVersion: 2
-        x: 78
-        y: 34
-        width: 29
-        height: 26
+        x: 97
+        y: 49
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,7 +433,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b36bec5f8ab6c74986eb0f30465a68e
+      spriteID: 3249fc093956d5642911d64d890b93f1
       vertices: []
       indices: 
       edges: []
@@ -442,18 +442,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_16
       rect:
         serializedVersion: 2
-        x: 108
-        y: 33
-        width: 29
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1
+        y: 25
+        width: 26
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5443112, y: 0.6280102}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a4bce0c2a7954449b6d2a82458f1392
+      spriteID: aa4acfec3cf9ff34b93e97dfd50d32aa
       vertices: []
       indices: 
       edges: []
@@ -462,18 +462,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_17
       rect:
         serializedVersion: 2
-        x: 137
-        y: 33
+        x: 33
+        y: 25
         width: 26
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 18
+      alignment: 9
+      pivot: {x: 0.4852298, y: 0.60667527}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49f94a8d7d9bba141b742a061b45b2ef
+      spriteID: 8d43de51bade88249b29e5740b0a88c5
       vertices: []
       indices: 
       edges: []
@@ -482,10 +482,10 @@ TextureImporter:
       name: Mage_Enemy_Sheet_18
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 22
-        height: 27
+        x: 65
+        y: 24
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -493,7 +493,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c6e2f120aa4ce4f84c5b471493404b
+      spriteID: 00306bdcd21df5c42912f2d4abb6354e
       vertices: []
       indices: 
       edges: []
@@ -502,10 +502,10 @@ TextureImporter:
       name: Mage_Enemy_Sheet_19
       rect:
         serializedVersion: 2
-        x: 24
-        y: 1
-        width: 25
-        height: 27
+        x: 97
+        y: 24
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -513,7 +513,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23b596200fcee7943a996bbee1227bb7
+      spriteID: 792ffc9a530b59e499cf754d0af603d4
       vertices: []
       indices: 
       edges: []
@@ -522,18 +522,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_20
       rect:
         serializedVersion: 2
-        x: 49
+        x: 1
         y: 1
-        width: 29
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 26
+        height: 18
+      alignment: 9
+      pivot: {x: 0.52215564, y: 0.6173427}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc7b1e147184e13449f5be6fc4e4e072
+      spriteID: 8086df1664845b04d9bc1b7a1757e402
       vertices: []
       indices: 
       edges: []
@@ -542,18 +542,18 @@ TextureImporter:
       name: Mage_Enemy_Sheet_21
       rect:
         serializedVersion: 2
-        x: 78
+        x: 33
         y: 1
-        width: 29
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 26
+        height: 18
+      alignment: 9
+      pivot: {x: 0.4926149, y: 0.58534026}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21602349acdb21d41a92dd444ec850b5
+      spriteID: a431b027d23b1b54a88ea84c7ee18924
       vertices: []
       indices: 
       edges: []
@@ -562,10 +562,10 @@ TextureImporter:
       name: Mage_Enemy_Sheet_22
       rect:
         serializedVersion: 2
-        x: 108
+        x: 65
         y: 1
-        width: 29
-        height: 27
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,7 +573,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 711b33992980b99428a08c4ab3cb9d5b
+      spriteID: 0352007a9e997554bb0aa4d8aaf0adda
       vertices: []
       indices: 
       edges: []
@@ -582,10 +582,10 @@ TextureImporter:
       name: Mage_Enemy_Sheet_23
       rect:
         serializedVersion: 2
-        x: 137
+        x: 97
         y: 1
-        width: 26
-        height: 27
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,7 +593,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcee1a9f07fa0a24690e90e8accf0041
+      spriteID: d03993dec93359f409abe310f10a0e42
       vertices: []
       indices: 
       edges: []
