@@ -404,7 +404,8 @@ Prefab:
       propertyPath: health
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114995260082382956, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &161246204
@@ -2298,7 +2299,8 @@ Prefab:
       propertyPath: health
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114995260082382956, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1351653990 stripped

@@ -80,7 +80,13 @@ public class weaponpickup : StateMachineBehaviour {
 					animator.SetBool("Ranged Mode", true);
 					animator.SetBool("Melee Mode", false);
 				break;
-			}
+
+                case "Uziwand":
+                    animator.SetBool("Uziwand Equipped", true);
+                    animator.SetBool("Ranged Mode", true);
+                    animator.SetBool("Melee Mode", false);
+                break;
+            }
 		}
 		else
 		{
