@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHealth_Beast : MonoBehaviour {
 
+    public bool boss;
 	public int health;
 	public bool dead = false;
 	public Animator animator;
@@ -34,7 +35,7 @@ public class EnemyHealth_Beast : MonoBehaviour {
 
     public void Update()
     {
-         if (dead)
+         if (dead && boss)
         {
             print(Time.time);
             if (Time.time - TiempoDead > 2)
