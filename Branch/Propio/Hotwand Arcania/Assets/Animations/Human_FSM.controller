@@ -1562,7 +1562,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0
+  m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
@@ -2245,7 +2245,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Sword_Attacking
+  m_Name: Human_Sword_Attacking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2261,7 +2261,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3b443366c1a796b46917354e7813723d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4e28e4a20760a2e46be210bafd8e0db0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2335,7 +2335,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Attack_Axe
+  m_Name: Human_Attack_Axe
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2353,7 +2353,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cf476e9ef61e20e4ca7fa2aa9a9926c5, type: 2}
+  m_Motion: {fileID: 7400000, guid: 220a5f146d2550c4d9bb5909418020f2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2365,7 +2365,7 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Idle
+  m_Name: Human_Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2386,7 +2386,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 71827ea764d0d2b47b78228b33b1ef57, type: 2}
+  m_Motion: {fileID: 7400000, guid: d35a914deb982f3459e13ceb64ce1447, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2428,7 +2428,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Axe_Attacking
+  m_Name: Human_Axe_Attacking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2444,7 +2444,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 68c27aaa30fcfda49a7747135500dfc8, type: 2}
+  m_Motion: {fileID: 7400000, guid: 490c1fb79e36b6546838e09c8d34fd48, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2482,7 +2482,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Knocked
+  m_Name: Human_Knocked
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2502,7 +2502,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8f5b5fefa3a8a8542b8dc07d8e80d21f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 55291f704688e5442949f4e18a36416a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2514,7 +2514,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Attack_Wand
+  m_Name: Human_Attack_Wand
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2531,7 +2531,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 617cc95f902a8ca4b934788169dad9f4, type: 2}
+  m_Motion: {fileID: 7400000, guid: e296567a9abc8864a8188091d8df819c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2543,7 +2543,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Attack_Crossbow
+  m_Name: Human_Attack_Crossbow
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2560,7 +2560,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: fc6a333fd82efaf43ad31e047e98d5c2, type: 2}
+  m_Motion: {fileID: 7400000, guid: a1e49637d3eacfa4d852ca61291dc983, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2572,7 +2572,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Dead
+  m_Name: Human_Dead
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2585,7 +2585,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8d55ca3e68f48dd47a0b0ff1861ff507, type: 2}
+  m_Motion: {fileID: 7400000, guid: 62a3407b0b0caab478a833fadb968732, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2658,7 +2658,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Walking
+  m_Name: Human_Walking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2679,7 +2679,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2fc1d22ef07f1534fa3fd63e6b04d24e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 311feed481680d9499209804839585ef, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2722,7 +2722,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Sword
+  m_Name: Human_Sword
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2740,7 +2740,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 40958b3d8d1989747963767b896141ec, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6eaf8c4470d30274d9cda616dd7870bb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2752,7 +2752,7 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Mage_Punch
+  m_Name: Human_Punch
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2769,7 +2769,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7ba1c005b3e0d0e428784ec1aac5c172, type: 2}
+  m_Motion: {fileID: 7400000, guid: df20764d8976c034ebf135169ea940e2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2815,7 +2815,7 @@ AnimatorStateMachine:
     m_Position: {x: 588, y: 108, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102579415258810622}
-    m_Position: {x: 528, y: -192, z: 0}
+    m_Position: {x: 683.40393, y: -147.93655, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -2854,14 +2854,14 @@ AnimatorStateMachine:
     m_Position: {x: 168, y: 324, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102713640192039582}
-    m_Position: {x: 396, y: -204, z: 0}
+    m_Position: {x: 360, y: -108, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 216, y: -12, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102296699634784392}
