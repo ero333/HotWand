@@ -26,7 +26,7 @@ public class LoadOnClick : MonoBehaviour {
     {
         print("SelectLevel");
         print(level);
-        if (level > 2)
+        if (level > 2 && level < 15)
         {
             print("NivelSeleccionado");
             print(level-5);
