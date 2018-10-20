@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212111404710642136}
   - component: {fileID: 114853993024623614}
   - component: {fileID: 114910162432117734}
-  - component: {fileID: 114724001247973460}
+  - component: {fileID: 114581317085924102}
   - component: {fileID: 50228689855554476}
   - component: {fileID: 95689475018918042}
   - component: {fileID: 114697143722862100}
@@ -331,7 +331,7 @@ MonoBehaviour:
   dead: 0
   knocked: 0
   health: 2
-  equipment: {fileID: 114724001247973460}
+  equipment: {fileID: 0}
   interact: {fileID: 114910162432117734}
 --- !u!114 &114470453829296156
 MonoBehaviour:
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 95469902205238458}
---- !u!114 &114697143722862100
+--- !u!114 &114581317085924102
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -353,19 +353,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1003030851967538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a00546f2d443d6447ab8e25756574b81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 100
---- !u!114 &114724001247973460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1003030851967538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5103f225c2331e946b7b4dfece3ad8ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 73655ecf5fbfac04887e352e852d3b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   equippedWeapon: {fileID: 0}
@@ -394,7 +382,19 @@ MonoBehaviour:
   wandAmmo: 50
   punchDamage: 1
   swordDamage: 2
-  wandProjectileDamage: 2
+  wandProjectileDamage: 1
+--- !u!114 &114697143722862100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003030851967538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00546f2d443d6447ab8e25756574b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
 --- !u!114 &114853993024623614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentWeaponOnFloor: {fileID: 0}
   currentWeaponScript: {fileID: 0}
-  equipment: {fileID: 114724001247973460}
+  equipment: {fileID: 114581317085924102}
   animator: {fileID: 95689475018918042}
   swordDelay: 0.1
   axeDelay: 0.8
