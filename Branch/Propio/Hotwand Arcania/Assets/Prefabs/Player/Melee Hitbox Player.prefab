@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4422789467992868}
   - component: {fileID: 58034546722463892}
-  - component: {fileID: 114535397337979986}
+  - component: {fileID: 114155085414151486}
   m_Layer: 12
   m_Name: Melee Hitbox Player
   m_TagString: Untagged
@@ -56,7 +56,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.14
---- !u!114 &114535397337979986
+--- !u!114 &114155085414151486
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,8 +64,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1770066681932538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7b6db5beb9975c44bfeb946590c390b, type: 3}
+  m_Script: {fileID: 11500000, guid: d736dc0345f16ec48945f4e6a84e0266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  deathTimer: 0.4
+  damage: 2
+  deathTimer: 1

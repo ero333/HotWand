@@ -64,27 +64,31 @@ public GameObject equippedWeapon;
 				animator.SetBool("Axe Stance", false);	
 				animator.SetBool("Wand Stance", false);	
 				animator.SetBool("Crossbow Stance", false);
-			break;
+                animator.SetBool("Uziwand Stance", false);
+                break;
 
 			case "Axe":
 				animator.SetBool("Sword Stance", false);	
 				animator.SetBool("Axe Stance", true);	
 				animator.SetBool("Wand Stance", false);	
 				animator.SetBool("Crossbow Stance", false);
-			break;
+                animator.SetBool("Uziwand Stance", false);
+                break;
 
 			case "Wand":
 				animator.SetBool("Sword Stance", false);	
 				animator.SetBool("Axe Stance", false);	
 				animator.SetBool("Wand Stance", true);	
 				animator.SetBool("Crossbow Stance", false);
-				if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
+                animator.SetBool("Uziwand Stance", false);
+                if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 			break;
 
 			case "Uziwand":
-				animator.SetBool("Sword Stance", false);	
+                animator.SetBool("Uziwand Stance", true);
+                animator.SetBool("Sword Stance", false);	
 				animator.SetBool("Axe Stance", false);	
-				animator.SetBool("Wand Stance", true);	
+				animator.SetBool("Wand Stance", false);	
 				animator.SetBool("Crossbow Stance", false);
 				if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 			break;
@@ -94,7 +98,8 @@ public GameObject equippedWeapon;
 				animator.SetBool("Axe Stance", false);	
 				animator.SetBool("Wand Stance", true);	
 				animator.SetBool("Crossbow Stance", false);
-				if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
+                animator.SetBool("Uziwand Stance", false);
+                if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 			break;
 
 			case "Crossbow":
@@ -102,7 +107,8 @@ public GameObject equippedWeapon;
 				animator.SetBool("Axe Stance", false);		
 				animator.SetBool("Wand Stance", false);	
 				animator.SetBool("Crossbow Stance", true);
-				if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
+                animator.SetBool("Uziwand Stance", false);
+                if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;
 			break;
 
 			default:
@@ -110,7 +116,8 @@ public GameObject equippedWeapon;
 				animator.SetBool("Axe Stance", false);
 				animator.SetBool("Wand Stance", false);
 				animator.SetBool("Crossbow Stance", false);
-			break;
+                animator.SetBool("Uziwand Stance", false);
+                break;
 		}
 	}
 
