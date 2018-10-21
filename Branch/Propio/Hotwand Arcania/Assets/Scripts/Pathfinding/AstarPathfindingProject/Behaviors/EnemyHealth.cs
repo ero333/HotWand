@@ -12,7 +12,8 @@ public class EnemyHealth : MonoBehaviour {
 	private SpriteRenderer sprite;
 	
 	public WeaponPickup weaponPickup;
-
+	public GameObject lastWeaponUsed;
+	private GameObject player;
 	private GameObject main;
 
 	//Getting Child's Sprite
@@ -33,6 +34,8 @@ public class EnemyHealth : MonoBehaviour {
 
 		main = GameObject.FindGameObjectWithTag("Main");
 
+		player = GameObject.FindGameObjectWithTag("Player");
+		lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
 	}
 
 
@@ -71,7 +74,23 @@ public class EnemyHealth : MonoBehaviour {
 				animator.SetBool("has weapon", false);
 			}
 		}
-		
+		else
+		if (health == 0)
+		{
+			if (main != null)
+			{
+				if (lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
+				{
+					main.GetComponent<Score>().score += 500;
+				}
+				else
+				{
+					main.GetComponent<Score>().score += 100;
+				}
+			}
+			lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
+		}
+
 		Debug.Log("Got Hit.");
 	}
 }
