@@ -51,12 +51,15 @@ public class EnemyHealth : MonoBehaviour {
 			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
 			if (main != null) main.GetComponent<Score>().score += 1;
 
-			if (GetComponent<WeaponPickup>().weaponEquipped != null)
+			if ((GetComponent<WeaponPickup>()) != null)
 			{
-				weaponPickup.weaponEquipped.transform.position = transform.position;
-				weaponPickup.weaponEquipped.SetActive(true);
-				weaponPickup.weaponEquipped = null;
-				animator.SetBool("has weapon", false);
+				if (GetComponent<WeaponPickup>().weaponEquipped != null)
+				{
+					weaponPickup.weaponEquipped.transform.position = transform.position;
+					weaponPickup.weaponEquipped.SetActive(true);
+					weaponPickup.weaponEquipped = null;
+					animator.SetBool("has weapon", false);
+				}
 			}	
 		}
 		else
