@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: 1
-  health: 12
+  health: 16
   dead: 0
   animator: {fileID: 95659856897252988}
   TiempoDead: 0

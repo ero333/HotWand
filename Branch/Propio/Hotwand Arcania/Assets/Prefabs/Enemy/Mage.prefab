@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 114496156965280622}
   - component: {fileID: 114653996985884588}
   - component: {fileID: 114170952899343450}
-  - component: {fileID: 114597930597993298}
   - component: {fileID: 114077938730257022}
   - component: {fileID: 114466524346552900}
   - component: {fileID: 114274934767132094}
@@ -274,10 +273,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e935b19c0cc9b3941b57c5a8c4c1ada5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 3
   dead: 0
   animator: {fileID: 95778099885741364}
   weaponPickup: {fileID: 0}
+  lastWeaponUsed: {fileID: 0}
 --- !u!114 &114274934767132094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -380,18 +380,6 @@ MonoBehaviour:
   version: 1
   weaponEquipped: {fileID: 0}
   target: {fileID: 0}
---- !u!114 &114597930597993298
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1266497085351078}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5267fc51bfca17d4a945a573832798bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 20
 --- !u!114 &114605577055277446
 MonoBehaviour:
   m_ObjectHideFlags: 1

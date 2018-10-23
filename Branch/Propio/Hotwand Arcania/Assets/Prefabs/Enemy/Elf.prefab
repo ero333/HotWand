@@ -77,7 +77,6 @@ GameObject:
   - component: {fileID: 114419821308725934}
   - component: {fileID: 114813755678542408}
   - component: {fileID: 114981258772921488}
-  - component: {fileID: 114827931700737676}
   - component: {fileID: 114015254025284058}
   - component: {fileID: 114403025852862670}
   - component: {fileID: 114949022142026636}
@@ -415,18 +414,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   delay: 0
---- !u!114 &114827931700737676
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1895218687968890}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5267fc51bfca17d4a945a573832798bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 20
 --- !u!114 &114949022142026636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -455,10 +442,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e935b19c0cc9b3941b57c5a8c4c1ada5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 3
   dead: 0
   animator: {fileID: 95993449130175552}
   weaponPickup: {fileID: 0}
+  lastWeaponUsed: {fileID: 0}
 --- !u!212 &212611151691757146
 SpriteRenderer:
   m_ObjectHideFlags: 1

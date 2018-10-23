@@ -40,7 +40,7 @@ public class EnemyHealth : MonoBehaviour {
 
 
 	public void TakeDamage(int damage) {
-		health -= damage;
+        health -= damage;
 		if (health <= 0)
 		{
 			dead = true;
@@ -73,10 +73,23 @@ public class EnemyHealth : MonoBehaviour {
 					weaponPickup.weaponEquipped = null;
 					animator.SetBool("has weapon", false);
 				}
-			}	
-		}
+			}
+
+            if (main != null)
+            {
+                if (lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
+                {
+                    main.GetComponent<Score>().score += 500;
+                }
+                else
+                {
+                    main.GetComponent<Score>().score += 100;
+                }
+            }
+            lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
+        }
 		else
-		if (health >= 1)
+		if (health == 1)
 		{
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
 			//Debug.Log("Got Knocked.");
@@ -90,6 +103,14 @@ public class EnemyHealth : MonoBehaviour {
 				animator.SetBool("has weapon", false);
 			}
 		}
+<<<<<<< HEAD
+=======
+		else
+		if (health < 0)
+		{
+            health = 0;
+		}
+>>>>>>> 09cda6efb50cfe5c01a79f8f83c8a356f35a7a14
 
 		//Debug.Log("Got Hit.");
 	}
