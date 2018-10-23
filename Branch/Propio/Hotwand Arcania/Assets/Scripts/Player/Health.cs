@@ -75,9 +75,11 @@ public class Health : MonoBehaviour {
 
 		if (dead == true) {
             RestartButton.gameObject.SetActive(true);
-			if (Input.GetKeyDown(KeyCode.R)) {
+            Time.timeScale = 0f;
+            if (Input.GetKeyDown(KeyCode.R)) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
-			}
+                Time.timeScale = 1f;
+            }
 		}
 
         if (dead == false)
