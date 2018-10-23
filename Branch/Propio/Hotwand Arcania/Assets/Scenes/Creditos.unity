@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 1004278569}
   - component: {fileID: 1004278571}
   m_Layer: 0
-  m_Name: CREDITOSFINAL
+  m_Name: VideoPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
