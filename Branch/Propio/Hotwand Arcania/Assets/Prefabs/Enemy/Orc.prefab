@@ -27,7 +27,6 @@ GameObject:
   - component: {fileID: 114788590449063496}
   - component: {fileID: 114608369267345608}
   - component: {fileID: 114738446222720830}
-  - component: {fileID: 114587669408741134}
   - component: {fileID: 114671284597496744}
   - component: {fileID: 114511249316009798}
   - component: {fileID: 114630174247274476}
@@ -313,18 +312,6 @@ MonoBehaviour:
   meleeHitbox: {fileID: 1389483194045350, guid: c003c19f7fd296940ae39a6e7c8ae537,
     type: 2}
   meleeAnchorPoint: {fileID: 1588998763639248}
---- !u!114 &114587669408741134
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1373910370790456}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5267fc51bfca17d4a945a573832798bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 20
 --- !u!114 &114608369267345608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -400,10 +387,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e935b19c0cc9b3941b57c5a8c4c1ada5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 8
   dead: 0
   animator: {fileID: 95554088365648222}
   weaponPickup: {fileID: 0}
+  lastWeaponUsed: {fileID: 0}
 --- !u!114 &114788590449063496
 MonoBehaviour:
   m_ObjectHideFlags: 1

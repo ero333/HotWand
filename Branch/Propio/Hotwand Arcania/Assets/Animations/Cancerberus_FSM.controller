@@ -349,9 +349,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 4
     m_ConditionEvent: distance
     m_EventTreshold: 0.8
-  - m_ConditionMode: 1
-    m_ConditionEvent: Melee Mode
-    m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: Knocked
     m_EventTreshold: 0
