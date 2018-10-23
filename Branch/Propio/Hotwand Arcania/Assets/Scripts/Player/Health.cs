@@ -31,7 +31,7 @@ public class Health : MonoBehaviour {
 	{
 		knocked = false;
 		dead = false;
-		sprite = GetComponent<SpriteRenderer>();
+        sprite = GetComponent<SpriteRenderer>();
 		child_transform = gameObject.transform.GetChild(0);
 		child_object = child_transform.gameObject;
 		//child_sprite = child_object.GetComponent<SpriteRenderer>();
@@ -92,7 +92,8 @@ public class Health : MonoBehaviour {
 			Debug.Log("Dead");
 			anim.SetBool("Dead", true);
 			dead = true;
-		}
+            GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().muertes+=1;
+        }
 		else
 		if (health > 0)
 		{

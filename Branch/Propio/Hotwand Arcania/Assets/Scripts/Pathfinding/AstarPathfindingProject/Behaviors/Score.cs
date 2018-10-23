@@ -10,11 +10,15 @@ public class Score : MonoBehaviour {
 	public Text scoreText;
 	public int ammo;
 	public Text ammoText;
-
+    public int muertes;
+    public float tiempoLevel;
 
 	// Use this for initialization
 	void Start () {
 		scoreText.text = "Score: " + score + "\n\nAmmo: " + ammo;
+
+        muertes = 0;
+        tiempoLevel = Time.time;
 	}
 	
 	// Update is called once per frame

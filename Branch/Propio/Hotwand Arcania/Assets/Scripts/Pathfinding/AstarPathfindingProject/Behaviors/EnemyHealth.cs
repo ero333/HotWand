@@ -49,9 +49,22 @@ public class EnemyHealth : MonoBehaviour {
 			if (child_sprite) child_sprite.sortingLayerName = "Dead";
 			
 			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
-			if (main != null) main.GetComponent<Score>().score += 1;
 
-			if ((GetComponent<WeaponPickup>()) != null)
+            if (main != null)
+            {
+                if (lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
+                {
+                    main.GetComponent<Score>().score += 500;
+                }
+                else
+                {
+                    main.GetComponent<Score>().score += 100;
+                }
+            }
+
+            lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
+
+            if ((GetComponent<WeaponPickup>()) != null)
 			{
 				if (GetComponent<WeaponPickup>().weaponEquipped != null)
 				{
@@ -66,7 +79,7 @@ public class EnemyHealth : MonoBehaviour {
 		if (health >= 1)
 		{
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
-			Debug.Log("Got Knocked.");
+			//Debug.Log("Got Knocked.");
 			transform.Translate(new Vector3(0,0,0));
 
 			if (GetComponent<WeaponPickup>().weaponEquipped != null)
@@ -77,23 +90,7 @@ public class EnemyHealth : MonoBehaviour {
 				animator.SetBool("has weapon", false);
 			}
 		}
-		else
-		if (health == 0)
-		{
-			if (main != null)
-			{
-				if (lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
-				{
-					main.GetComponent<Score>().score += 500;
-				}
-				else
-				{
-					main.GetComponent<Score>().score += 100;
-				}
-			}
-			lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
-		}
 
-		Debug.Log("Got Hit.");
+		//Debug.Log("Got Hit.");
 	}
 }

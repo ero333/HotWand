@@ -1977,6 +1977,10 @@ Prefab:
       propertyPath: m_Text
       value: 'Score:'
       objectReference: {fileID: 0}
+    - target: {fileID: 1131077872402636, guid: 1d2e0c6c43928784b9d00b7bb2d4bd9c, type: 2}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d2e0c6c43928784b9d00b7bb2d4bd9c, type: 2}
   m_IsPrefabAsset: 0
@@ -16067,6 +16071,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1048291527}
+  ammo: 0
+  ammoText: {fileID: 0}
+  muertes: 0
+  tiempoLevel: 0
 --- !u!1 &1548927501
 GameObject:
   m_ObjectHideFlags: 0
