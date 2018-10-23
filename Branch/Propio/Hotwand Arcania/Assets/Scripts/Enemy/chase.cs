@@ -18,21 +18,24 @@ public class chase : StateMachineBehaviour {
 		animator.GetComponent<AIPath>().enableRotation = false;
 		animator.GetComponent<RotateToTarget>().enabled = true;
 
-
-
-
+        
         if ( animator.name.Substring(0,2) == "Elf" )
         {
-            animator.GetComponent<AIPath>().maxSpeed = 1.4f;
+            animator.GetComponent<AIPath>().maxSpeed = 1.8f;
         };
         if (animator.name.Substring(0, 2) == "Orc")
         {
-            animator.GetComponent<AIPath>().maxSpeed = 0.8f;
+            animator.GetComponent<AIPath>().maxSpeed = 1.2f;
         };
         if (animator.name.Substring(0, 4) == "Human")
         {
-            animator.GetComponent<AIPath>().maxSpeed = 1.0f;
+            animator.GetComponent<AIPath>().maxSpeed = 1.5f;
         };
+        if (animator.name.Substring(0, 3) == "Mage")
+        {
+            animator.GetComponent<AIPath>().maxSpeed = 1.2f;
+        };
+
 
 
 
