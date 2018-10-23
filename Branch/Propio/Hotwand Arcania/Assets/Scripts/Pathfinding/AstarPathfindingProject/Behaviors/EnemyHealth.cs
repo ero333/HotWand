@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour {
 	private SpriteRenderer sprite;
 	
 	public WeaponPickup weaponPickup;
-	public GameObject lastWeaponUsed;
+	
 	private GameObject player;
 	private GameObject main;
 
@@ -35,13 +35,18 @@ public class EnemyHealth : MonoBehaviour {
 		main = GameObject.FindGameObjectWithTag("Main");
 
 		player = GameObject.FindGameObjectWithTag("Player");
-		lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
+
 	}
 
 
 	public void TakeDamage(int damage) {
         health -= damage;
-		if (health <= 0)
+        if (health < 0)
+        {
+            health = 0;
+        }
+
+        if (health <= 0)
 		{
 			dead = true;
 			animator.SetBool("Dead", true);
@@ -52,7 +57,7 @@ public class EnemyHealth : MonoBehaviour {
 
             if (main != null)
             {
-                if (lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
+                if (main.GetComponent<Score>().lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
                 {
                     main.GetComponent<Score>().score += 500;
                 }
@@ -60,9 +65,11 @@ public class EnemyHealth : MonoBehaviour {
                 {
                     main.GetComponent<Score>().score += 100;
                 }
+                main.GetComponent<Score>().lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
+
+       
             }
 
-            lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
 
             if ((GetComponent<WeaponPickup>()) != null)
 			{
@@ -75,18 +82,6 @@ public class EnemyHealth : MonoBehaviour {
 				}
 			}
 
-            if (main != null)
-            {
-                if (lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
-                {
-                    main.GetComponent<Score>().score += 500;
-                }
-                else
-                {
-                    main.GetComponent<Score>().score += 100;
-                }
-            }
-            lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
         }
 		else
 		if (health == 1)
@@ -103,14 +98,9 @@ public class EnemyHealth : MonoBehaviour {
 				animator.SetBool("has weapon", false);
 			}
 		}
-<<<<<<< HEAD
-=======
-		else
-		if (health < 0)
-		{
-            health = 0;
-		}
->>>>>>> 09cda6efb50cfe5c01a79f8f83c8a356f35a7a14
+
+
+
 
 		//Debug.Log("Got Hit.");
 	}

@@ -12,14 +12,16 @@ public class Score : MonoBehaviour {
 	public Text ammoText;
     public int muertes;
     public float tiempoLevel;
+    public GameObject lastWeaponUsed;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		scoreText.text = "Score: " + score + "\n\nAmmo: " + ammo;
 
         muertes = 0;
         tiempoLevel = Time.time;
-	}
+        lastWeaponUsed = GameObject.FindGameObjectWithTag("Player").GetComponent<Equipment>().equippedWeapon;
+    }
 	
 	// Update is called once per frame
 	void Update () {
