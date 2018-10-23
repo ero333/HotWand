@@ -5,8 +5,7 @@ using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
 
-public class Videoplay : MonoBehaviour
-{
+public class Videoplay : MonoBehaviour {
     public static VideoPlayer videoInicial;
     private string sceneName;
     public GameObject camAnimacion;
@@ -56,8 +55,25 @@ public class Videoplay : MonoBehaviour
             if (sceneName == "Creditos")
                 {
                 SceneManager.LoadScene("Calificar");
+                }            
+            if (sceneName == "CutIntro")
+                {
+                SceneManager.LoadScene("Tutorial");
+                }             
+            if (sceneName == "CutPostTutorial")
+                {
+                SceneManager.LoadScene("CutPreLevel1");
                 }
-            }           
-        }
-    }
+            if (sceneName == "CutPreLevel1")
+                {
+                SceneManager.LoadScene("Lvl1");
+                }
+            if (sceneName == "FinalCut")
+                {
+                SceneManager.LoadScene("Creditos");
+                }
+            }
+          }
+       }
+    
 
