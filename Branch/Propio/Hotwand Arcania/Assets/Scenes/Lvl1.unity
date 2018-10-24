@@ -782,16 +782,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114925980807460442, guid: bd9cd0f6bf4701747a4ebdce1d240904,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114925980807460442, guid: bd9cd0f6bf4701747a4ebdce1d240904,
+    - target: {fileID: 114084419952353084, guid: bd9cd0f6bf4701747a4ebdce1d240904,
         type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1844150157}
     - target: {fileID: 114490573033477020, guid: bd9cd0f6bf4701747a4ebdce1d240904,
         type: 2}
       propertyPath: targets.Array.data[0]
@@ -812,21 +807,6 @@ Prefab:
       propertyPath: targets.Array.data[3]
       value: 
       objectReference: {fileID: 1260897178}
-    - target: {fileID: 114084419952353084, guid: bd9cd0f6bf4701747a4ebdce1d240904,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1844150157}
-    - target: {fileID: 114393006492918260, guid: bd9cd0f6bf4701747a4ebdce1d240904,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114473864483676626, guid: bd9cd0f6bf4701747a4ebdce1d240904,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1669835280225692, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
       propertyPath: m_Name
       value: Human1
@@ -16075,6 +16055,7 @@ MonoBehaviour:
   ammoText: {fileID: 0}
   muertes: 0
   tiempoLevel: 0
+  lastWeaponUsed: {fileID: 0}
 --- !u!1 &1548927501
 GameObject:
   m_ObjectHideFlags: 0

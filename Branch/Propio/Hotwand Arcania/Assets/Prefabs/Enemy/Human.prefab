@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1669835280225692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.14623594, y: -1.7895365, z: -0.19995117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4985132707302932}
@@ -114,13 +114,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1030725112110474}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.001, y: 0.152, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.73670864, w: 0.6762103}
+  m_LocalPosition: {x: 0.0059999805, y: 0.3200003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4358462033678724}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 94.90401}
 --- !u!4 &4973923395861648
 Transform:
   m_ObjectHideFlags: 1
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 4042692248449106, guid: e9383c8bd18e7d34283cf78400b385a7, type: 2}
+  target: {fileID: 0}
 --- !u!114 &114096093930081490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -310,7 +310,6 @@ MonoBehaviour:
   dead: 0
   animator: {fileID: 95855240931412556}
   weaponPickup: {fileID: 0}
-  lastWeaponUsed: {fileID: 0}
 --- !u!114 &114393006492918260
 MonoBehaviour:
   m_ObjectHideFlags: 1

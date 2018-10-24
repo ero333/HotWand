@@ -239,9 +239,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543a6117c95b5204ab01159cdf5f0ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boss: 0
   health: 5
   dead: 0
   animator: {fileID: 95171416948322532}
+  TiempoDead: 0
 --- !u!114 &114491366551721420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,7 +299,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  delay: 0.8
+  delay: 0
 --- !u!114 &114887047283799000
 MonoBehaviour:
   m_ObjectHideFlags: 1

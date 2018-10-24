@@ -124,8 +124,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1895218687968890}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.3728261, y: 1.7005584, z: -0.17627718}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4352357930036318}
@@ -140,13 +140,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242771368803716}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.001, y: 0.152, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.73670864, w: 0.6762103}
+  m_LocalPosition: {x: 0.0059999805, y: 0.3200003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4721539217006456}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 94.90401}
 --- !u!50 &50917774783221874
 Rigidbody2D:
   serializedVersion: 4
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 4042692248449106, guid: e9383c8bd18e7d34283cf78400b385a7, type: 2}
+  target: {fileID: 0}
 --- !u!114 &114164825271049252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -446,7 +446,6 @@ MonoBehaviour:
   dead: 0
   animator: {fileID: 95993449130175552}
   weaponPickup: {fileID: 0}
-  lastWeaponUsed: {fileID: 0}
 --- !u!212 &212611151691757146
 SpriteRenderer:
   m_ObjectHideFlags: 1
