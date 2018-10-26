@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class Projectile : MonoBehaviour {
-
+ 
 	public Vector3 direction;
 	private Vector2 target;
 	public int damage;

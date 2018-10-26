@@ -16,8 +16,8 @@ public class CameraFollowPlayer : MonoBehaviour {
 		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("MeleeHitboxEnemy"));
 		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer("MeleeHitboxPlayer"), LayerMask.NameToLayer("Wall"));
 		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer("MeleeHitboxEnemy"), LayerMask.NameToLayer("Wall"));
-
-	}
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("DoorHinge"), LayerMask.NameToLayer("Wall"));
+    }
 	
 	// Update is called once per frame
 	void Update () {
