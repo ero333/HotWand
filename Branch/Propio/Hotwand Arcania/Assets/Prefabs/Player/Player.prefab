@@ -331,7 +331,7 @@ MonoBehaviour:
   dead: 0
   knocked: 0
   health: 2
-  equipment: {fileID: 114581317085924102}
+  equipment: {fileID: 0}
   interact: {fileID: 114910162432117734}
 --- !u!114 &114470453829296156
 MonoBehaviour:

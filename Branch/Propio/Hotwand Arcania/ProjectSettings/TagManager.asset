@@ -36,8 +36,8 @@ TagManager:
   - Player
   - MeleeHitboxPlayer
   - MeleeHitboxEnemy
-  - DoorHinge
-  - PathBlockNoEntityCollision
+  - 
+  - 
   - 
   - 
   - 
