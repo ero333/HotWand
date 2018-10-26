@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 
 public class Videoplay : MonoBehaviour {
     public static VideoPlayer videoInicial;
     private string sceneName;
     public GameObject camAnimacion;
+    [SerializeField] private int VerCreditos;
+    public float tiempoLevel;
 
     // Use this for initialization
     void Start()
@@ -18,7 +21,7 @@ public class Videoplay : MonoBehaviour {
         sceneName = currentScene.name;
         videoInicial = GameObject.Find("VideoPlayer").GetComponent<VideoPlayer>();
         camAnimacion.SetActive(true);
-
+        tiempoLevel = Time.time;
 
         switch (sceneName)
         {
@@ -53,9 +56,13 @@ public class Videoplay : MonoBehaviour {
         {
             SceneManager.LoadScene("Tutorial");
             if (sceneName == "Creditos")
+                Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
                 {
+                    {"saltear", Time.time - tiempoLevel},
+                });
+            {
                 SceneManager.LoadScene("Calificar");
-                }            
+                }
             if (sceneName == "CutIntro")
                 {
                 SceneManager.LoadScene("Tutorial");
@@ -69,9 +76,14 @@ public class Videoplay : MonoBehaviour {
                 SceneManager.LoadScene("Lvl1");
                 }
             if (sceneName == "FinalCut")
+
                 {
                 SceneManager.LoadScene("Creditos");
-                }
+                Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
+                {
+                    {"vez", VerCreditos+=1},
+                });
+            }
             }
           }
        }
