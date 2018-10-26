@@ -21,11 +21,11 @@ public class DoorMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/*if (this.transform.eulerAngles.z > startRot && beingOpened==false) {
+		if (this.transform.eulerAngles.z > startRot && beingOpened==false) {
 			rotateAntiClockwiseMethod ();
 		} else if(this.transform.eulerAngles.z < startRot && beingOpened==false){
 			rotateClockwiseMethod ();
-		}*/
+		}
 	}
 
 	public void rotateClockwiseMethod()
