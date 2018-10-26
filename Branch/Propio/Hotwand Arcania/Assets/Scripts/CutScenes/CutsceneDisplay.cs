@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CutsceneDisplay : MonoBehaviour {
 	public CutsceneContainer[] cutsceneBits;
@@ -77,7 +78,7 @@ public class CutsceneDisplay : MonoBehaviour {
 		if (display == true) {
 			GUI.DrawTexture (new Rect (0, 0, originalWidth, originalHeight), bg);
 			GUI.DrawTexture (new Rect (originalWidth - 800, originalHeight / 2-400, 500, 500), activeFace);
-			GUI.Box (new Rect (originalWidth / 2-500, originalHeight - 220, 1000, 100), activeCutscene.Text,text);
+			GUI.Box (new Rect (originalWidth / 2-500, y: originalHeight - 220, width: 1000, height: 100), activeCutscene.Text,text);
 		}
 		GUI.matrix = svMat;
 	}
