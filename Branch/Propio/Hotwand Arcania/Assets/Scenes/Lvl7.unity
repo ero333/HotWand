@@ -33047,7 +33047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1238264724}
   m_Layer: 0
-  m_Name: ObjetosDeco
+  m_Name: DecoObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
