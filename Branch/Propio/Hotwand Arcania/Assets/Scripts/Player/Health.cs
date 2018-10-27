@@ -80,14 +80,16 @@ public class Health : MonoBehaviour {
 				SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
                 Time.timeScale = 1f;
             }
+           
 		}
 
         if (dead == false)
         {
             RestartButton.gameObject.SetActive(false);
         }
+        
 
-	}
+    }
 	public void TakeDamage(int damage)
 	{
 		if (health <= 0){
@@ -95,6 +97,7 @@ public class Health : MonoBehaviour {
 			anim.SetBool("Dead", true);
 			dead = true;
             GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().muertes+=1;
+            //Debug.Log("oh por Dios he muerto, necesito reiniciar!");
         }
 		else
 		if (health > 0)
@@ -114,11 +117,13 @@ public class Health : MonoBehaviour {
 		GUI.matrix = Matrix4x4.TRS(Vector3.zero,Quaternion.identity,scale);
 
 		if (dead == true) {
-			//Rect posForRestart = new Rect (0,0,originalWidth,originalHeight);
-			//GUI.DrawTexture (posForRestart,bg);
-			//SceneManager.LoadScene (SceneManager.GetActiveScene().name);
-		}
+            //Rect posForRestart = new Rect (0,0,originalWidth,originalHeight);
+            //GUI.DrawTexture (posForRestart,bg);
+            //SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+            
+        }
 
 		GUI.matrix = svMat;
-	}
+        
+    }
 }
