@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class LoadOnClick : MonoBehaviour {
 
-	public void LoadScene(int level)
+    private string sceneName;
+
+    public void LoadScene(int level)
     {
         print("LoadOnClick");
         print(level);
