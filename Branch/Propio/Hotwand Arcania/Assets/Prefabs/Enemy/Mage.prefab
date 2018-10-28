@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 114641715435049928}
   - component: {fileID: 114496156965280622}
   - component: {fileID: 114653996985884588}
-  - component: {fileID: 114170952899343450}
   - component: {fileID: 114077938730257022}
+  - component: {fileID: 114170952899343450}
   - component: {fileID: 114466524346552900}
   - component: {fileID: 114274934767132094}
   - component: {fileID: 114571689958224074}
@@ -433,7 +433,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  delay: 0
+  delay: 0.4
 --- !u!114 &114662904680125628
 MonoBehaviour:
   m_ObjectHideFlags: 1

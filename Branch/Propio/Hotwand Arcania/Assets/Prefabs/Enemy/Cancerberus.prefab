@@ -38,12 +38,12 @@ GameObject:
   - component: {fileID: 212588477934610378}
   - component: {fileID: 50902282014199434}
   - component: {fileID: 61071410979337096}
+  - component: {fileID: 114689935879515502}
+  - component: {fileID: 114460621135923472}
   - component: {fileID: 114127218423038834}
   - component: {fileID: 114112141797921342}
   - component: {fileID: 114887047283799000}
-  - component: {fileID: 114689935879515502}
   - component: {fileID: 114484016342537802}
-  - component: {fileID: 114460621135923472}
   - component: {fileID: 114491366551721420}
   - component: {fileID: 114560061419580412}
   - component: {fileID: 95171416948322532}
@@ -299,7 +299,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  delay: 0
+  delay: 1
 --- !u!114 &114887047283799000
 MonoBehaviour:
   m_ObjectHideFlags: 1

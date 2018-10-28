@@ -26,8 +26,8 @@ GameObject:
   - component: {fileID: 114460981721147712}
   - component: {fileID: 114788590449063496}
   - component: {fileID: 114608369267345608}
-  - component: {fileID: 114738446222720830}
   - component: {fileID: 114671284597496744}
+  - component: {fileID: 114738446222720830}
   - component: {fileID: 114511249316009798}
   - component: {fileID: 114630174247274476}
   - component: {fileID: 114173188282440880}
@@ -329,7 +329,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  delay: 0
+  delay: 1.2
 --- !u!114 &114630174247274476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -391,7 +391,6 @@ MonoBehaviour:
   dead: 0
   animator: {fileID: 95554088365648222}
   weaponPickup: {fileID: 0}
-  lastWeaponUsed: {fileID: 0}
 --- !u!114 &114788590449063496
 MonoBehaviour:
   m_ObjectHideFlags: 1

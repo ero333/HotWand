@@ -38,12 +38,12 @@ GameObject:
   - component: {fileID: 212775900149829074}
   - component: {fileID: 50397172172540080}
   - component: {fileID: 61553518908835734}
+  - component: {fileID: 114526099281869482}
+  - component: {fileID: 114710091360512162}
   - component: {fileID: 114181944561119076}
   - component: {fileID: 114305296070830818}
   - component: {fileID: 114893591646269320}
-  - component: {fileID: 114526099281869482}
   - component: {fileID: 114613887217338130}
-  - component: {fileID: 114710091360512162}
   - component: {fileID: 114185615228106528}
   - component: {fileID: 114656449829463978}
   - component: {fileID: 114962549378975100}
