@@ -824,11 +824,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114084419952353084, guid: bd9cd0f6bf4701747a4ebdce1d240904,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1844150157}
     - target: {fileID: 114490573033477020, guid: bd9cd0f6bf4701747a4ebdce1d240904,
         type: 2}
       propertyPath: targets.Array.data[0]
@@ -849,6 +844,11 @@ Prefab:
       propertyPath: targets.Array.data[3]
       value: 
       objectReference: {fileID: 1260897178}
+    - target: {fileID: 114084419952353084, guid: bd9cd0f6bf4701747a4ebdce1d240904,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1844150157}
     - target: {fileID: 1669835280225692, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
       propertyPath: m_Name
       value: Human1

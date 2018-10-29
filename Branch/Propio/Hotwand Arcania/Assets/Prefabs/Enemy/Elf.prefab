@@ -445,6 +445,7 @@ MonoBehaviour:
   health: 3
   dead: 0
   animator: {fileID: 95993449130175552}
+  legs: {fileID: 1007823856543644}
   weaponPickup: {fileID: 0}
 --- !u!212 &212611151691757146
 SpriteRenderer:

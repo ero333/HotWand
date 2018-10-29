@@ -309,6 +309,7 @@ MonoBehaviour:
   health: 3
   dead: 0
   animator: {fileID: 95855240931412556}
+  legs: {fileID: 1873902297899312}
   weaponPickup: {fileID: 0}
 --- !u!114 &114393006492918260
 MonoBehaviour:

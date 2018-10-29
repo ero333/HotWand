@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour {
 	public int health;
 	public bool dead = false;
 	public Animator animator;
+    public GameObject legs;
 	private SpriteRenderer sprite;
 	
 	public WeaponPickup weaponPickup;
@@ -48,6 +49,7 @@ public class EnemyHealth : MonoBehaviour {
 
         if (health <= 0)
 		{
+            legs.SetActive(false);
 			dead = true;
 			animator.SetBool("Dead", true);
             if (sprite) sprite.sortingLayerName = "Dead";
