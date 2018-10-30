@@ -224,7 +224,7 @@ public GameObject equippedWeapon;
 				case "Wand":
 					if (equippedWeapon.GetComponent<Weapon>().weaponAmmo > 0) 
 					{
-							if (main != null) main.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
+							if (score != null) score.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
 							Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 					}
 				break;
