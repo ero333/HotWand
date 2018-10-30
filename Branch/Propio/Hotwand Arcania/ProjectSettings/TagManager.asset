@@ -21,6 +21,7 @@ TagManager:
   - Cutscene5
   - Portal
   - Main
+  - Score
   layers:
   - Default
   - TransparentFX

@@ -22,15 +22,15 @@ public class changeToLevel1 : MonoBehaviour {
             {
                 Debug.Log("TerminarNivel");
                 Debug.Log("nivel 0");
-                Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().tiempoLevel));
-                Debug.Log("puntos" + (GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().score));
-                Debug.Log("muertes " + GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().muertes);
+                Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
+                Debug.Log("puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score));
+                Debug.Log("muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes);
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {
                     {"nivel", 0},
-                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().tiempoLevel) },
-                    {"puntos", (GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().score) },
-                    {"muertes", GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().muertes }
+                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                    {"puntos", (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score) },
+                    {"muertes", GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes }
                 });
 
                 Debug.Log("muertes ");

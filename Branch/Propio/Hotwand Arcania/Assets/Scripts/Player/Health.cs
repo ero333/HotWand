@@ -96,7 +96,7 @@ public class Health : MonoBehaviour {
 			Debug.Log("Dead");
 			anim.SetBool("Dead", true);
 			dead = true;
-            GameObject.FindGameObjectWithTag("Main").GetComponent<Score>().muertes+=1;
+            GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes+=1;
             //Debug.Log("oh por Dios he muerto, necesito reiniciar!");
         }
 		else

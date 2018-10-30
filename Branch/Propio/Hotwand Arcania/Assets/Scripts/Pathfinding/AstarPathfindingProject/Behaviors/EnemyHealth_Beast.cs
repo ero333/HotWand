@@ -13,9 +13,10 @@ public class EnemyHealth_Beast : MonoBehaviour {
 	public Animator animator;
 	private SpriteRenderer sprite;
 	private GameObject main;
+    private GameObject score;
 
-	//Getting Child's Sprite
-	private Transform child_transform;
+    //Getting Child's Sprite
+    private Transform child_transform;
 	private GameObject child_object;
 	private SpriteRenderer child_sprite;
 	private GameObject portal;
@@ -56,7 +57,7 @@ public class EnemyHealth_Beast : MonoBehaviour {
 			if (child_sprite) child_sprite.sortingLayerName = "Dead";
 			
 			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
-			if (main != null) main.GetComponent<Score>().score += 1000;
+			if (score != null) score.GetComponent<Score>().score += 1000;
             TiempoDead = Time.time;
 
 

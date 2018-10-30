@@ -16,9 +16,10 @@ public class EnemyHealth : MonoBehaviour {
 	
 	private GameObject player;
 	private GameObject main;
+    private GameObject score;
 
-	//Getting Child's Sprite
-	private Transform child_transform;
+    //Getting Child's Sprite
+    private Transform child_transform;
 	private GameObject child_object;
 	private SpriteRenderer child_sprite;
 	private GameObject portal;
@@ -35,9 +36,12 @@ public class EnemyHealth : MonoBehaviour {
 
 		main = GameObject.FindGameObjectWithTag("Main");
 
+		score = GameObject.FindGameObjectWithTag("Score");
+
 		player = GameObject.FindGameObjectWithTag("Player");
 
-	}
+
+    }
 
 
 	public void TakeDamage(int damage) {
@@ -57,17 +61,17 @@ public class EnemyHealth : MonoBehaviour {
 			
 			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
 
-            if (main != null)
+            if (score != null)
             {
-                if (main.GetComponent<Score>().lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
+                if (score.GetComponent<Score>().lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
                 {
-                    main.GetComponent<Score>().score += 500;
+                    score.GetComponent<Score>().score += 500;
                 }
                 else
                 {
-                    main.GetComponent<Score>().score += 100;
+                    score.GetComponent<Score>().score += 100;
                 }
-                main.GetComponent<Score>().lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
+                score.GetComponent<Score>().lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
 
        
             }
