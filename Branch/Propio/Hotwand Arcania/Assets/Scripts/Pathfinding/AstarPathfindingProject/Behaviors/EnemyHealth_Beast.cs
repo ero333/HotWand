@@ -14,6 +14,7 @@ public class EnemyHealth_Beast : MonoBehaviour {
 	private SpriteRenderer sprite;
 	private GameObject main;
     private GameObject score;
+    private GameObject player;
 
     //Getting Child's Sprite
     private Transform child_transform;
@@ -31,6 +32,8 @@ public class EnemyHealth_Beast : MonoBehaviour {
 		child_sprite = child_object.GetComponent<SpriteRenderer>();
 		portal = GameObject.FindGameObjectWithTag("Portal");
 		main = GameObject.FindGameObjectWithTag("Main");
+        score = GameObject.FindGameObjectWithTag("Score");
+        player = GameObject.FindGameObjectWithTag("Player");
         TiempoDead = 0;
 	}
 
@@ -48,19 +51,34 @@ public class EnemyHealth_Beast : MonoBehaviour {
 
     public void TakeDamage(int damage) {
 		health -= damage;
-		if (health <= 0)
-		{
+        if (health < 0)
+        {
+            health = 0;
+        }
+
+        if (health <= 0)
+        {
             print("muerto");
-			dead = true;
-			animator.SetBool("Dead", true);
+            dead = true;
+            animator.SetBool("Dead", true);
             if (sprite) sprite.sortingLayerName = "Dead";
-			if (child_sprite) child_sprite.sortingLayerName = "Dead";
-			
-			if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
-			if (score != null) score.GetComponent<Score>().score += 1000;
-            TiempoDead = Time.time;
+            if (child_sprite) child_sprite.sortingLayerName = "Dead";
 
+            if (portal != null) portal.GetComponent<NextLevel>().enemiesAlive -= 1;
+            if (score != null)
+            {
+                if (score.GetComponent<Score>().lastWeaponUsed != player.GetComponent<Equipment>().equippedWeapon)
+                {
+                    score.GetComponent<Score>().score += 500;
+                }
+                else
+                {
+                    score.GetComponent<Score>().score += 100;
+                }
+                score.GetComponent<Score>().lastWeaponUsed = player.GetComponent<Equipment>().equippedWeapon;
+                TiempoDead = Time.time;
 
+        }
         }
 		else
 		if (health >= 1)
