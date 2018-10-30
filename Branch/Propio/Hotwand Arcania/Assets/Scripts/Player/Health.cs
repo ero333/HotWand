@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
+
 public class Health : MonoBehaviour {
     
     float originalWidth = 1280.0f; //turn these to floats to fix placement issue
@@ -57,6 +59,7 @@ public class Health : MonoBehaviour {
 			GetComponent<RotateToCursor>().enabled = true;
 			GetComponent<Movement>().enabled = true;
 			GetComponent<PlayerInteract>().enabled = true;
+            Debug.Log("--Venga que me han noqueado. Gilipollas!" +1);
 		}
 
 		/////////////Knocked Logic
@@ -77,7 +80,19 @@ public class Health : MonoBehaviour {
             RestartButton.gameObject.SetActive(true);
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.R)) {
-				SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
+                Debug.Log("ReiniciarNivel");
+                Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
+                Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
+                Debug.Log("puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score));
+                Debug.Log("muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes);
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+              {
+                    {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                    {"puntos", (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score) },
+                    {"muertes", GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes }
+                });
+                SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
                 Time.timeScale = 1f;
             }
            
@@ -93,13 +108,27 @@ public class Health : MonoBehaviour {
 	public void TakeDamage(int damage)
 	{
 		if (health <= 0){
-			Debug.Log("Dead");
+            Debug.Log("oh por Dios he muerto, necesito reiniciar!"); 
 			anim.SetBool("Dead", true);
 			dead = true;
             GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes+=1;
-            //Debug.Log("oh por Dios he muerto, necesito reiniciar!");
+
+            Debug.Log("Morir");
+            Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
+            Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
+            //Debug.Log("enemigo" + (GameObject.FindGameObjectWithTag("Enemy").name));
+            Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Enemy").transform.position.x);
+            Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y);
+                
+            Analytics.CustomEvent("Morir", new Dictionary<string, object> {
+                        {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                        {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                        {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                        {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) } 
+                    });
+            
         }
-		else
+        else
 		if (health > 0)
 		{
 			health -= damage;

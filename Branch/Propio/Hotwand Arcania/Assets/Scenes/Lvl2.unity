@@ -2709,7 +2709,7 @@ GameObject:
   - component: {fileID: 914302138}
   - component: {fileID: 914302137}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Press R Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
