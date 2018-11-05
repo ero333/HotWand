@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class EnemyHealth : MonoBehaviour {
 
@@ -49,6 +50,20 @@ public class EnemyHealth : MonoBehaviour {
         if (health < 0)
         {
             health = 0;
+            if (health == 0) { 
+            Debug.Log("holamemori");
+            Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
+            Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
+            Debug.Log("enemigo" + (this.name));
+            Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Player").transform.position.x);
+            Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Player").transform.position.y);
+            }
+            /* Analytics.CustomEvent("Morir", new Dictionary<string, object> {
+                         {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                         {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                         {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                         {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
+                     });*/
         }
 
         if (health <= 0)
