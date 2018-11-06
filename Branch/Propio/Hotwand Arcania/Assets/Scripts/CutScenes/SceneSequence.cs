@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class SceneSequence : MonoBehaviour {
 
@@ -38,10 +39,13 @@ public class SceneSequence : MonoBehaviour {
 							cutsceneStep = 1;
 
 							timeLeft = timeBetweenCutscenes;
-						}
-					
-					}
-				break;
+                        Debug.Log("Paso 1");
+                        Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { {"Paso", 1} });
+                        }
+                    
+
+                    }
+				    break;
 
 				case 1:
 					if (player.GetComponent<Equipment>().equippedWeapon != null)
@@ -55,7 +59,9 @@ public class SceneSequence : MonoBehaviour {
 								cutsceneStep = 2;
 
 								timeLeft = timeBetweenCutscenes;
-							}
+                            Debug.Log("Paso 2");
+                            Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { { "Paso", 2 } });
+                        }
 							
 						}
 					}
@@ -71,7 +77,9 @@ public class SceneSequence : MonoBehaviour {
 							cutsceneStep = 3;
 
 							timeLeft = timeBetweenCutscenes;
-						}
+                        Debug.Log("Paso 3");
+                        Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { { "Paso", 3 } });
+                    }
 						
 					}
 				break;
@@ -88,7 +96,9 @@ public class SceneSequence : MonoBehaviour {
 								cutsceneStep = 4;
 
 								timeLeft = timeBetweenCutscenes;
-							}
+                            Debug.Log("Paso 4");
+                            Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { { "Paso", 4 } });
+                        }
 							
 						}
 					}
@@ -104,7 +114,9 @@ public class SceneSequence : MonoBehaviour {
 							cutsceneStep = 5;
 
 							timeLeft = timeBetweenCutscenes;
-						}
+                        Debug.Log("Paso 5");
+                        Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { { "Paso", 5 } });
+                    }
 					
 					}
 				break;
