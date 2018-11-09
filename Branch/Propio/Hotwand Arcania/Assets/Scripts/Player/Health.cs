@@ -59,7 +59,6 @@ public class Health : MonoBehaviour {
 			GetComponent<RotateToCursor>().enabled = true;
 			GetComponent<Movement>().enabled = true;
 			GetComponent<PlayerInteract>().enabled = true;
-            //Debug.Log("--Venga que me han noqueado. Gilipollas!" +1);
 		}
 
 		/////////////Knocked Logic
@@ -69,7 +68,6 @@ public class Health : MonoBehaviour {
               {
                     {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                     {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
-                     {"enemigo",  (this.name) },
                 });
             if (Time.time > knockedTimer + 2)
 			{
@@ -86,9 +84,6 @@ public class Health : MonoBehaviour {
             RestartButton.gameObject.SetActive(true);
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.R)) {
-
-                Debug.Log("puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score));
-                Debug.Log("muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes);
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
               {
                     {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
@@ -121,7 +116,6 @@ public class Health : MonoBehaviour {
                         {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                         {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
                         {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) },
-                         {"enemigo",  (this.name) },
                     });
         }
         else
