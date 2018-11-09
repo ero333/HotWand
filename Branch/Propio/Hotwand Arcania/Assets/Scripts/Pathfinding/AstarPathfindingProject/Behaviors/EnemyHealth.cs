@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour {
             Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Player").transform.position.x);
             Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Player").transform.position.y);
             }
-            Analytics.CustomEvent("Morir", new Dictionary<string, object> {
+            Analytics.CustomEvent("Matar", new Dictionary<string, object> {
                          {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                          {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                          {"enemigo",  (this.name) },
