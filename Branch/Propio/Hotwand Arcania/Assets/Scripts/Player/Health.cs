@@ -64,8 +64,14 @@ public class Health : MonoBehaviour {
 
 		/////////////Knocked Logic
 		if (knocked)
-		{			
-			if (Time.time > knockedTimer + 2)
+		{
+            Analytics.CustomEvent("Noquear", new Dictionary<string, object>
+              {
+                    {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                     {"enemigo",  (this.name) },
+                });
+            if (Time.time > knockedTimer + 2)
 			{
 				knocked = false;
 				knockedTimer = Time.time;
@@ -80,9 +86,7 @@ public class Health : MonoBehaviour {
             RestartButton.gameObject.SetActive(true);
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.R)) {
-                Debug.Log("ReiniciarNivel");
-                Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
-                Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
+
                 Debug.Log("puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score));
                 Debug.Log("muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes);
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
@@ -108,25 +112,17 @@ public class Health : MonoBehaviour {
 	public void TakeDamage(int damage)
 	{
 		if (health <= 0){
-            Debug.Log("oh por Dios he muerto, necesito reiniciar!"); 
+
 			anim.SetBool("Dead", true);
 			dead = true;
             GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes+=1;
-
-            Debug.Log("Morir");
-            Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
-            Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
-            //Debug.Log("enemigo" + (GameObject.FindGameObjectWithTag("Enemy").name));
-            Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Enemy").transform.position.x);
-            Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y);
-                
             Analytics.CustomEvent("Morir", new Dictionary<string, object> {
                         {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                         {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                         {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
-                        {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) } 
+                        {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) },
+                         {"enemigo",  (this.name) },
                     });
-            
         }
         else
 		if (health > 0)
