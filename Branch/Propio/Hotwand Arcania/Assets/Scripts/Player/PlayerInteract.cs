@@ -91,7 +91,7 @@ public class PlayerInteract : MonoBehaviour {
 		else
 		if(other.CompareTag("Enemy"))
 		{
-			GetComponent<Health>().TakeDamage(1);
+			GetComponent<Health>().TakeDamage(new Attack(1, other.name));
 		}
 	}
 

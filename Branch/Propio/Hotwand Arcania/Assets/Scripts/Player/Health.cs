@@ -13,7 +13,7 @@ public class Health : MonoBehaviour {
 	public Texture2D bg;
     public GameObject RestartButton;
 
-
+    
 	public Animator anim;
 	public bool dead;
 	public bool knocked;
@@ -105,36 +105,42 @@ public class Health : MonoBehaviour {
         
 
     }
-	public void TakeDamage(int damage)
+	public void TakeDamage(Attack attack)
 	{
-		if (health <= 0){
-            Debug.Log("oh por Dios he muerto, necesito reiniciar!"); 
-			anim.SetBool("Dead", true);
-			dead = true;
-            GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes+=1;
-
-            Debug.Log("Morir");
-            Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
-            Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
-            //Debug.Log("enemigo" + (GameObject.FindGameObjectWithTag("Enemy").name));
-            Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Enemy").transform.position.x);
-            Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y);
-                
-            Analytics.CustomEvent("Morir", new Dictionary<string, object> {
-                        {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
-                        {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
-                        {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
-                        {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) } 
-                    });
-            
-        }
-        else
 		if (health > 0)
 		{
-			health -= damage;
-			knocked = true;
-		}
-	}
+			health -= attack.damage;
+
+            if (health > 0)
+                knocked = true;
+            else
+            {
+                health = 0;
+
+                Debug.Log("oh por Dios he muerto, necesito reiniciar!");
+                anim.SetBool("Dead", true);
+                if (!dead)
+                {
+                    Debug.Log("Morir");
+                    Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
+                    Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
+                    Debug.Log("enemigo" + attack.creator);
+                    Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Enemy").transform.position.x);
+                    Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y);
+                    
+                    Analytics.CustomEvent("Morir", new Dictionary<string, object> {
+                        {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                        {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                        { "enemigo", attack.creator },
+                        { "CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                        {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
+                    });
+                }
+                dead = true;
+                GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes += 1;
+            }
+        }
+    }
 
 	void OnGUI()
 	{

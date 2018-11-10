@@ -9,6 +9,7 @@ public class MeleeAttack : MonoBehaviour {
 	private float lastAttackTime;
 	public float attackDelay;
 
+
 	[SerializeField]	private GameObject meleeHitbox;	
 	[SerializeField]	private GameObject meleeAnchorPoint;
 
@@ -21,30 +22,33 @@ public class MeleeAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Attacking AI
-
-		//Check the distance between enemy and player to see if the player is close enough to attack
-		float distanceToPlayer = Vector3.Distance(transform.position, target.position);
+        //Attacking AI
+        GameObject attack;
+        //Check the distance between enemy and player to see if the player is close enough to attack
+        float distanceToPlayer = Vector3.Distance(transform.position, target.position);
 		if (distanceToPlayer < attackRange){
 			//Check to see if enough time has passed since we last attacked
 			if (Time.time > lastAttackTime + attackDelay){
 				if (gameObject.GetComponent<WeaponPickup>().weaponEquipped != null)
 				{
-					GameObject swordAttack;
-					GameObject axeAttack;
-
-					switch (gameObject.GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName)
+                 	switch (gameObject.GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName)
 					{
 						case "Sword":
-							swordAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
-							if (swordAttack != null) swordAttack.GetComponent<MeleeHitboxEnemy>().damage = 2;
-							attackDelay = attackDelay * 1f;
+                            attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+							if (attack != null){
+                                attack.GetComponent<MeleeHitboxEnemy>().damage = 2;
+                                attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
+                            }
+                            attackDelay = attackDelay * 1f;
 							animator.SetTrigger("Sword");
 						break;
 
 						case "Axe":
-							axeAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
-							if (axeAttack != null) axeAttack.GetComponent<MeleeHitboxEnemy>().damage = 3;
+                            attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+							if (attack != null) {
+                                attack.GetComponent<MeleeHitboxEnemy>().damage = 3;
+                                attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
+                            }
 							attackDelay = attackDelay * 1.25f;
 							animator.SetTrigger("Axe");
 						break;
@@ -52,8 +56,9 @@ public class MeleeAttack : MonoBehaviour {
 				}
 				else
 				{
-					animator.SetTrigger("Punch");
-					Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+                    animator.SetTrigger("Punch");
+					attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+                    if (attack != null) attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
 				}
 				
 				//Record the time we attacked

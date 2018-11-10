@@ -49,8 +49,8 @@ public class EnemyHealth_Beast : MonoBehaviour {
         }
     }
 
-    public void TakeDamage(int damage) {
-		health -= damage;
+    public void TakeDamage(Attack attack) {
+		health -= attack.damage;
         if (health < 0)
         {
             health = 0;

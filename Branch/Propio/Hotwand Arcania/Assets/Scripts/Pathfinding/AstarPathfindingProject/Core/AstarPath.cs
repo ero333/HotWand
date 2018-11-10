@@ -1598,7 +1598,7 @@ public class AstarPath : VersionedMonoBehaviour {
 			Debug.Log("Scanning - Process took "+(lastScanTime*1000).ToString("0")+" ms to complete");
             
             // A partir de este punto se carga el evento de reiniciar!!....
-            Debug.Log("oh por Dios he muerto, necesito reiniciar!");
+           
 
         }
 	}
