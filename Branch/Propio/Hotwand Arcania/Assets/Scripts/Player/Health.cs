@@ -59,13 +59,17 @@ public class Health : MonoBehaviour {
 			GetComponent<RotateToCursor>().enabled = true;
 			GetComponent<Movement>().enabled = true;
 			GetComponent<PlayerInteract>().enabled = true;
-            //Debug.Log("--Venga que me han noqueado. Gilipollas!" +1);
 		}
 
-		/////////////Knocked Logic
+		///Knocked Logic
 		if (knocked)
-		{			
-			if (Time.time > knockedTimer + 2)
+		{
+            Analytics.CustomEvent("Noquear", new Dictionary<string, object>
+              {
+                    {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                });
+            if (Time.time > knockedTimer + 2)
 			{
 				knocked = false;
 				knockedTimer = Time.time;
@@ -80,11 +84,6 @@ public class Health : MonoBehaviour {
             RestartButton.gameObject.SetActive(true);
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.R)) {
-                Debug.Log("ReiniciarNivel");
-                Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
-                Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
-                Debug.Log("puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score));
-                Debug.Log("muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes);
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
               {
                     {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
