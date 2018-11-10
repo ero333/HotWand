@@ -49,6 +49,9 @@ public class MeleeAttack : MonoBehaviour {
                                 attack.GetComponent<MeleeHitboxEnemy>().damage = 3;
                                 attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
                             }
+
+                            print(  "dano hacha" + attack.GetComponent<MeleeHitboxEnemy>().damage);
+                            print( "nombre hacha" + attack.GetComponent<MeleeHitboxEnemy>().creator_name);
 							attackDelay = attackDelay * 1.25f;
 							animator.SetTrigger("Axe");
 						break;
