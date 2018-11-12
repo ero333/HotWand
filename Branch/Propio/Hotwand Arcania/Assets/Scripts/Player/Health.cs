@@ -104,6 +104,8 @@ public class Health : MonoBehaviour {
         
 
     }
+
+
 	public void TakeDamage(Attack attack)
 	{
 		if (health > 0)
@@ -130,8 +132,8 @@ public class Health : MonoBehaviour {
                     Analytics.CustomEvent("Morir", new Dictionary<string, object> {
                         {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                         {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
-                        { "enemigo", attack.creator },
-                        { "CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                        {"enemigo", attack.creator },
+                        {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
                         {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
                     });
                 }

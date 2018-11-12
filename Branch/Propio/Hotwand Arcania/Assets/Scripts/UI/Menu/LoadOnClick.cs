@@ -8,13 +8,24 @@ public class LoadOnClick : MonoBehaviour {
 
     private string sceneName;
 
+   
+
     public void LoadScene(int level)
     {
         print("LoadOnClick");
         print(level);
         if (level >4)        
         {
-            print("EmpezarNivel");
+            Debug.Log("EmpezarJugar");
+            Globales.EmpezarJugar++;
+            print("vez " + Globales.EmpezarJugar);
+           
+            Analytics.CustomEvent("EmpezarJugar", new Dictionary<string, object>
+            {
+                {"vez", Globales.EmpezarJugar++},
+            });
+            
+
             print(level);
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
             {
