@@ -21,7 +21,7 @@ public class MeleeHitboxPlayer : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Enemy")){
-			other.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+            other.SendMessage("TakeDamage", new Attack(damage, other.name), SendMessageOptions.DontRequireReceiver);
 			Destroy(this.gameObject);
 		}
 	}

@@ -211,8 +211,12 @@ public GameObject equippedWeapon;
 			{
 				case "Sword":
 						swordAttack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
-						if (swordAttack != null) swordAttack.GetComponent<MeleeHitboxPlayer>().damage = 2;
-						animator.SetTrigger("Sword Attack");
+                    if (swordAttack != null)
+                    {
+                        swordAttack.GetComponent<MeleeHitboxPlayer>().damage = 2;
+                  //    swordAttack.GetComponent<MeleeHitboxPlayer>().creator_name = gameObject.name;
+                    }
+                    animator.SetTrigger("Sword Attack");
 				break;
 
 				case "Axe":

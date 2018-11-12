@@ -40,7 +40,7 @@ public class Weapon : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if ((beingThrown) && (other.CompareTag("Enemy"))){
 			beingThrown = false;
-			other.SendMessage("TakeDamage", 1, SendMessageOptions.DontRequireReceiver);
+			other.SendMessage("TakeDamage", new Attack(1, other.name), SendMessageOptions.DontRequireReceiver);
 		}
 		else
 		if ((beingThrown) && (other.CompareTag("Wall"))){

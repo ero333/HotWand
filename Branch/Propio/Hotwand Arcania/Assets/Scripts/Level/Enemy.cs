@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour {
 	{
 		if(other.CompareTag("Player"))
 		{
-			other.SendMessage("TakeDamage", 1, SendMessageOptions.DontRequireReceiver);
+			other.SendMessage("TakeDamage", new Attack(1, name), SendMessageOptions.DontRequireReceiver);
 		}
 	}
 }

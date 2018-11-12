@@ -34,7 +34,7 @@ public class Projectile : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Enemy")){
 			Destroy(this.gameObject);
-			other.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+			other.SendMessage("TakeDamage", new Attack(damage, other.name), SendMessageOptions.DontRequireReceiver);
 		}
 		else
 		if(other.CompareTag("Wall")){

@@ -13,11 +13,10 @@ public class Door : MonoBehaviour {
 	
 	}
 
-
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "Enemy"){
 			if (Vector3.Distance (player.transform.position, this.transform.position) < 1.0) {
-				coll.gameObject.SendMessage("TakeDamage", 1, SendMessageOptions.DontRequireReceiver);
+				coll.gameObject.SendMessage("TakeDamage", new Attack(1, coll.gameObject.name), SendMessageOptions.DontRequireReceiver);
 			}
 		}
 	}
