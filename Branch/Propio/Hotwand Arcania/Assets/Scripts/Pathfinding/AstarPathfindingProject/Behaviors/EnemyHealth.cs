@@ -34,44 +34,36 @@ public class EnemyHealth : MonoBehaviour {
 		child_sprite = child_object.GetComponent<SpriteRenderer>();
 
 		portal = GameObject.FindGameObjectWithTag("Portal");
-
 		main = GameObject.FindGameObjectWithTag("Main");
-
 		score = GameObject.FindGameObjectWithTag("Score");
-
 		player = GameObject.FindGameObjectWithTag("Player");
-
-
     }
 
 
-	public void TakeDamage(int damage) {
-        health -= damage;
-        if (health < 0)
-        {
+    public void TakeDamage(Attack attack) {
+        health -= attack.damage;
+
+        if (health <= 0)
+		{
+            legs.SetActive(false);
             health = 0;
-            if (health == 0) { 
-            Debug.Log("holamemori");
-            Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
-            Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
-            Debug.Log("enemigo" + (this.name));
-            Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Player").transform.position.x);
-            Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Player").transform.position.y);
-            }
-            Analytics.CustomEvent("Matar", new Dictionary<string, object> {
+            if ( !dead ) {
+                dead = true;
+                Debug.Log("Evento Matar");
+                Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
+                Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
+                Debug.Log("enemigo" + (this.name));
+                Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Player").transform.position.x);
+                Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Player").transform.position.y);
+                Analytics.CustomEvent("Matar", new Dictionary<string, object> {
                          {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                          {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                          {"enemigo",  (this.name) },
                          {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
                          {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
-                     });
-        }
-
-        if (health <= 0)
-		{
-            legs.SetActive(false);
-			dead = true;
-			animator.SetBool("Dead", true);
+                });
+            }
+            animator.SetBool("Dead", true);
             if (sprite) sprite.sortingLayerName = "Dead";
 			if (child_sprite) child_sprite.sortingLayerName = "Dead";
 			
@@ -91,8 +83,6 @@ public class EnemyHealth : MonoBehaviour {
 
        
             }
-
-
             if ((GetComponent<WeaponPickup>()) != null)
 			{
 				if (GetComponent<WeaponPickup>().weaponEquipped != null)
@@ -106,13 +96,29 @@ public class EnemyHealth : MonoBehaviour {
 
         }
 		else
-		if (health == 1)
 		{
+            // Si sobrevivio al ataque, queda noqueado
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
 			//Debug.Log("Got Knocked.");
 			transform.Translate(new Vector3(0,0,0));
 
-			if (GetComponent<WeaponPickup>().weaponEquipped != null)
+            //knocked = true;
+            Debug.Log("Evento Noqueado");
+            Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
+            Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
+            Debug.Log("enemigo" + (this.name));
+            Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Enemy").transform.position.x);
+            Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y);
+            Analytics.CustomEvent("Noqueado", new Dictionary<string, object>
+                {
+                    {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                    {"enemigo",  (this.name) },
+                    {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                    {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
+                });
+
+            if (GetComponent<WeaponPickup>().weaponEquipped != null)
 			{
 				weaponPickup.weaponEquipped.transform.position = transform.position;
 				weaponPickup.weaponEquipped.SetActive(true);

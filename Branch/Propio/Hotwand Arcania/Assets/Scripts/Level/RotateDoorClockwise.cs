@@ -19,7 +19,7 @@ public class RotateDoorClockwise : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (Vector3.Distance (player.transform.position, this.gameObject.transform.position) < 1.1f &&other.gameObject.tag == "Enemy") {
-            other.SendMessage("TakeDamage", 1, SendMessageOptions.DontRequireReceiver);
+            other.SendMessage("TakeDamage", new Attack(1, "puerta"), SendMessageOptions.DontRequireReceiver);
         }
 	}
 

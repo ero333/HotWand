@@ -25,18 +25,22 @@ public class EnemyProjectile : MonoBehaviour {
 	private Vector2 target;
 	private Transform player;
 	public int damage;
-	public float speed;
+    public string creator_name;
+    public float speed;
 
 	// time for killing the projectile if it lasts for too long
 	public float deathTimer = 10.0f;
 
 
-	void Start () {
-		direction.x = Vector2.right.x;
-		direction.y = Vector2.right.y;
-		direction.z = 0;
-		player = GameObject.FindGameObjectWithTag("Player").transform;
-	}
+    void Start()
+    {
+        direction.x = Vector2.right.x;
+        direction.y = Vector2.right.y;
+        direction.z = 0;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        damage = 1;
+        creator_name = "enemy";
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -58,7 +62,7 @@ public class EnemyProjectile : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
 			Destroy(this.gameObject);
-			other.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+			other.SendMessage("TakeDamage", new Attack(damage, creator_name), SendMessageOptions.DontRequireReceiver);
 		}
 		else
 		if(other.CompareTag("Wall")){

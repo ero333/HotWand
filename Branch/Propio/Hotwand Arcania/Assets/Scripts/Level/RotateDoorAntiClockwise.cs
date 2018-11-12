@@ -20,7 +20,7 @@ public class RotateDoorAntiClockwise : MonoBehaviour {
 	{
 		if (Vector3.Distance (player.transform.position, this.gameObject.transform.position) < 1.1f &&other.gameObject.tag == "Enemy") {
 
-            other.SendMessage("TakeDamage", 1, SendMessageOptions.DontRequireReceiver);
+            other.SendMessage("TakeDamage", new Attack(1, "puerta"), SendMessageOptions.DontRequireReceiver);             
         }
 	}
 
