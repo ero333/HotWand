@@ -31,10 +31,10 @@ public class MeleeAttack : MonoBehaviour {
 			if (Time.time > lastAttackTime + attackDelay){
 				if (gameObject.GetComponent<WeaponPickup>().weaponEquipped != null)
 				{
-                 	switch (gameObject.GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName)
+                    attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+                    switch (gameObject.GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName)
 					{
 						case "Sword":
-                            attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
 							if (attack != null){
                                 attack.GetComponent<MeleeHitboxEnemy>().damage = 2;
                                 attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
@@ -44,28 +44,38 @@ public class MeleeAttack : MonoBehaviour {
 						break;
 
 						case "Axe":
-                            attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
 							if (attack != null) {
                                 attack.GetComponent<MeleeHitboxEnemy>().damage = 3;
                                 attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
+ 
                             }
 
                             print(  "dano hacha" + attack.GetComponent<MeleeHitboxEnemy>().damage);
                             print( "nombre hacha" + attack.GetComponent<MeleeHitboxEnemy>().creator_name);
 							attackDelay = attackDelay * 1.25f;
 							animator.SetTrigger("Axe");
-						break;
+    				    break;
+
+                        default:
+                            break;
+
+
 					}
 				}
 				else
 				{
                     animator.SetTrigger("Punch");
 					attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
-                    if (attack != null) attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
-				}
-				
-				//Record the time we attacked
-				lastAttackTime = Time.time;
+                    if (attack != null)
+                    {
+                        attack.GetComponent<MeleeHitboxEnemy>().damage = 1;
+                        attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
+ 
+                    }
+                }
+
+                //Record the time we attacked
+                lastAttackTime = Time.time;
 			}
 		}
 	}

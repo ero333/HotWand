@@ -39,7 +39,7 @@ public class SceneSequence : MonoBehaviour {
 							cutsceneStep = 1;
 
 							timeLeft = timeBetweenCutscenes;
-                        Debug.Log("Paso 1");
+                        Debug.Log("Evento VerTutorial <Paso 1>");
                         Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { {"Paso", 1} });
                         }
                     
@@ -59,7 +59,7 @@ public class SceneSequence : MonoBehaviour {
 								cutsceneStep = 2;
 
 								timeLeft = timeBetweenCutscenes;
-                            Debug.Log("Paso 2");
+                            Debug.Log("Evento VerTutorial <Paso: 2>");
                             Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { { "Paso", 2 } });
                         }
 							
@@ -77,7 +77,7 @@ public class SceneSequence : MonoBehaviour {
 							cutsceneStep = 3;
 
 							timeLeft = timeBetweenCutscenes;
-                        Debug.Log("Paso 3");
+                        Debug.Log("Evento VerTutorial <Paso 3>");
                         Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { { "Paso", 3 } });
                     }
 						
@@ -96,7 +96,7 @@ public class SceneSequence : MonoBehaviour {
 								cutsceneStep = 4;
 
 								timeLeft = timeBetweenCutscenes;
-                            Debug.Log("Paso 4");
+                            Debug.Log("Evento VerTutorial <Paso 4>");
                             Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { { "Paso", 4 } });
                         }
 							
@@ -114,7 +114,7 @@ public class SceneSequence : MonoBehaviour {
 							cutsceneStep = 5;
 
 							timeLeft = timeBetweenCutscenes;
-                        Debug.Log("Paso 5");
+                        Debug.Log("Evento VerTutorial <Paso 5>");
                         Analytics.CustomEvent("VerTutorial", new Dictionary<string, object> { { "Paso", 5 } });
                     }
 					

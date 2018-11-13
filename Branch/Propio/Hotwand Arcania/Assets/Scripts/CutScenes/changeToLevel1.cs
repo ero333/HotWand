@@ -20,11 +20,11 @@ public class changeToLevel1 : MonoBehaviour {
         {
             if (ChangeScene.gameObject.CompareTag("Player"))
             {
-                Debug.Log("TerminarNivel");
-                Debug.Log("nivel 0");
-                Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
-                Debug.Log("puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score));
-                Debug.Log("muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes);
+                Debug.Log("Evento TerminarNivel <"
+                +"nivel 0"
+                +"tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)
+                +"puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score)
+                +"muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes+">");
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {
                     {"nivel", 0},
@@ -33,7 +33,7 @@ public class changeToLevel1 : MonoBehaviour {
                     {"muertes", GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes }
                 });
 
-                Debug.Log("muertes ");
+                Debug.Log("Evento EmpezarNivel < nivel: 1>");
                 Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
                 {
                     {"nivel", 1}

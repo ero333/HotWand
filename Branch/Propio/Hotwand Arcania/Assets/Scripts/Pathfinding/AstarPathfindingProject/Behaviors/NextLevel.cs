@@ -29,11 +29,11 @@ public class NextLevel : MonoBehaviour {
             {
                 
 
-                Debug.Log("TerminarNivel");
-                Debug.Log("nivel " +(nextLevel - 1));
-                Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) );
-                Debug.Log("puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score));
-                Debug.Log("muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes );
+                Debug.Log("Evento TerminarNivel <"
+                +" nivel " +(nextLevel - 1) 
+                +" tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)  
+                +" puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score) 
+                +" muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes +">");
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {
                     {"nivel", nextLevel - 1},

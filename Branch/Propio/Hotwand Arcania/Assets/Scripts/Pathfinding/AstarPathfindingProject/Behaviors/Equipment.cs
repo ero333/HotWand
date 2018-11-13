@@ -214,7 +214,7 @@ public GameObject equippedWeapon;
                     if (swordAttack != null)
                     {
                         swordAttack.GetComponent<MeleeHitboxPlayer>().damage = 2;
-                  //    swordAttack.GetComponent<MeleeHitboxPlayer>().creator_name = gameObject.name;
+                        //swordAttack.GetComponent<MeleeHitboxPlayer>().creator_name = gameObject.name;
                     }
                     animator.SetTrigger("Sword Attack");
 				break;

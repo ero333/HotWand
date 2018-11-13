@@ -12,6 +12,7 @@ public class MeleeHitboxEnemy : MonoBehaviour {
     {
         creator_name = "nadie";
     }
+
     // time for killing the projectile if it lasts for too long
     public float deathTimer = 1.0f;
 

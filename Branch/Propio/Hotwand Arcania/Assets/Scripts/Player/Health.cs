@@ -79,11 +79,11 @@ public class Health : MonoBehaviour {
             RestartButton.gameObject.SetActive(true);
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.R)) {
-                Debug.Log("Evento ReiniciarNivel");
-                Debug.Log("nivel" + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
-                Debug.Log("tiempo" + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
-                Debug.Log("puntos" + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score);
-                Debug.Log("muertes" + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes); 
+                Debug.Log("Evento ReiniciarNivel <"
+                +" nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)
+                +" tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)
+                +" puntos: " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score
+                +" muertes: " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes+" >"); 
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {
                     {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
@@ -117,12 +117,12 @@ public class Health : MonoBehaviour {
                 if(!knocked)
                 {                    
                     knocked = true;
-                    Debug.Log("Evento Noqueado");
-                    Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
-                    Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
-                    Debug.Log("enemigo" + attack.creator);
-                    Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Enemy").transform.position.x);
-                    Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y);
+                    Debug.Log("Evento Noqueado <"
+                    +" nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)
+                    +" tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)
+                    +" enemigo: " + attack.creator
+                    +" CordenadasX: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.x
+                    +" CordenadasY: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.y+" >");
                     Analytics.CustomEvent("Noqueado", new Dictionary<string, object>
                     {
                         {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
@@ -141,12 +141,12 @@ public class Health : MonoBehaviour {
                 anim.SetBool("Dead", true);
                 if (!dead)
                 {
-                    Debug.Log("Evento Morir");
-                    Debug.Log("nivel " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1));
-                    Debug.Log("tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel));
-                    Debug.Log("enemigo" + attack.creator);
-                    Debug.Log("CordenadasX" + GameObject.FindGameObjectWithTag("Enemy").transform.position.x);
-                    Debug.Log("CordenadasY" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y);
+                    Debug.Log("Evento Morir <"
+                    +" nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)
+                    +" tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)
+                    +" enemigo: " + attack.creator
+                    +" CordenadasX: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.x
+                    +" CordenadasY: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.y+" >");
                     
                     Analytics.CustomEvent("Morir", new Dictionary<string, object> {
                         {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
