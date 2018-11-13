@@ -7,6 +7,7 @@ public class MeleeHitboxEnemy : MonoBehaviour {
 	private Vector2 target;
 	public int damage;
     public string creator_name;
+    public string arma;
     Attack attack;
     private void Start()
     {
@@ -28,7 +29,7 @@ public class MeleeHitboxEnemy : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
  		if(other.CompareTag("Player")){
 			Destroy(this.gameObject);
-			other.SendMessage("TakeDamage", new Attack(damage, creator_name), SendMessageOptions.DontRequireReceiver);
+			other.SendMessage("TakeDamage", new Attack(damage, creator_name, arma), SendMessageOptions.DontRequireReceiver);
 		}
 	}
 }

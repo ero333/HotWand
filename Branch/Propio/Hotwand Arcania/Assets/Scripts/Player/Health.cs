@@ -121,13 +121,15 @@ public class Health : MonoBehaviour {
                     +" nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)
                     +" tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)
                     +" enemigo: " + attack.creator
-                    +" CordenadasX: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.x
+                    + " arma: " + attack.arma
+                    + " CordenadasX: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.x
                     +" CordenadasY: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.y+" >");
                     Analytics.CustomEvent("Noqueado", new Dictionary<string, object>
                     {
                         {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                         {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                         {"enemigo", attack.creator },
+                        {"arma", attack.arma },
                         {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
                         {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
                     });
@@ -145,14 +147,16 @@ public class Health : MonoBehaviour {
                     +" nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)
                     +" tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)
                     +" enemigo: " + attack.creator
-                    +" CordenadasX: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.x
+                    + " arma: " + attack.arma
+                    + " CordenadasX: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.x
                     +" CordenadasY: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.y+" >");
                     
                     Analytics.CustomEvent("Morir", new Dictionary<string, object> {
                         {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                         {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                         {"enemigo", attack.creator },
-                        {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                        {"arma", attack.arma },
+                        { "CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
                         {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
                     });
                 }

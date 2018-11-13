@@ -32,6 +32,7 @@ public class MeleeAttack : MonoBehaviour {
 				if (gameObject.GetComponent<WeaponPickup>().weaponEquipped != null)
 				{
                     attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+                    attack.GetComponent<MeleeHitboxEnemy>().arma = gameObject.GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName;
                     switch (gameObject.GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName)
 					{
 						case "Sword":
@@ -66,6 +67,7 @@ public class MeleeAttack : MonoBehaviour {
 				{
                     animator.SetTrigger("Punch");
 					attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+                    attack.GetComponent<MeleeHitboxEnemy>().arma = "Punch";
                     if (attack != null)
                     {
                         attack.GetComponent<MeleeHitboxEnemy>().damage = 1;

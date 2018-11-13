@@ -54,6 +54,7 @@ public class EnemyHealth : MonoBehaviour {
                 " nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)+
                 " tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)+
                 " enemigo: " + (this.name)+
+                " arma:" + attack.arma +
                 " CordenadasX: " + GameObject.FindGameObjectWithTag("Player").transform.position.x+
                 " CordenadasY: " + GameObject.FindGameObjectWithTag("Player").transform.position.y+">");
 
@@ -61,7 +62,8 @@ public class EnemyHealth : MonoBehaviour {
                          {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                          {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                          {"enemigo",  (this.name) },
-                         {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                         {"arma", attack.arma },
+                         { "CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
                          {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
                 });
             }
@@ -108,6 +110,7 @@ public class EnemyHealth : MonoBehaviour {
             Debug.Log("Evento Noqueado <" +"nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)+
             " tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)+
             " enemigo: " + (this.name)+
+            " arma;"+ attack.arma +
             " CordenadasX: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.x+
             " CordenadasY:" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y+">");
             Analytics.CustomEvent("Noqueado", new Dictionary<string, object>
@@ -115,6 +118,7 @@ public class EnemyHealth : MonoBehaviour {
                     {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
                     {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                     {"enemigo",  (this.name) },
+                    {"arma", attack.arma },
                     {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
                     {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
                 });

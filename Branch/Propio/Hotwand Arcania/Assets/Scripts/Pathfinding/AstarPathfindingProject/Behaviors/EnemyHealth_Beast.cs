@@ -4,6 +4,7 @@ using UnityEngine;
 using Pathfinding;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class EnemyHealth_Beast : MonoBehaviour {
 
@@ -51,15 +52,33 @@ public class EnemyHealth_Beast : MonoBehaviour {
 
     public void TakeDamage(Attack attack) {
 		health -= attack.damage;
-        if (health < 0)
-        {
-            health = 0;
-        }
-
+ 
         if (health <= 0)
         {
             print("muerto");
-            dead = true;
+            health = 0;
+            if (!dead)
+            {
+                dead = true;
+
+                Debug.Log("Evento Matar <" +
+                " nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1) +
+                " tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) +
+                " enemigo: " + "Beast" +
+                " arma:" + attack.arma +
+                " CordenadasX: " + GameObject.FindGameObjectWithTag("Player").transform.position.x +
+                " CordenadasY: " + GameObject.FindGameObjectWithTag("Player").transform.position.y + ">");
+
+                Analytics.CustomEvent("Matar", new Dictionary<string, object> {
+                         {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                         {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                         {"enemigo", "Beast" },
+                         {"arma", attack.arma },
+                         { "CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                         {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
+                });
+            }
+  
             animator.SetBool("Dead", true);
             if (sprite) sprite.sortingLayerName = "Dead";
             if (child_sprite) child_sprite.sortingLayerName = "Dead";
@@ -86,7 +105,23 @@ public class EnemyHealth_Beast : MonoBehaviour {
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
 			Debug.Log("Got Knocked.");
 			transform.Translate(new Vector3(0,0,0));
-		}
+            //knocked = true;
+            Debug.Log("Evento Noqueado <" + "nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1) +
+            " tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) +
+            " enemigo: " + "Beast" +
+            " arma;" + attack.arma +
+            " CordenadasX: " + GameObject.FindGameObjectWithTag("Enemy").transform.position.x +
+            " CordenadasY:" + GameObject.FindGameObjectWithTag("Enemy").transform.position.y + ">");
+            Analytics.CustomEvent("Noqueado", new Dictionary<string, object>
+                {
+                    {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
+                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                    {"enemigo",  "Beast" },
+                    {"arma", attack.arma },
+                    {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
+                    {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
+                });
+        }
 		
 		Debug.Log("Got Hit.");
 	}

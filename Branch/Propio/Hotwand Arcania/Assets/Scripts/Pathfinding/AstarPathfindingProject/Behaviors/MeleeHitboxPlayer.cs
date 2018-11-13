@@ -5,10 +5,12 @@ using UnityEngine.Tilemaps;
 
 public class MeleeHitboxPlayer : MonoBehaviour {
 	private Vector2 target;
-	public int damage;    
+	public int damage;
+    public string creator_name;
+    public string arma;
 
-	// time for killing the projectile if it lasts for too long
-	public float deathTimer = 1.0f;
+    // time for killing the projectile if it lasts for too long
+    public float deathTimer = 1.0f;
 
 	// Update is called once per frame
 	void Update () {
@@ -21,7 +23,7 @@ public class MeleeHitboxPlayer : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Enemy")){
-            other.SendMessage("TakeDamage", new Attack(damage, other.name), SendMessageOptions.DontRequireReceiver);
+            other.SendMessage("TakeDamage", new Attack(damage, other.name, arma), SendMessageOptions.DontRequireReceiver);
 			Destroy(this.gameObject);
 		}
 	}
