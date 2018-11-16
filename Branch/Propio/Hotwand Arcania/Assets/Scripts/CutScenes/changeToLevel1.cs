@@ -22,15 +22,15 @@ public class changeToLevel1 : MonoBehaviour {
             {
                 Debug.Log("Evento TerminarNivel <"
                 +"nivel 0"
-                +"tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)
+                +"tiempo " + (Time.time - Globales.tiempoLevel)
                 +"puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score)
-                +"muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes+">");
+                +"muertes " + Globales.muertes+">");
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {
                     {"nivel", 0},
-                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                    {"tiempo", (Time.time - Globales.tiempoLevel) },
                     {"puntos", (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score) },
-                    {"muertes", GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes }
+                    {"muertes", Globales.muertes }
                 });
 
                 Debug.Log("Evento EmpezarNivel < nivel: 1>");
@@ -38,6 +38,8 @@ public class changeToLevel1 : MonoBehaviour {
                 {
                     {"nivel", 1}
                 });
+                Globales.muertes = 0;
+                Globales.tiempoLevel = Time.time;
                 SceneManager.LoadScene("CutPostTutorial");
                 Destroy(gameObject);
             }

@@ -78,18 +78,21 @@ public class Health : MonoBehaviour {
 		if (dead == true) {
             RestartButton.gameObject.SetActive(true);
             Time.timeScale = 0f;
+
+
             if (Input.GetKeyDown(KeyCode.R)) {
+                Globales.muertes++;
                 Debug.Log("Evento ReiniciarNivel <"
                 +" nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)
-                +" tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)
+                +" tiempo: " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel
                 +" puntos: " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score
-                +" muertes: " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes+" >"); 
+                +" muertes: " + Globales.muertes+" >"); 
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {
                     {"nivel", (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)},
-                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                    {"tiempo", (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
                     {"puntos", (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score) },
-                    {"muertes", GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes }
+                    {"muertes", Globales.muertes }
                 });
                 SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
                 Time.timeScale = 1f;

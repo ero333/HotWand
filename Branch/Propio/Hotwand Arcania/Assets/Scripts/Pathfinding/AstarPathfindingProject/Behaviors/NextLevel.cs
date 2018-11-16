@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Analytics;
+//using Globales;
 
 
 public class NextLevel : MonoBehaviour {
@@ -31,22 +32,23 @@ public class NextLevel : MonoBehaviour {
 
                 Debug.Log("Evento TerminarNivel <"
                 +" nivel " +(nextLevel - 1) 
-                +" tiempo " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)  
+                +" tiempo " + (Time.time - Globales.tiempoLevel)  
                 +" puntos" + (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score) 
-                +" muertes " + GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes +">");
+                +" muertes " + Globales.muertes +">");
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {
                     {"nivel", nextLevel - 1},
-                    {"tiempo", (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel) },
+                    {"tiempo", (Time.time - Globales.tiempoLevel) },
                     {"puntos", (GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().score) },
-                    {"muertes", GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().muertes }
+                    {"muertes", Globales.muertes }
                 });                
                 Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
                 {
                     {"nivel", nextLevel}
                 });
 
-
+                Globales.muertes = 0;
+                Globales.tiempoLevel = Time.time;
                 SceneManager.LoadScene(nextLevel+5);
                 Destroy(gameObject);
             }

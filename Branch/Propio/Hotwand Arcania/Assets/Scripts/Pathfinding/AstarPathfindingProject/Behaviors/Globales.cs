@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-class Globales  {
+
+public class Globales {
 
     public static int EmpezarJugar = 0;
+    public static int muertes = 0;
+    public static float tiempoLevel = 0;
 
 }
