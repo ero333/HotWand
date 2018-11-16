@@ -465,7 +465,12 @@ Prefab:
         type: 2}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1755505643}
+    - target: {fileID: 114261917038993058, guid: d310ce75d1182a14190a38f222f80f95,
+        type: 2}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 1755505643}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d310ce75d1182a14190a38f222f80f95, type: 2}
   m_IsPrefabAsset: 0
@@ -16142,6 +16147,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1051559613463262, guid: 1057df699dd1b9a439b9ce409daa3729,
     type: 2}
   m_PrefabInternal: {fileID: 1814540970}
+--- !u!114 &1755505643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114914785016411768, guid: 1057df699dd1b9a439b9ce409daa3729,
+    type: 2}
+  m_PrefabInternal: {fileID: 1814540970}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1760283604
 GameObject:
   m_ObjectHideFlags: 0

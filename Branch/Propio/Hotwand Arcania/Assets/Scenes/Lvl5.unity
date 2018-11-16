@@ -13421,6 +13421,11 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 614493373}
+    - target: {fileID: 114261917038993058, guid: d310ce75d1182a14190a38f222f80f95,
+        type: 2}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 614493373}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d310ce75d1182a14190a38f222f80f95, type: 2}
   m_IsPrefabAsset: 0
