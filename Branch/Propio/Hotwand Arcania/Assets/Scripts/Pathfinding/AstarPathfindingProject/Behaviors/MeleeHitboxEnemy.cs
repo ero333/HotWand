@@ -11,7 +11,7 @@ public class MeleeHitboxEnemy : MonoBehaviour {
     Attack attack;
     private void Start()
     {
-        creator_name = "nadie";
+        //creator_name = "nadie";
     }
 
     // time for killing the projectile if it lasts for too long
@@ -28,8 +28,11 @@ public class MeleeHitboxEnemy : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
  		if(other.CompareTag("Player")){
-			Destroy(this.gameObject);
+
+			print(creator_name+ " atacando! ");
 			other.SendMessage("TakeDamage", new Attack(damage, creator_name, arma), SendMessageOptions.DontRequireReceiver);
+			Destroy(this.gameObject);
+	
 		}
 	}
 }

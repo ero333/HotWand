@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Pathfinding;
+
 public class EnemyProjectile : MonoBehaviour {
 	/*
 	public float speed;
@@ -27,6 +29,7 @@ public class EnemyProjectile : MonoBehaviour {
 	public int damage;
     public string creator_name;
     public float speed;
+	public string arma;
 
 	// time for killing the projectile if it lasts for too long
 	public float deathTimer = 10.0f;
@@ -39,7 +42,7 @@ public class EnemyProjectile : MonoBehaviour {
         direction.z = 0;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         damage = 1;
-        creator_name = "enemy";
+        //creator_name = "enemy";
     }
 
 	// Update is called once per frame
@@ -61,8 +64,10 @@ public class EnemyProjectile : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("Player")){
+			print(creator_name + " me ataco");
+			print("El proyectil vino de una " + arma);
+			other.SendMessage("TakeDamage", new Attack(damage, creator_name, arma), SendMessageOptions.DontRequireReceiver);
 			Destroy(this.gameObject);
-			other.SendMessage("TakeDamage", new Attack(damage, creator_name), SendMessageOptions.DontRequireReceiver);
 		}
 		else
 		if(other.CompareTag("Wall")){

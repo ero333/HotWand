@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa326858bad22f14a9ebde0092821e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 1
   rangedAnchorPoint: {fileID: 1082372415991542}
   fireBreathProjectile: {fileID: 1653958583639518, guid: b75f5fd2323f52b469e3d7760e39f099,
     type: 2}
