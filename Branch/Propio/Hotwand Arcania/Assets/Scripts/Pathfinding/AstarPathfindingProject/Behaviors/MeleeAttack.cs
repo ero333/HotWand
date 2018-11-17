@@ -40,6 +40,8 @@ public class MeleeAttack : MonoBehaviour {
                                 attack.GetComponent<MeleeHitboxEnemy>().damage = 2;
                                 attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
                             }
+							print(  "daño de la espada: " + attack.GetComponent<MeleeHitboxEnemy>().damage);
+                            print( "nombre del enemigo que me mato con la espada: " + attack.GetComponent<MeleeHitboxEnemy>().creator_name);
                             attackDelay = attackDelay * 1f;
 							animator.SetTrigger("Sword");
 						break;
@@ -51,8 +53,8 @@ public class MeleeAttack : MonoBehaviour {
  
                             }
 
-                            print(  "dano hacha" + attack.GetComponent<MeleeHitboxEnemy>().damage);
-                            print( "nombre hacha" + attack.GetComponent<MeleeHitboxEnemy>().creator_name);
+                            print(  "daño del hacha: " + attack.GetComponent<MeleeHitboxEnemy>().damage);
+                            print( "nombre del enemigo que me mato con el hacha: " + attack.GetComponent<MeleeHitboxEnemy>().creator_name);
 							attackDelay = attackDelay * 1.25f;
 							animator.SetTrigger("Axe");
     				    break;
@@ -74,6 +76,8 @@ public class MeleeAttack : MonoBehaviour {
                         attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
  
                     }
+					print(  "daño de la piña: " + attack.GetComponent<MeleeHitboxEnemy>().damage);
+                    print( "nombre del enemigo que me mato con la piña: " + attack.GetComponent<MeleeHitboxEnemy>().creator_name);
                 }
 
                 //Record the time we attacked
