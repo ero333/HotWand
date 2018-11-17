@@ -22,7 +22,7 @@ public class LoadOnClick : MonoBehaviour {
            
             Analytics.CustomEvent("EmpezarJugar", new Dictionary<string, object>
             {
-                {"vez", Globales.EmpezarJugar++},
+                {"vez", Globales.EmpezarJugar},
             });
             
 
