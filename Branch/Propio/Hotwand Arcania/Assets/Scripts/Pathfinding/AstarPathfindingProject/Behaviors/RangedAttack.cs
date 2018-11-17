@@ -39,6 +39,8 @@ public class RangedAttack : MonoBehaviour {
 		if (Time.time > lastAttackTime + 2)
 		{
 				GameObject newProjectile = Instantiate(projectile, rangedAnchorPoint.transform.position, rangedAnchorPoint.transform.rotation);
+				newProjectile.GetComponent<EnemyProjectile>().arma = GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName;
+				newProjectile.GetComponent<EnemyProjectile>().creator_name = gameObject.name;
 				lastAttackTime = Time.time;
 		}
 	}

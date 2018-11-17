@@ -12,6 +12,8 @@ public class RangedAttack_Dragon : MonoBehaviour {
 	public GameObject crossbowProjectile;
 	GameObject projectile;
 	private Transform player;
+	public string creator_name;
+	public string arma;
 
 	private float speed = 50f;
 
@@ -31,6 +33,8 @@ public class RangedAttack_Dragon : MonoBehaviour {
 		if (Time.time > lastAttackTime + 2)
 		{
 				GameObject newProjectile = Instantiate(projectile, rangedAnchorPoint.transform.position, rangedAnchorPoint.transform.rotation);
+				newProjectile.GetComponent<EnemyProjectile>().arma = "Dragonbreath";
+				newProjectile.GetComponent<EnemyProjectile>().creator_name = gameObject.name;
 				lastAttackTime = Time.time;
 		}
 	}

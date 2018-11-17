@@ -22,14 +22,22 @@ public class MeleeAttack_Beast : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Attacking AI
-
+		GameObject attack;
 		//Check the distance between enemy and player to see if the player is close enough to attack
 		float distanceToPlayer = Vector3.Distance(transform.position, target.position);
 		//if (distanceToPlayer < attackRange){
 			//Check to see if enough time has passed since we last attacked
 			if (Time.time > lastAttackTime + attackDelay){
 					animator.SetTrigger("Punch");
-					Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+					attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
+                    attack.GetComponent<MeleeHitboxEnemy>().arma = "Punch";
+                    if (attack != null)
+                    {
+                        attack.GetComponent<MeleeHitboxEnemy>().damage = 1;
+                        attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
+                    }
+					print(  "daño de la piña: " + attack.GetComponent<MeleeHitboxEnemy>().damage);
+                    print( "nombre del enemigo que me mato con la piña: " + attack.GetComponent<MeleeHitboxEnemy>().creator_name);
 				}
 				
 				//Record the time we attacked
