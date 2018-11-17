@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Wand
   equippable: 1
-  weaponAmmo: 25
+  weaponAmmo: 3
   direction: {x: 0, y: 0, z: 0}
   attackDelay: 0
   beingThrown: 0
