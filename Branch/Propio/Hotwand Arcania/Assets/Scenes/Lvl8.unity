@@ -787,6 +787,11 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1292007255}
+    - target: {fileID: 114261917038993058, guid: d310ce75d1182a14190a38f222f80f95,
+        type: 2}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 1292007255}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d310ce75d1182a14190a38f222f80f95, type: 2}
   m_IsPrefabAsset: 0
@@ -2374,7 +2379,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1110819603
 GameObject:
