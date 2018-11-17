@@ -104,6 +104,7 @@ public class EnemyHealth : MonoBehaviour {
 		{
             legs.SetActive(false);
             // Si sobrevivio al ataque, queda noqueado
+
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
 			//Debug.Log("Got Knocked.");
 			transform.Translate(new Vector3(0,0,0));
