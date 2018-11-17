@@ -39,12 +39,14 @@ public class Weapon : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if ((beingThrown) && (other.CompareTag("Enemy"))){
-			beingThrown = false;
+			//beingThrown = false;
 			other.SendMessage("TakeDamage", new Attack(1, other.name), SendMessageOptions.DontRequireReceiver);
+			Destroy(this.gameObject);
 		}
 		else
 		if ((beingThrown) && (other.CompareTag("Wall"))){
-			beingThrown = false;
+			//beingThrown = false;
+			Destroy(this.gameObject);
 		}
 	}
 	public void PickedUp(){
