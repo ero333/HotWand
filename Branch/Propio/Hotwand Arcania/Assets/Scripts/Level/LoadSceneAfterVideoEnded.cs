@@ -20,11 +20,6 @@ public class LoadSceneAfterVideoEnded : MonoBehaviour
     {
         tiempoLevel = Time.time;
 
-        Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
-                {
-                   {"vez", VerCreditos+=1},
-                   {"saltear", Time.time - tiempoLevel}
-                });
         SceneManager.LoadScene(SceneName);
 
     }

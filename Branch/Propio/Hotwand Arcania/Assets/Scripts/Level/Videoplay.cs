@@ -27,6 +27,12 @@ public class Videoplay : MonoBehaviour {
         {
             case "Creditos":
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "CREDITOSFINAL.mp4");
+                VerCreditos++;
+                Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
+                {
+                    {"vez", VerCreditos},
+                });
+
                 break;
             case "CutIntro":
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "CUT1.mp4");
@@ -56,9 +62,9 @@ public class Videoplay : MonoBehaviour {
         {
             SceneManager.LoadScene("Tutorial");
             if (sceneName == "Creditos")
-                Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
+                Analytics.CustomEvent("SaltearCreditos", new Dictionary<string, object>
                 {
-                    {"saltear", Time.time - tiempoLevel},
+                    {"vez", VerCreditos},
                 });
             {
                 SceneManager.LoadScene("Calificar");
@@ -79,10 +85,6 @@ public class Videoplay : MonoBehaviour {
 
                 {
                 SceneManager.LoadScene("Creditos");
-                Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
-                {
-                    {"vez", VerCreditos+=1},
-                });
             }
             }
           }
