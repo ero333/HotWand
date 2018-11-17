@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e5407f0b9b1060d4e87f7a0ddd2eaded
+=======
+guid: 579f8f0e37865f44e95155911f8dbb51
+>>>>>>> 21b1076e25ec8dfe386fa302f721fabc936126a8
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -31,7 +35,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: -1
+>>>>>>> 21b1076e25ec8dfe386fa302f721fabc936126a8
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -45,7 +53,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 15
+=======
+  spritePixelsToUnits: 100
+>>>>>>> 21b1076e25ec8dfe386fa302f721fabc936126a8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,6 +81,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -91,13 +104,19 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+=======
+>>>>>>> 21b1076e25ec8dfe386fa302f721fabc936126a8
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: f65c57223df6a4e40aebdfa9ccbc4de6
+=======
+    spriteID: adf35d9a10b24cb4b888bcf43b5d5f84
+>>>>>>> 21b1076e25ec8dfe386fa302f721fabc936126a8
     vertices: []
     indices: 
     edges: []
