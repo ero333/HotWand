@@ -9,7 +9,6 @@ public class RangedAttack_Dragon : MonoBehaviour {
 
 	public GameObject rangedAnchorPoint;
 	public GameObject fireBreathProjectile;
-	public GameObject crossbowProjectile;
 	GameObject projectile;
 	private Transform player;
 	public string creator_name;

@@ -25,6 +25,7 @@ public class EnemyProjectile : MonoBehaviour {
 	*/
 	public Vector3 direction;
 	private Vector2 target;
+	private Vector3 targetDir;
 	private Transform player;
 	public int damage;
     public string creator_name;
@@ -42,17 +43,17 @@ public class EnemyProjectile : MonoBehaviour {
         direction.z = 0;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         damage = 1;
+		targetDir = player.position - transform.position;
         //creator_name = "enemy";
     }
 
 	// Update is called once per frame
 	void Update () {
-		player = GameObject.FindGameObjectWithTag("Player").transform;
-		Vector3 targetDir = player.position - transform.position;
+		targetDir = player.position - transform.position;
 		float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
 		Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
 		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
-
+		
 		transform.Translate (direction*speed*Time.deltaTime);
 
 		deathTimer -= Time.deltaTime;

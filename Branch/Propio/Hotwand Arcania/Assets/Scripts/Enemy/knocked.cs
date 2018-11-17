@@ -11,10 +11,10 @@ public class knocked : StateMachineBehaviour {
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		animator.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
 		animator.GetComponent<Rigidbody2D>().angularVelocity = 0.0f;
-		animator.GetComponent<AIPath>().maxSpeed = 0.0f;
 		animator.GetComponent<AIPath>().enabled = false;
 		animator.GetComponent<Chase>().enabled = false;
 		animator.GetComponent<CircleCollider2D>().enabled = false;
+		animator.GetComponent<AIPath>().canMove = false;
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -24,6 +24,8 @@ public class knocked : StateMachineBehaviour {
 			animator.SetBool("Knocked", false);
 			knockedTimer = Time.time;
 		}
+		animator.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
+		animator.GetComponent<Rigidbody2D>().angularVelocity = 0.0f;
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
@@ -32,6 +34,7 @@ public class knocked : StateMachineBehaviour {
 		animator.GetComponent<AIPath>().enabled = true;
 		animator.GetComponent<Chase>().enabled = true;
 		animator.GetComponent<CircleCollider2D>().enabled = true;
+		animator.GetComponent<AIPath>().canMove = true;
 	}
 }
 
