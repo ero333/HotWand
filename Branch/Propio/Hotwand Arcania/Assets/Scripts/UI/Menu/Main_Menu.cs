@@ -16,6 +16,8 @@ public class Main_Menu : MonoBehaviour {
 		{
 			{"nivel", SceneManager.GetActiveScene().buildIndex + 2}
 		});
+		Globales.muertes = 0;
+        Globales.tiempoLevel = Time.time;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
 	}
 

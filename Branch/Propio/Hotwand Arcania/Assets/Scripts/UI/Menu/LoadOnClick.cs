@@ -56,6 +56,8 @@ public class LoadOnClick : MonoBehaviour {
             });
 
         }
+        Globales.muertes = 0;
+        Globales.tiempoLevel = Time.time;
         SceneManager.LoadScene(level);
     }
 
