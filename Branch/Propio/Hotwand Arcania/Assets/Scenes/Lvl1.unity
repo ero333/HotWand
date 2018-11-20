@@ -830,6 +830,11 @@ Prefab:
       propertyPath: m_Name
       value: Human1
       objectReference: {fileID: 0}
+    - target: {fileID: 114473864483676626, guid: bd9cd0f6bf4701747a4ebdce1d240904,
+        type: 2}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd9cd0f6bf4701747a4ebdce1d240904, type: 2}
   m_IsPrefabAsset: 0
@@ -1210,6 +1215,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4009850305094390, guid: a269f409ddc4fe54b8e76cd239e023d8, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080141074504426, guid: a269f409ddc4fe54b8e76cd239e023d8,
+        type: 2}
+      propertyPath: beingThrown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080141074504426, guid: a269f409ddc4fe54b8e76cd239e023d8,
+        type: 2}
+      propertyPath: equippable
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

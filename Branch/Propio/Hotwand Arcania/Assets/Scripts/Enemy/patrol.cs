@@ -19,15 +19,15 @@ public class patrol : StateMachineBehaviour {
         if (animator.name.Substring(0, 2) == "Elf")
         {
             animator.GetComponent<AIPath>().maxSpeed = 1.0f;
-        };
+        }
         if (animator.name.Substring(0, 2) == "Orc")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.6f;
-        };
+        }
         if (animator.name.Substring(0, 4) == "Human")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.8f;
-        };
+        }
         animator.SetBool("Walking", true);
 	}
 
@@ -38,15 +38,15 @@ public class patrol : StateMachineBehaviour {
         if (animator.name.Substring(0, 2) == "Elf")
         {
             animator.GetComponent<AIPath>().maxSpeed = 1.0f;
-        };
+        }
         if (animator.name.Substring(0, 2) == "Orc")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.6f;
-        };
+        }
         if (animator.name.Substring(0, 4) == "Human")
         {
             animator.GetComponent<AIPath>().maxSpeed = 0.8f;
-        };
+        }
         //Looking for weapon only
         float distanceToClosestWeapon = Mathf.Infinity;
 		GameObject closestWeapon = null;

@@ -26,26 +26,31 @@ public class Weapon : MonoBehaviour {
 	{		
 		if (beingThrown)
 		{
-			transform.Translate(direction*4*Time.deltaTime);
+			transform.Translate(direction * 4 * Time.deltaTime);
 			//transform.rotation = Quaternion.Slerp(this.transform.rotation,new Quaternion(this.transform.rotation.x,this.transform.rotation.y,this.transform.rotation.z-1,this.transform.rotation.w), Time.deltaTime * 10);
 			lastRotation = transform.rotation;
+			//Destroy(this.gameObject);
 		}
 		else
 		{
 			transform.Translate(new Vector3(0,0,0));
 			transform.rotation = lastRotation;
+				
 		}
+
+		
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if ((beingThrown) && (other.CompareTag("Enemy"))){
-			//beingThrown = false;
+		if ((beingThrown) && (other.CompareTag("Enemy")))
+		{
+			beingThrown = false;
 			other.SendMessage("TakeDamage", new Attack(1, other.name), SendMessageOptions.DontRequireReceiver);
 			Destroy(this.gameObject);
 		}
-		else
-		if ((beingThrown) && (other.CompareTag("Wall"))){
-			//beingThrown = false;
+		else if ((beingThrown) && (other.CompareTag("Wall")))
+		{
+			beingThrown = false;
 			Destroy(this.gameObject);
 		}
 	}

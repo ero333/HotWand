@@ -151,7 +151,7 @@ public GameObject equippedWeapon;
 				case "Wand":
 					thrownWand = Instantiate(wandPrefab, meleeAnchorPoint.transform.position, transform.rotation);
 					thrownWand.GetComponent<Weapon>().beingThrown = true;
-					Destroy(equippedWeapon);
+					Destroy(this.equippedWeapon);
 					ResetStance();
 				break;
 
@@ -227,7 +227,8 @@ public GameObject equippedWeapon;
 
 				case "Wand":
 					if (equippedWeapon.GetComponent<Weapon>().weaponAmmo > 0) 
-					{
+					{	
+							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
 							if (score != null) score.GetComponent<Score>().ammo = equippedWeapon.GetComponent<Weapon>().weaponAmmo;							equippedWeapon.GetComponent<Weapon>().weaponAmmo -= 1;
 							Instantiate(wandProjectile, rangedAnchorPoint.transform.position, transform.rotation);
 					}
