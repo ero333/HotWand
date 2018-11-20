@@ -69,6 +69,7 @@ public class EnemyHealth : MonoBehaviour {
                 });
             }
             animator.SetBool("Dead", true);
+
             if (sprite) sprite.sortingLayerName = "Dead";
 			if (child_sprite) child_sprite.sortingLayerName = "Dead";
 			
@@ -106,10 +107,11 @@ public class EnemyHealth : MonoBehaviour {
             // Si sobrevivio al ataque, queda noqueado
 
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
+            
 			//Debug.Log("Got Knocked.");
 			transform.Translate(new Vector3(0,0,0));
 
-            //knocked = true;
+            //Knocked = true;
             Debug.Log("Evento Noqueado <" +"nivel: " + (GameObject.FindGameObjectWithTag("Portal").GetComponent<NextLevel>().nextLevel - 1)+
             " tiempo: " + (Time.time - GameObject.FindGameObjectWithTag("Score").GetComponent<Score>().tiempoLevel)+
             " enemigo: " + (this.name)+

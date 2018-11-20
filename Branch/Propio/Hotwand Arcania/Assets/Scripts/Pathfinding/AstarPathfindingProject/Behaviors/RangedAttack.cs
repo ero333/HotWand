@@ -20,10 +20,12 @@ public class RangedAttack : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player").transform;	
 		switch (GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName)
 		{
-			case "Wand": projectile = wandProjectile;
+			case "Wand": 
+				projectile = wandProjectile;
 			break;
 
-			case "Crossbow": projectile = crossbowProjectile;
+			case "Crossbow": 
+				projectile = crossbowProjectile;
 			break;
 		}
 		
