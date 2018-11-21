@@ -50,9 +50,9 @@ public class EnemyProjectile : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		targetDir = player.position - transform.position;
-		float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
+		float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 2f;
 		Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
+		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 2 * Time.deltaTime);
 		
 		transform.Translate (direction*speed*Time.deltaTime);
 
