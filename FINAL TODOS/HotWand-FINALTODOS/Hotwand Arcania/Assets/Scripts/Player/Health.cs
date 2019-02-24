@@ -133,10 +133,13 @@ public class Health : MonoBehaviour {
 		{
 			health -= attack.damage;
 
-            if (health > 0) { 
-                if (!knocked) {
+            if (health > 0)
+            { 
+                if (!knocked)
+                {
                     knockedTimer = 20.0f;
                     knocked = true;
+                    HealthBar.health -= 40.0f;
                 }
 
                 child_object.GetComponent<SpriteRenderer>().material = Hit;
