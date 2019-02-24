@@ -67,5 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d736dc0345f16ec48945f4e6a84e0266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 1
+  creator_name: 
+  arma: 
   deathTimer: 1

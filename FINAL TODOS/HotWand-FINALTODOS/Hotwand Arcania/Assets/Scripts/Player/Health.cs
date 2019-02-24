@@ -18,12 +18,15 @@ public class Health : MonoBehaviour {
 	public bool dead;
 	public bool knocked;
 	public int health;
-	private float knockedTimer;
+	
     private SpriteRenderer sprite;
 	public Equipment equipment;
 	public PlayerInteract interact;
 
-
+    //Flash Shader Vars
+    public Material Default;
+    public Material Hit;
+    private float knockedTimer = 20.0f;
 
     //Getting Child's Sprite
     private Transform child_transform;
@@ -61,18 +64,33 @@ public class Health : MonoBehaviour {
 			GetComponent<PlayerInteract>().enabled = true;
 		}
 
-		///Knocked Logic
+        //Flash Shader when hit
+        if (knocked) {
+            knockedTimer -= Time.time;
+
+            if (knockedTimer <= 0.0f)
+            {
+                knocked = false;
+                child_object.GetComponent<SpriteRenderer>().material = Default;
+                GetComponent<SpriteRenderer>().material = Default;
+            }
+            equipment.DropWeapon();
+        }
+        ///Knocked Logic
+        /*
 		if (knocked)
 		{
-            if (Time.time > knockedTimer + 2)
+            if (knockedTimer + 300f < Time.time)
 			{
 				knocked = false;
 				knockedTimer = Time.time;
-
+                Debug.Log("Fui Noqueado!");
+                //GetComponent<SpriteRenderer>().material = Default;
 			}
-			equipment.DropWeapon();
-		}
 
+			
+		}
+        */
 
 
 		if (dead == true) {
@@ -116,7 +134,14 @@ public class Health : MonoBehaviour {
 			health -= attack.damage;
 
             if (health > 0) { 
+                if (!knocked) {
+                    knockedTimer = 20.0f;
+                    knocked = true;
+                }
 
+                child_object.GetComponent<SpriteRenderer>().material = Hit;
+                GetComponent<SpriteRenderer>().material = Hit;
+                /* Quitado del master branch para evitar mayores bugs
                 if(!knocked)
                 {                    
                     knocked = true;
@@ -138,6 +163,7 @@ public class Health : MonoBehaviour {
                     });
 
                 }
+                */
             }
             else
             {

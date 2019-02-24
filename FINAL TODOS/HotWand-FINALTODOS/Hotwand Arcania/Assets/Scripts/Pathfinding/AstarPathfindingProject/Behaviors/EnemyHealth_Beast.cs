@@ -17,6 +17,12 @@ public class EnemyHealth_Beast : MonoBehaviour {
     private GameObject score;
     private GameObject player;
 
+    //Flash Shader Vars
+    public Material Default;
+    public Material Hit;
+    private float knockedTimer = 20.0f;
+    public bool knocked;
+
     //Getting Child's Sprite
     private Transform child_transform;
 	private GameObject child_object;
@@ -40,12 +46,24 @@ public class EnemyHealth_Beast : MonoBehaviour {
 
     public void Update()
     {
-         if (dead && boss)
+        if (dead && boss)
         {
             print(Time.time);
             if (Time.time - TiempoDead > 2)
             {
                 SceneManager.LoadScene("FinalCut");
+            }
+        }
+
+        //Flash Shader when hit
+        if (knocked) {
+            knockedTimer -= Time.time;
+
+            if (knockedTimer <= 0.0f)
+            {
+                knocked = false;
+                child_object.GetComponent<SpriteRenderer>().material = Default;
+                GetComponent<SpriteRenderer>().material = Default;
             }
         }
     }
@@ -100,8 +118,16 @@ public class EnemyHealth_Beast : MonoBehaviour {
         }
         }
 		else
-		if (health >= 1)
+		if (health > 0)
 		{
+            if (!knocked) {
+                knockedTimer = 20.0f;
+                knocked = true;
+            }
+
+            child_object.GetComponent<SpriteRenderer>().material = Hit;
+            GetComponent<SpriteRenderer>().material = Hit;
+            /*
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
 			Debug.Log("Got Knocked.");
 			transform.Translate(new Vector3(0,0,0));
@@ -121,8 +147,8 @@ public class EnemyHealth_Beast : MonoBehaviour {
                     {"CordenadasX", ( GameObject.FindGameObjectWithTag("Enemy").transform.position.x) },
                     {"CordenadasY",  (GameObject.FindGameObjectWithTag("Enemy").transform.position.y) }
                 });
+            */
         }
-		
 		Debug.Log("Got Hit.");
 	}
 }

@@ -330,9 +330,11 @@ MonoBehaviour:
   anim: {fileID: 95689475018918042}
   dead: 0
   knocked: 0
-  health: 2
+  health: 3
   equipment: {fileID: 114581317085924102}
   interact: {fileID: 114910162432117734}
+  Default: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  Hit: {fileID: 2100000, guid: caa678318ebf07a4ca263482dc1a7f4e, type: 2}
 --- !u!114 &114470453829296156
 MonoBehaviour:
   m_ObjectHideFlags: 1

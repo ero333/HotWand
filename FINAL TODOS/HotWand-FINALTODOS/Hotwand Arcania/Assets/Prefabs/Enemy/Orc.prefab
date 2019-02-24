@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 2.5
-  attackDelay: 2
+  attackDelay: 3
   meleeHitbox: {fileID: 1389483194045350, guid: c003c19f7fd296940ae39a6e7c8ae537,
     type: 2}
   meleeAnchorPoint: {fileID: 1588998763639248}
@@ -392,6 +392,9 @@ MonoBehaviour:
   animator: {fileID: 95554088365648222}
   legs: {fileID: 1962226634289828}
   weaponPickup: {fileID: 0}
+  Default: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  Hit: {fileID: 2100000, guid: 720d1f7a5ebde384c9d86bf2be2ba4bb, type: 2}
+  knocked: 0
 --- !u!114 &114788590449063496
 MonoBehaviour:
   m_ObjectHideFlags: 1

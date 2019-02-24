@@ -37,7 +37,7 @@ public class MeleeAttack : MonoBehaviour {
 					{
 						case "Sword":
 							if (attack != null){
-                                attack.GetComponent<MeleeHitboxEnemy>().damage = 2;
+                                attack.GetComponent<MeleeHitboxEnemy>().damage = 1;
                                 attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
                             }
 							print(  "daño de la espada: " + attack.GetComponent<MeleeHitboxEnemy>().damage);
@@ -48,7 +48,7 @@ public class MeleeAttack : MonoBehaviour {
 
 						case "Axe":
 							if (attack != null) {
-                                attack.GetComponent<MeleeHitboxEnemy>().damage = 3;
+                                attack.GetComponent<MeleeHitboxEnemy>().damage = 1;
                                 attack.GetComponent<MeleeHitboxEnemy>().creator_name = gameObject.name;
  
                             }

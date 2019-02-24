@@ -283,6 +283,9 @@ MonoBehaviour:
   health: 16
   dead: 0
   animator: {fileID: 95659856897252988}
+  Default: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  Hit: {fileID: 2100000, guid: d7dc6c3e68ff12140876ff624346b041, type: 2}
+  knocked: 0
   TiempoDead: 0
 --- !u!114 &114656449829463978
 MonoBehaviour:
@@ -299,8 +302,8 @@ MonoBehaviour:
   rangedAnchorPoint: {fileID: 1082372415991542}
   fireBreathProjectile: {fileID: 1653958583639518, guid: b75f5fd2323f52b469e3d7760e39f099,
     type: 2}
-  crossbowProjectile: {fileID: 1653958583639518, guid: b75f5fd2323f52b469e3d7760e39f099,
-    type: 2}
+  creator_name: 
+  arma: 
 --- !u!114 &114710091360512162
 MonoBehaviour:
   m_ObjectHideFlags: 1
