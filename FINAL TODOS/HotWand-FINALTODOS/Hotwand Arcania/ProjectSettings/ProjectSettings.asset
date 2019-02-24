@@ -617,9 +617,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 9b7924d7-34cd-4269-a0cd-ebccfbb3b4c8
-  projectName: Hotwand Arcania FINAL FAUSTO
-  organizationId: hotwandfausto
+  cloudProjectId: 31241023-8033-4da6-9c90-d8c28e19453f
+  projectName: HW - FINAL TODOS
+  organizationId: pazflor96
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
