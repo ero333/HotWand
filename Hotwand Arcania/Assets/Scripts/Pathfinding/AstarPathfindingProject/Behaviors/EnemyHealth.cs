@@ -61,10 +61,12 @@ public class EnemyHealth : MonoBehaviour {
     }
     public void TakeDamage(Attack attack) {
         health -= attack.damage;
+        child_object.GetComponent<SpriteRenderer>().material = Hit;
+        GetComponent<SpriteRenderer>().material = Hit;
 
         if (health <= 0)
 		{
-           
+            GetComponent<SpriteRenderer>().material = Default;
             legs.SetActive(false);          
             health = 0;
             if ( !dead ) {
@@ -129,8 +131,7 @@ public class EnemyHealth : MonoBehaviour {
                 knocked = true;
             }
 
-            child_object.GetComponent<SpriteRenderer>().material = Hit;
-            GetComponent<SpriteRenderer>().material = Hit;
+ 
             /*
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
             
