@@ -38,12 +38,15 @@ public class RangedAttack : MonoBehaviour {
 		Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
 		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 2 * Time.deltaTime);
 
-		if (Time.time > lastAttackTime + 2)
+		if ((projectile != null) && (projectile.GetComponent<EnemyProjectile>().arma != null))
 		{
-				GameObject newProjectile = Instantiate(projectile, rangedAnchorPoint.transform.position, rangedAnchorPoint.transform.rotation);
-				newProjectile.GetComponent<EnemyProjectile>().arma = GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName;
-				newProjectile.GetComponent<EnemyProjectile>().creator_name = gameObject.name;
-				lastAttackTime = Time.time;
+			if (Time.time > lastAttackTime + 2)
+			{
+					GameObject newProjectile = Instantiate(projectile, rangedAnchorPoint.transform.position, rangedAnchorPoint.transform.rotation);
+					newProjectile.GetComponent<EnemyProjectile>().arma = GetComponent<WeaponPickup>().weaponEquipped.GetComponent<Weapon>().weaponName;
+					newProjectile.GetComponent<EnemyProjectile>().creator_name = gameObject.name;
+					lastAttackTime = Time.time;
+			}
 		}
 	}
 }

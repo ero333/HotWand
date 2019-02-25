@@ -31,6 +31,7 @@ public class MeleeAttack_Beast : MonoBehaviour {
 					animator.SetTrigger("Punch");
 					attack = Instantiate(meleeHitbox, meleeAnchorPoint.transform.position, transform.rotation);
                     attack.GetComponent<MeleeHitboxEnemy>().arma = "Punch";
+					
                     if (attack != null)
                     {
                         attack.GetComponent<MeleeHitboxEnemy>().damage = 1;

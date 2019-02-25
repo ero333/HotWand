@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 114887047283799000}
   - component: {fileID: 114484016342537802}
   - component: {fileID: 114491366551721420}
-  - component: {fileID: 114560061419580412}
   - component: {fileID: 95171416948322532}
   - component: {fileID: 114402022437580378}
   - component: {fileID: 114500269526529864}
@@ -227,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 0}
+  target: {fileID: 4042692248449106, guid: e9383c8bd18e7d34283cf78400b385a7, type: 2}
 --- !u!114 &114484016342537802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -258,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de2efa9fc19b5f34db45e876c03f7511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 30
+  attackRange: 20
   attackDelay: 0.5
   meleeHitbox: {fileID: 1389483194045350, guid: c003c19f7fd296940ae39a6e7c8ae537,
     type: 2}
@@ -272,17 +271,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352a9c690e3a57e4d83e48212668afd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114560061419580412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1664972673325768}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4db85a7a607d24542b2060d88d89a261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114689935879515502

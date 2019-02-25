@@ -187,6 +187,7 @@ public GameObject equippedWeapon;
 		animator.SetBool("Sword Stance", false);
 		animator.SetBool("Axe Stance", false);
 		animator.SetBool("Wand Stance", false);
+		animator.SetBool("Uziwand Stance", false);
 		animator.SetBool("Crossbow Stance", false);
 	}
 	public void DropWeapon()

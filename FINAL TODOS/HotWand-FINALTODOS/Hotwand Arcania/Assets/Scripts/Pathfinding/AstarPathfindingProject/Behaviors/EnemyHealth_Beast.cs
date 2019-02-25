@@ -62,7 +62,6 @@ public class EnemyHealth_Beast : MonoBehaviour {
             if (knockedTimer <= 0.0f)
             {
                 knocked = false;
-                child_object.GetComponent<SpriteRenderer>().material = Default;
                 GetComponent<SpriteRenderer>().material = Default;
             }
         }
@@ -125,7 +124,6 @@ public class EnemyHealth_Beast : MonoBehaviour {
                 knocked = true;
             }
 
-            child_object.GetComponent<SpriteRenderer>().material = Hit;
             GetComponent<SpriteRenderer>().material = Hit;
             /*
 			gameObject.GetComponent<Animator>().SetBool("Knocked", true);
