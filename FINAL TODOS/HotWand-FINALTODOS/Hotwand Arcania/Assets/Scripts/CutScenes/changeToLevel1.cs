@@ -9,7 +9,7 @@ public class changeToLevel1 : MonoBehaviour {
 
     void Update()
     {
-        if (cutsceneManager.GetComponent<SceneSequence>().cutsceneStep == 4)
+        if (cutsceneManager.GetComponent<SceneSequence>().cutsceneStep == 5)
         {
             GetComponent<Animator>().SetBool("Can Continue", true);
         }
