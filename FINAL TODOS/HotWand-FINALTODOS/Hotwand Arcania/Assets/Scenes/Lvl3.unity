@@ -1494,7 +1494,7 @@ Prefab:
     - target: {fileID: 114195879647035568, guid: 098a8127862035d469323a91844624d9,
         type: 2}
       propertyPath: weaponAmmo
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 098a8127862035d469323a91844624d9, type: 2}
@@ -13948,7 +13948,12 @@ Prefab:
     - target: {fileID: 114080141074504426, guid: a269f409ddc4fe54b8e76cd239e023d8,
         type: 2}
       propertyPath: weaponAmmo
-      value: 6
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080141074504426, guid: a269f409ddc4fe54b8e76cd239e023d8,
+        type: 2}
+      propertyPath: beingThrown
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a269f409ddc4fe54b8e76cd239e023d8, type: 2}
@@ -14251,6 +14256,11 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114581317085924102, guid: e9383c8bd18e7d34283cf78400b385a7,
+        type: 2}
+      propertyPath: punchDamage
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 58546706583975536, guid: e9383c8bd18e7d34283cf78400b385a7, type: 2}
