@@ -406,15 +406,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4311544650827114, guid: 438f19f5ae15d45269fce761f1eac30a, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.37968022
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4311544650827114, guid: 438f19f5ae15d45269fce761f1eac30a, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.37968022
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4311544650827114, guid: 438f19f5ae15d45269fce761f1eac30a, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.37968
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4311544650827114, guid: 438f19f5ae15d45269fce761f1eac30a, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
