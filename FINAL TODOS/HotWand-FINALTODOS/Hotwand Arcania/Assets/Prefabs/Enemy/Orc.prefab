@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e935b19c0cc9b3941b57c5a8c4c1ada5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 8
+  health: 5
   dead: 0
   animator: {fileID: 95554088365648222}
   legs: {fileID: 1962226634289828}
