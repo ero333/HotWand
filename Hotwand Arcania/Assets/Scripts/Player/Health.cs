@@ -26,7 +26,7 @@ public class Health : MonoBehaviour {
     //Flash Shader Vars
     public Material Default;
     public Material Hit;
-    private float knockedTimer = 20.0f;
+    private float knockedTimer = 40.0f;
 
     //Getting Child's Sprite
     private Transform child_transform;
@@ -137,7 +137,7 @@ public class Health : MonoBehaviour {
             { 
                 if (!knocked)
                 {
-                    knockedTimer = 20.0f;
+                    knockedTimer = 40.0f;
                     knocked = true;
                     HealthBar.health -= 40.0f;
                 }

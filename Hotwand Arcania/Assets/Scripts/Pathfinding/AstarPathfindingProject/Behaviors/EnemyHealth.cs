@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour {
     //Flash Shader Vars
     public Material Default;
     public Material Hit;
-    private float knockedTimer = 20.0f;
+    private float knockedTimer = 40.0f;
     public bool knocked;
 
     //Getting Child's Sprite
@@ -127,7 +127,7 @@ public class EnemyHealth : MonoBehaviour {
             //legs.SetActive(false);
             // Si sobrevivio al ataque, queda noqueado
             if (!knocked) {
-                knockedTimer = 20.0f;
+                knockedTimer = 40.0f;
                 knocked = true;
             }
 

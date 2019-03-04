@@ -20,7 +20,7 @@ public class EnemyHealth_Beast : MonoBehaviour {
     //Flash Shader Vars
     public Material Default;
     public Material Hit;
-    private float knockedTimer = 20.0f;
+    private float knockedTimer = 40.0f;
     public bool knocked;
 
     //Getting Child's Sprite
@@ -120,7 +120,7 @@ public class EnemyHealth_Beast : MonoBehaviour {
 		if (health > 0)
 		{
             if (!knocked) {
-                knockedTimer = 20.0f;
+                knockedTimer = 40.0f;
                 knocked = true;
             }
 
